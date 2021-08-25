@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.MedicineMenu {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(270deg, #414141 -27.69%, #000000 108.53%);
+    background: linear-gradient(270deg, #0A4FB6 -9.87%, #28859A 111.47%);
+
+
+}
+
+
+.MedicineMenuText {
+    margin-top: 30px;
+}
+
+.MedicineMenuText1 {
+    /* Subtitle / Base */
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    /* or 57px */
+    font-family: 'Andale Mono', monospace;
+
+    text-align: center;
+
+    color: white
+}
+
+.MedicineMenuText2 {
+
+
+    width: 80%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+
+    text-align: center;
+    margin: auto;
+
+    color: white;
+
+    opacity: 0.7;
+}
+
+.MedicineMenuCard {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-top: 50px;
+}
+
+.MedicineMenuCardGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.CardMedicine {
+    background-image: url(../img/pharmacy.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 190px;
+    width: 22%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    text-align: start;
+    line-height: 20px;
+
+}
+
+.CardMedicine1 {
+    background-image: url(../img/Card1.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 190px;
+    width: 22%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    text-align: start;
+    line-height: 20px;
+
+}
+
+.CardMedicine2 {
+    background-image: url(../img/Card.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 190px;
+    width: 22%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    text-align: start;
+    line-height: 20px;
+
+}
+
+.CardMedicine3 {
+    background-image: url(../img/Card2.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 190px;
+    width: 22%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    text-align: start;
+    line-height: 20px;
+
+}
+
+.CardMedicine p:nth-child(1) {
+    color: white;
+    font-size: 19px;
+}
+
+.CardMedicine p:nth-child(3) {
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.CardMedicine p:nth-child(2) {
+    color: white;
+    font-size: 22px;
+    width: 30%;
+    font-weight: bolder;
+    width: 100%;
+
+}
+
+.CardMedicine1 p:nth-child(1) {
+    color: white;
+    font-size: 19px;
+}
+
+.CardMedicine1 p:nth-child(3) {
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.CardMedicine1 p:nth-child(2) {
+    color: white;
+    font-size: 22px;
+    width: 30%;
+    font-weight: bolder;
+    width: 100%;
+
+}
+
+.CardMedicine3 p:nth-child(1) {
+    color: white;
+    font-size: 19px;
+}
+
+.CardMedicine3 p:nth-child(3) {
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.CardMedicine3 p:nth-child(2) {
+    color: white;
+    font-size: 22px;
+    width: 30%;
+    font-weight: bolder;
+    width: 100%;
+
+}
+
+.CardMedicine2 p:nth-child(1) {
+    color: white;
+    font-size: 19px;
+}
+
+.CardMedicine2 p:nth-child(3) {
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.CardMedicine2 p:nth-child(2) {
+    color: white;
+    font-size: 22px;
+    width: 30%;
+    font-weight: bolder;
+    width: 100%;
+
+}
+
+.CardMedicine:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media(min-width:1024px) and (max-width:1250px) {
+    .CardMedicine {
+        width: 30%;
+        display: block;
+
+    }
+
+    .CardMedicine1 {
+        width: 30%;
+
+    }
+
+    .CardMedicine2 {
+        width: 30%;
+
+    }
+
+    .CardMedicine3 {
+        display: none;
+    }
+
+    .MedicineMenuCardGroup {
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+    .CardMedicine {
+        width: 40%;
+        display: block;
+
+    }
+
+    .CardMedicine1 {
+        width: 40%;
+
+    }
+
+    .CardMedicine2 {
+        display: none;
+
+    }
+
+    .CardMedicine3 {
+        display: none;
+    }
+
+    .MedicineMenuCardGroup {
+        flex-wrap: wrap;
+        margin-top: 3%;
+    }
+}
+
+@media(min-width:550px) and (max-width:767px) {
+    .CardMedicine {
+        width: 49%;
+        display: block;
+
+    }
+
+    .CardMedicine1 {
+        width: 49%;
+
+    }
+
+    .CardMedicine2 {
+        display: none;
+
+    }
+
+    .CardMedicine3 {
+        display: none;
+    }
+
+    .MedicineMenuCard {
+        margin-top: 3%;
+    }
+
+    .MedicineMenuCardGroup {
+        flex-wrap: wrap;
+        margin-top: 3%;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+}
+
+@media(max-width:550px) {
+    .CardMedicine {
+        width: 63%;
+        display: block;
+
+    }
+
+    .CardMedicine p:nth-child(3) {
+        font-size: 17px;
+    }
+
+    .CardMedicine1 p:nth-child(3) {
+        font-size: 17px;
+    }
+
+    .CardMedicine1 {
+        width: 63%;
+        margin-top: 2%;
+
+    }
+
+    .CardMedicine2 {
+        display: none;
+
+    }
+
+    .CardMedicine3 {
+        display: none;
+
+    }
+
+    .MedicineMenuCard {
+        margin-top: 3%;
+    }
+
+    .MedicineMenuCardGroup {
+        flex-wrap: wrap;
+        margin-top: 3%;
+        margin-top: 2%;
+        justify-content: center;
+
+    }
+
+    .MedicineMenu {
+        height: auto;
+    }
+}
