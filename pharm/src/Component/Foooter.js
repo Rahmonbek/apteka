@@ -23,69 +23,17 @@ import {
   TwitterOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
+import PragressGroup from "./PragressGroup";
+import Events from "./Events";
 export default class Obuna extends Component {
   render() {
     return (
       <div>
         <section id="Testimonials"></section>
-        <div className={style.menu}>
-          <Container>
-            <Row className={style.row}>
-              <Col className={style.col}>
-                <div className={style.plus}>500+</div>
-                <div className={style.homiy}>Homiylar</div>
-              </Col>
-              <Col className={style.col}>
-                <div className={style.plus}>1500+</div>
-                <div className={style.homiy}>Obunachilar</div>
-              </Col>
-              <Col className={style.col}>
-                <div className={style.plus}>200+</div>
-                <div className={style.homiy}>Xodimlar</div>
-              </Col>
-              <Col className={style.col}>
-                <div className={style.plus}>15+</div>
-                <div className={style.homiy}>Filyallar</div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className={style.menu2}>
-          <h1>Ishlab chiqarish jarayoni</h1>
-          <p className={style.izoh}>
-            Bizda dori-darmonlar yuqori saviyada, chet el inavatsiyon
-            texnolofiyalari asoslarida ishlab chiqariladi.
-          </p>
-          <Container className={style.matn}>
-            <div className={style.Rasm}>
-              <img src={Fab} alt="dori fabrikasi" />
-            </div>
-            <div className={style.CommentMe}>
-              <Timeline>
-                <Timeline.Item color="red">
-                  <p>Chet el talablariga javob beradigan tarkib</p>
-                  <p>Bizda samarali ishlab chiqarish </p>
-                  <p>Ko`p yillik tajriba 2015-09-01</p>
-                </Timeline.Item>
-                <Timeline.Item color="gray">
-                  <p>Maxsulotni yaxshi saqlash</p>
-                  <p>yaroqlilik muddatini muttasil ko`rib borish</p>
-                  <p>Kafolatni taminlash </p>
-                </Timeline.Item>
-                <Timeline.Item>
-                  <p>Ishonchi maslahatlar</p>
-                  <p>Mijoz bilan kirishish qobiliyati</p>
-                  <p>Kamchiliksiz ishlash</p>
-                </Timeline.Item>
-                <Timeline.Item color="gray" variant="saccess">
-                  <p>Tez va samarali yetkazib berish</p>
-                  <p>Maxsulot saqlash sharoitini tushuntrish </p>
-                  <p>Maxsulotni ishlatish yoriqnomasi</p>
-                </Timeline.Item>
-              </Timeline>
-            </div>
-          </Container>
-        </div>
+        <PragressGroup />
+        <section id="event"></section>
+        <Events />
+
         <div className={style.FooterMenu}>
           <Container>
             <section id="blog"></section>
