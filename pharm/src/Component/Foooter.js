@@ -25,6 +25,7 @@ import {
 } from "@ant-design/icons";
 import PragressGroup from "./PragressGroup";
 import Events from "./Events";
+
 export default class Obuna extends Component {
   render() {
     return (

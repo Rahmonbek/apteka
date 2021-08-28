@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Css/Cardgroup.module.css";
-import { Container } from "react-bootstrap";
-import { Card, Col, Row } from "antd";
+import { Container, Image } from "react-bootstrap";
 import AOS from "aos";
 import Rasm1 from "./img/AA1.png";
 import Rasm2 from "./img/AA2.jpg";
@@ -13,10 +12,6 @@ import Rasm7 from "./img/Drug8.jpg";
 import Rasm8 from "./img/Drug2.jpg";
 import Rasm9 from "./img/Drug3.jpg";
 import Rasm10 from "./img/Drug4.jpg";
-const gridStyle = {
-  width: "25%",
-  textAlign: "center",
-};
 
 export default function CardGroup1() {
   AOS.init({
@@ -42,7 +37,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm1} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm1} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -56,7 +51,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm2} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm2} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -71,7 +66,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm3} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm3} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -85,7 +80,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm4} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm4} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -99,7 +94,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm5} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm5} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -113,7 +108,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm6} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm6} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -127,7 +122,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm7} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm7} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -141,7 +136,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm8} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm8} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -155,7 +150,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm9} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm9} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
@@ -169,7 +164,7 @@ export default function CardGroup1() {
             data-aos-anchor-placement="center-bottom"
             className={styles.flex_item}
           >
-            <img id={styles.flex_img} src={Rasm10} className="img-fluid" />
+            <Image id={styles.flex_img} src={Rasm10} className="img-fluid" />
             <div>
               {" "}
               <a href="#">
