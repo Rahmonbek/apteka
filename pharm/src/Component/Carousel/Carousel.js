@@ -9,6 +9,7 @@ import Rasm1 from "../img/slider2.jpg";
 import Rasm2 from "../img/slider3.jpg";
 import Rasm3 from "../img/slider4.jpg";
 import Rasm4 from "../img/slider5.jpg";
+import AOS from "aos";
 
 export default function ImageSlider() {
   let settings = {
@@ -22,16 +23,30 @@ export default function ImageSlider() {
     autoplaySpeed: 3000, //2000
     pauseOnHover: true,
   };
+  AOS.init({
+    duration: 1000,
+  });
   return (
-    <div>
+    <div className={styles.SliderMenu}>
       <Container>
-        <Slider {...settings}>
-          <div className={styles.card_wrapper}>
+        <div className={styles.SliderMenuText}>
+          <p className={styles.SliderMenuText1}>
+            Eng Yaxshi Dorixonalar Ruyhati
+          </p>
+          <p className={styles.SliderMenuText2}>
+            Semper integer est quis leo, nunc. Quis lectus amet aenean massa
+            turpis senectus pulvinar. Pharetra gravida volutpat faucibus
+            faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.
+            Pharetra gravida volutpat faucibus faucibus.
+          </p>
+        </div>
+        <Slider className={styles.SliderMenuItem} {...settings}>
+          <div data-aos="zoom-in" className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm1} className="img-fluid" />
               </div>
-              <div className={styles.CardBody}>
+              <div id={styles.CardBody}>
                 <p>Ar-Roziy farm</p>
                 <p>Ish vaqti 8:00 dan 18:00 gacha.</p>
               </div>
@@ -60,7 +75,7 @@ export default function ImageSlider() {
                   </a>
                 </li>
               </ul>
-              <div className={styles.details}>
+              <div id={styles.details}>
                 <h5>
                   <p className={styles.AddressPlace}> Manzil:</p>
                   <p className={styles.JobTitle}>
@@ -80,12 +95,12 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div className={styles.card_wrapper}>
+          <div data-aos="zoom-in" className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm2} class="img-fluid" />
               </div>
-              <div className={styles.CardBody}>
+              <div id={styles.CardBody}>
                 <p>Dori-Darmon</p>
                 <p>Ish vaqti 7:00 dan 21:00 gacha.</p>
               </div>
@@ -114,7 +129,7 @@ export default function ImageSlider() {
                   </a>
                 </li>
               </ul>
-              <div className={styles.details}>
+              <div id={styles.details}>
                 <h5>
                   <p className={styles.AddressPlace}> Manzil:</p>
                   <p className={styles.JobTitle}>
@@ -134,12 +149,12 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div className={styles.card_wrapper}>
+          <div data-aos="zoom-in" className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm3} class="img-fluid" />
               </div>
-              <div className={styles.CardBody}>
+              <div id={styles.CardBody}>
                 <p>Eco Med Dorixona</p>
                 <p>Bizning ish foaliyatimiz 24/7</p>
               </div>
@@ -168,7 +183,7 @@ export default function ImageSlider() {
                   </a>
                 </li>
               </ul>
-              <div className={styles.details}>
+              <div id={styles.details}>
                 <h5>
                   <p className={styles.AddressPlace}> Manzil:</p>
                   <p className={styles.JobTitle}>
@@ -188,12 +203,12 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div className={styles.card_wrapper}>
+          <div data-aos="zoom-in" className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm} class="img-fluid" />
               </div>
-              <div className={styles.CardBody}>
+              <div id={styles.CardBody}>
                 <p>777 Dorixona</p>
                 <p>Ish vaqti 7:00 dan 22:00 gacha.</p>
               </div>
@@ -222,7 +237,7 @@ export default function ImageSlider() {
                   </a>
                 </li>
               </ul>
-              <div className={styles.details}>
+              <div id={styles.details}>
                 <h5>
                   <p className={styles.AddressPlace}> Manzil:</p>
                   <p className={styles.JobTitle}>
@@ -242,12 +257,12 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div className={styles.card_wrapper}>
+          <div data-aos="zoom-in" className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm4} class="img-fluid" />
               </div>
-              <div className={styles.CardBody}>
+              <div id={styles.CardBody}>
                 <p>IMVITANO Dorixona</p>
                 <p>Ish vaqti 7:00 dan 22:00 gacha.</p>
               </div>
@@ -277,7 +292,7 @@ export default function ImageSlider() {
                   </a>
                 </li>
               </ul>
-              <div className={styles.details}>
+              <div id={styles.details}>
                 <h5>
                   <p className={styles.AddressPlace}> Manzil:</p>
                   <p className={styles.JobTitle}>

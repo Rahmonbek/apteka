@@ -27,7 +27,7 @@ export default function Events() {
             <div data-aos="fade-right" className={styles.EventsMenuItemImg}>
               <img src={Rasm} className="img-fluid" />
             </div>
-            <div data-aos="fade-left" className={styles.EventsMenuItemText}>
+            <div className={styles.EventsMenuItemText}>
               <ul>
                 <li>
                   <i class="fas fa-check-double"></i>

@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import styles from "./Css/LandingPage.module.css";
 import CardGroup from "./CardGroup";
+import Carousell from "./Carousel/Carousel";
 import Doctor1 from "./img/Rectangle 10.png";
 import Doctor2 from "./img/Rectangle 11.png";
 import Doctor3 from "./img/Rectangle 8.png";
@@ -12,12 +13,16 @@ import {
   PhoneOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
+import AOS from "aos";
 
 import { Card } from "antd";
 import Menu from "./Menu";
 const { Meta } = Card;
 
 export default function LandingPage() {
+  AOS.init({
+    duration: 1000,
+  });
   return (
     <div className={styles.BodyHeader}>
       <Menu />
@@ -38,7 +43,11 @@ export default function LandingPage() {
           <div className={styles.ServiceMenuCard}>
             <div className={styles.ServiceMenuCard1}>
               {/* Card Group */}
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-ambulance fa-2x"></i>
                 </div>
@@ -50,7 +59,11 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-user-md fa-2x"></i>
                 </div>
@@ -62,7 +75,11 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-book-medical fa-2x "></i>
                 </div>
@@ -77,7 +94,10 @@ export default function LandingPage() {
             </div>
             <div className={styles.ServiceMenuCard1}>
               {/* Card Group */}
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-headset fa-2x"></i>
                 </div>
@@ -89,7 +109,10 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-book-medical fa-2x "></i>
                 </div>
@@ -101,7 +124,10 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className={styles.Card}>
+              <div
+                data-aos="fade-up"
+                className={styles.Card}
+              >
                 <div className={styles.CardIcons}>
                   <i class="fas fa-user-clock fa-2x"></i>
                 </div>
@@ -117,91 +143,8 @@ export default function LandingPage() {
           </div>
         </div>
         <section id="List"></section>
-        <div className={styles.ListMenu}>
-          <div className={styles.ListMenuText}>
-            <p className={styles.ListMenuText1}>
-              Bizning ma'lakali Doctorlirimiz
-            </p>
-            <p className={styles.ListMenuText2}>
-              Semper integer est quis leo, nunc. Quis lectus amet aenean massa
-              turpis senectus pulvinar. Pharetra gravida volutpat faucibus
-              faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.
-              Pharetra gravida volutpat faucibus faucibus.
-            </p>
-          </div>
-          <div className={styles.ListMenuCard}>
-            <Card
-              className={styles.CardMenuList}
-              hoverable
-              cover={<img alt="example" src={Doctor1} />}
-              actions={[
-                <PhoneOutlined className={styles.CallMeCard} key="Phone" />,
-                <EditOutlined key="edit" />,
-                <YoutubeOutlined key="Youtube" />,
-
-                <EllipsisOutlined key="ellipsis" />,
-              ]}
-            >
-              <Meta
-                title="Rakshit Sannegowda
-"
-                description="2 -Toshkent tibbiyot institutining umumiy tibbiyot fakultetini tamomlagan. Toshkent tibbiyot akademiyasi  ilmiy darajasini oldi.
-"
-              />
-            </Card>
-            <Card
-              className={styles.CardMenuList}
-              hoverable
-              cover={<img alt="example" src={Doctor2} />}
-              actions={[
-                <PhoneOutlined className={styles.CallMeCard} key="Phone" />,
-                <EditOutlined key="edit" />,
-                <YoutubeOutlined key="Youtube" />,
-                <EllipsisOutlined key="ellipsis" />,
-              ]}
-            >
-              <Meta
-                title="Azmiov Anvar Toirovich"
-                description="2 -Toshkent tibbiyot institutining umumiy tibbiyot fakultetini tamomlagan. Toshkent tibbiyot akademiyasi  ilmiy darajasini oldi."
-              />
-            </Card>
-            <Card
-              className={styles.CardMenuList}
-              hoverable
-              cover={<img alt="example" src={Doctor3} />}
-              actions={[
-                <PhoneOutlined className={styles.CallMeCard} key="Phone" />,
-                <EditOutlined key="edit" twoToneColor="#52c41a" />,
-                <YoutubeOutlined key="Youtube" />,
-
-                <EllipsisOutlined key="ellipsis" />,
-              ]}
-            >
-              <Meta
-                title="Ахмедова Феруза Шорасуловна"
-                description="Pediatriya mutaxassisligi bo'yicha SamPI bitiruvchisi. Amaliyot pediatriya bo'yicha TAPOiCHda bo'lib o'tdi."
-              />
-            </Card>
-            <Card
-              className={styles.CardMenuList}
-              hoverable
-              cover={<img alt="example" src={Doctor4} />}
-              actions={[
-                <PhoneOutlined className={styles.CallMeCard} key="Phone" />,
-                <EditOutlined key="edit" twoToneColor="#52c41a" />,
-                <YoutubeOutlined key="Youtube" />,
-
-                <EllipsisOutlined key="ellipsis" />,
-              ]}
-            >
-              <Meta
-                title="Аминов Санжар Абдуазимович
-"
-                description="2 -Toshkent tibbiyot institutining umumiy tibbiyot fakultetini tamomlagan. Toshkent tibbiyot akademiyasi  ilmiy darajasini oldi. 
-"
-              />
-            </Card>
-          </div>
+        <div>
+          <Carousell />
         </div>
       </Container>
       <section id="medicine"></section>

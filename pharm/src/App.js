@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Medicines from "./Medicines/Components/Medicines";
 import InfoMedicine from "./Medicines/Components/InfoMedicine";
 import ErrorPage from "./Medicines/Components/ErrorPage";
+import Carouselll from "./Component/Carousel/Carousel";
 function App() {
   return (
     <div className="App">
