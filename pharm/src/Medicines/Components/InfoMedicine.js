@@ -1,29 +1,18 @@
 import { Button, Container, Image } from "react-bootstrap";
-//import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { dorilar } from "./../server";
 import ReactPlayer from "react-player";
+import { Row, Col } from "react-bootstrap";
 import TinySlider from "tiny-slider-react";
-//import { Carousel } from "antd";
 import "./css/infoMedicine.css";
 
 let data = JSON.parse(localStorage.getItem("id"));
 
 function InfoMedicine() {
-  //const [data, setData] = useState([]);
-  //const [index, setIndex] = useState("");
   const onRemove = () => {
     localStorage.removeItem("id");
   };
 
-  // useEffect(() => {
-  //   for (let i = 0; i < dorilar.length; i++) {
-  //     if (dorilar[i].id === info) {
-  //       setData(dorilar[i]);
-  //       setIndex(i);
-  //     }
-  //   }
-  // }, []);
   const settings = {
     duration: 1,
     lazyload: true,
@@ -50,13 +39,12 @@ function InfoMedicine() {
 
   const loadingImage =
     "data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
-  console.log(data);
   return (
     <div className="infoMedicine">
       <div className="contenat_inf">
         <div className="info_button">
           <Button onClick={onRemove} variant="primary">
-            <Link to="./">Qaytish</Link>
+            <Link to="./dorilar">Qaytish</Link>
           </Button>
         </div>
         <div className="info_container">
@@ -136,18 +124,25 @@ function InfoMedicine() {
             </Container>
           </div>
           <Container>
-            <ReactPlayer
-              className="react-player"
-              url={data.video[0]}
-              width="100%"
-              height="100%"
-            />
-            <ReactPlayer
-              className="react-player"
-              url={data.video[1]}
-              width="100%"
-              height="100%"
-            />
+            <Row className="info_row_video">
+              <Col sm={12} lg={6}>
+                {" "}
+                <ReactPlayer
+                  className="react-player"
+                  url={data.videos[0]}
+                  width="100%"
+                  height="100%"
+                />
+              </Col>
+              <Col sm={12} lg={6}>
+                <ReactPlayer
+                  className="react-player"
+                  url={data.videos[1]}
+                  width="100%"
+                  height="100%"
+                />
+              </Col>
+            </Row>
           </Container>
         </div>
       </div>

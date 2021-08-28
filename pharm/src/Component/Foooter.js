@@ -14,15 +14,6 @@ import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { RiCopyrightLine } from "react-icons/ri";
 
-import {
-  PhoneFilled,
-  MailFilled,
-  InstagramOutlined,
-  FacebookOutlined,
-  MailOutlined,
-  TwitterOutlined,
-  YoutubeOutlined,
-} from "@ant-design/icons";
 export default class Obuna extends Component {
   render() {
     return (
