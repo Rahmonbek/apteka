@@ -1,143 +1,185 @@
 import React from "react";
 import styles from "./Css/Cardgroup.module.css";
 import { Container } from "react-bootstrap";
+import { Card, Col, Row } from "antd";
+import AOS from "aos";
+import Rasm1 from "./img/AA1.png";
+import Rasm2 from "./img/AA2.jpg";
+import Rasm3 from "./img/AA3.jpg";
+import Rasm4 from "./img/Drug1.jpg";
+import Rasm5 from "./img/AA5.png";
+import Rasm6 from "./img/Drug5.jpg";
+import Rasm7 from "./img/Drug8.jpg";
+import Rasm8 from "./img/Drug2.jpg";
+import Rasm9 from "./img/Drug3.jpg";
+import Rasm10 from "./img/Drug4.jpg";
+const gridStyle = {
+  width: "25%",
+  textAlign: "center",
+};
 
-const CardInfo = [
-  {
-    id: 1,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 2,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 3,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 4,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 5,
-    img: "https://cdn.pixabay.com/photo/2017/01/29/21/16/nurse-2019420_960_720.jpg",
-    title: "Hello",
-  },
-  {
-    id: 6,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 7,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-  {
-    id: 8,
-    img: "https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125__340.jpg",
-    title: "Hello",
-  },
-];
-
-export default function CardGroup() {
+export default function CardGroup1() {
+  AOS.init({
+    duration: 2000,
+  });
   return (
-    <div>
-      {" "}
-      <div className={styles.MedicineMenu}>
-        <Container>
-          <div className={styles.MedicineMenuText}>
-            <p className={styles.MedicineMenuText1}>Sifatli Dorilar Ruyhati</p>
-            <p className={styles.MedicineMenuText2}>
-              Semper integer est quis leo, nunc. Quis lectus amet aenean massa
-              turpis senectus pulvinar. Pharetra gravida volutpat faucibus
-              faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.
-              Pharetra gravida volutpat faucibus faucibus.
-            </p>
-          </div>
-          <div className={styles.MedicineMenuCard}>
-            <div className={styles.MedicineMenuCardGroup}>
-              <div className={styles.CardMedicine}>
-                <p>Ingalatsiya uchun narkoz vositalari</p>
-                <p>
-                  Izofluran, Galotan <br /> Sevofluran
-                </p>
-                <p>ingalatsiya uchun eritma 100 ml; 250 ml</p>
-              </div>
-
-              <div className={styles.CardMedicine1}>
-                <p>Tutqanoqga qarshi vositalar</p>
-                <p>
-                  Fenobarbital, Karbamazepin <br /> Benzobarbital
-                </p>
-                <p>Kukun, ichish uchun tomchilar 300 mg/ml</p>
-              </div>
-
-              <div className={styles.CardMedicine2}>
-                <p>Neyroleptik vositalar</p>
-                <p>
-                  Levomepromazin, Droperidol <br /> Trifluoperazin
-                </p>
-                <p>
-                  inyeksiya uchun eritma 5 mg/ml inyeksiya uchun moyli eritma 50
-                  mg/ml
-                </p>
-              </div>
-              <div className={styles.CardMedicine3}>
-                <p>Trankvilizatorlar</p>
-                <p>
-                  Alprazolam, Tofizopam <br /> Fenazepam
-                </p>
-                <p>
-                  tabletkalar 5 mg inyeksiya uchun eritma 5 mg/ml 2 ml; 10
-                  mg/2ml.
-                </p>
-              </div>
-            </div>{" "}
-            <div className={styles.MedicineMenuCardGroup}>
-              <div className={styles.CardMedicine}>
-                <p>Antidepressantlar</p>
-                <p>
-                  Venlafaksin, Fluvoksamin <br /> Mirtazapin
-                </p>
-                <p>ingalatsiya uchun eritma 100 ml; 250 ml</p>
-              </div>
-              <div className={styles.CardMedicine1}>
-                <p>Psixostimulyatorlar</p>
-                <p>
-                  Kofein-natriy benzoat , Karbamazepin <br /> Sitokolin
-                </p>
-                <p>Kukun, ichish uchun tomchilar 300 mg/ml</p>
-              </div>
-              <div className={styles.CardMedicine2}>
-                <p>Parkinsonizmga qarshi vositalar</p>
-                <p>
-                  Trigeksifenidil, Amantadin
-                  <br /> karbidopa
-                </p>
-                <p>
-                  Tabletkalar 100 mg, Kukun, ichish uchun tomchilar 300 mg/ml
-                </p>
-              </div>
-              <div className={styles.CardMedicine3}>
-                <p>Nonarkotik analgetiklar</p>
-                <p>
-                  Paratsetamol, Metamizol natriy
-                  <br /> Benzobarbital
-                </p>
-                <p>
-                  Tabletkalar 100 mg, Kukun, ichish uchun tomchilar 300 mg/ml
-                </p>
-              </div>
+    <div className={styles.CardGroupMenu}>
+      <Container>
+        <div className={styles.CardGroupMenuText}>
+          <p className={styles.CardGroupMenuText1}>
+            Bizning Eng Yaxshi Dorilarimiz
+          </p>
+          <p className={styles.CardGroupMenuText2}>
+            Semper integer est quis leo, nunc. Quis lectus amet aenean massa
+            turpis senectus pulvinar. Pharetra gravida volutpat faucibus
+            faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.
+            Pharetra gravida volutpat faucibus faucibus.
+          </p>
+        </div>
+        <div className={styles.flex_container}>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm1} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
             </div>
           </div>
-        </Container>
-      </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm2} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm3} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm4} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm5} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm6} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm7} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm8} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm9} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.flex_item}
+          >
+            <img id={styles.flex_img} src={Rasm10} className="img-fluid" />
+            <div>
+              {" "}
+              <a href="#">
+                <p class="fas fa-plus"></p>
+                <p>Ma'lumot uchun</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </Container>
     </div>
   );
 }

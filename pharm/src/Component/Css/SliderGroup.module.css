@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+    background: white;
+}
+
+.SliderContainer {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+
+}
+
+.slider_title {
+    font-size: 5vh;
+    color: tomato;
+    text-align: center;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+
+.card_wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.card_wrapper:active,
+.card_wrapper:hover,
+.card_wrapper:focus {
+    outline: none;
+    border: none;
+}
+
+.Card {
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.card_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+}
+
+.CardBody {
+    position: relative;
+    z-index: 3;
+    margin: auto;
+
+    color: white;
+    align-content: flex-end;
+    margin-top: 60%;
+    width: 90%;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(0, 0, 255, 0.26);
+
+}
+
+.CardBody p:nth-child(1) {
+    font-size: 22px;
+    font-family: 'Andale Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.CardBody p:nth-child(2) {
+    font-size: 18px;
+    font-family: 'Andale Mono', monospace;
+
+
+}
+
+
+.Card:hover .CardBody {
+    display: none;
+    transition: .3s;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_image:hover img {
+    opacity: .5;
+    transition: .5s;
+}
+
+.Card:hover .card_image {
+    transform: translateY(-100px);
+    transition: all .9s;
+}
+
+.social_icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+    display: flex;
+}
+
+.social_icons li {
+    list-style-type: none;
+}
+
+.social_icons li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: white;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transform: translateY(200px);
+    transition: .7s;
+    opacity: 0;
+}
+
+.Card:hover .social_icons li a {
+    transform: translateY(0px);
+    opacity: 1;
+
+
+}
+
+.social_icons li a i {
+    transition: .8s;
+
+}
+
+.social_icons li:nth-child(1) a:hover i {
+    transform: rotate(360deg);
+    color: #0D8BF0;
+}
+
+.social_icons li:nth-child(2) a:hover i {
+    transform: rotate(360deg);
+
+    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social_icons li:nth-child(3) a:hover i {
+    transform: rotate(360deg);
+    color: linear-gradient(45deg, #aa72df 0%, #164b92 100%);
+
+}
+
+.social_icons li:nth-child(4) a:hover i {
+    transform: rotate(360deg);
+    color: #29A1D4;
+}
+
+
+
+
+.Card:hover li:nth-child(1) a {
+    transition-delay: .1s;
+}
+
+.Card:hover li:nth-child(2) a {
+    transition-delay: .2s;
+}
+
+.Card:hover li:nth-child(3) a {
+    transition-delay: .3s;
+}
+
+.Card:hover li:nth-child(4) a {
+    transition-delay: .4s;
+}
+
+.details {
+    position: absolute;
+    bottom: 400px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
+    transition: .6s;
+    border: .5px solid #A09B94;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.details h5 {
+    margin: 15px 10px;
+    padding: 0px;
+    font-family: system-ui;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.details h5 a {
+    display: flex;
+}
+
+.details h5 a p:nth-child(1) {
+    color: black;
+
+
+}
+
+.details h5 a p:nth-child(2) {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.details h5 a:hover p:nth-child(2) {
+    color: #A09B94;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+
+
+.AddressPlace {
+    width: 20%;
+    color: #000000;
+    margin-top: 1%;
+}
+
+.JobTitle {
+    width: 80%;
+    font-size: 15px;
+    line-height: 2;
+    color: #0C0C0C;
+    font-weight: 400;
+    display: block;
+}
+
+.JobTitle:hover {
+    color: #6C6C6C;
+}
+
+.Card:hover .details {
+    bottom: 0;
+}
+
+.carousel .slick-prev,
+.slick-next {
+    width: 50%;
+    height: 50px;
+    background-color: white;
+}
+
+.carousel .slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: white;
+    outline: none;
+    background: #fff;
+
+}
+
+.carousel .slick-prev::before,
+.slick-next::before {
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.carousel .slick-next {
+    right: -55px;
+
+}
+
+.carousel .slick-prev {
+    left: -55px;
+}
