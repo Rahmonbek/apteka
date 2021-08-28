@@ -1,0 +1,43 @@
+.medicines {
+  background-color: #fff;
+}
+.medicine {
+  padding: 10px 10px 0 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(90deg, #1a487c 30%, #194e60);
+  width: 100%;
+  min-height: 55vh;
+}
+.medicine div,
+.medicine h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  color: azure;
+}
+.medicine > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medicine .madicine_button {
+  padding: 0 20px 20px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.madicine_button button,
+.madicine_button a,
+.madicine_button a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .medicines > .container {
+    width: 100%;
+    margin: 0;
+  }
+}

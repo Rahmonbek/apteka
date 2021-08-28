@@ -1,0 +1,86 @@
+.infoMedicine {
+  background-image: url("https://wallpapercave.com/wp/wp3487937.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contenat_inf {
+  background-color: rgba(0, 22, 255, 0.3);
+}
+
+.contenat_inf h1,
+.contenat_inf h4,
+.contenat_inf h5 {
+  counter-set: inherit;
+}
+.contenat_inf h1,
+.contenat_inf h4,
+.contenat_inf h5,
+.contenat_inf div {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.info_container h1 {
+  text-align: center;
+  text-shadow: 0 0 3px #fff;
+  padding-top: 15px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.info_container h5 {
+  text-indent: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0 40px 20px;
+  /* text-shadow: 0 0 2px #fff; */
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.info_container .silder {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: #fff;
+}
+.list_info {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.newspaper {
+  column-count: 2;
+  column-gap: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 10px;
+  margin-bottom: 0;
+}
+.newspaper h4 {
+  text-shadow: 0 0 2px #fff;
+}
+.info_button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.info_button a,
+.info_button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.tns-outer > button {
+  display: none;
+}
+.slick-track div {
+  height: 50vh;
+}
+
+@media screen and (max-width: 900px) {
+  .newspaper {
+    column-count: 1;
+    column-gap: 50px;
+  }
+}
