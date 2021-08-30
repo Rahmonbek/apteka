@@ -42,7 +42,9 @@ function Menu() {
                 <Navbar.Toggle
                   className={styles.NavbarMenuMedia}
                   aria-controls="responsive-navbar-nav"
-                />
+                  style={{color:'#98349400',border:'none'}}
+                > 
+                <i class="fas fa-bars" style={{color:'white',fontSize:'26px'}}></i></Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
                     <Nav.Link href="#deets">
@@ -54,9 +56,9 @@ function Menu() {
                     <Nav.Link href="#List">
                       <p>Doctors</p>
                     </Nav.Link>
-                    <Link to="/dorilar">
-                      <p>Dorilar</p>
-                    </Link>
+                    <Nav.Link >
+                     <Link to="/dorilar"> <p>Dorilar</p></Link>
+                    </Nav.Link>
 
                     <Nav.Link href="#Testimonials">
                       <p>Testimonials</p>

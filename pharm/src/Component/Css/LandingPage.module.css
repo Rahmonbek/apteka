@@ -47,26 +47,21 @@
 }
 
 .NavMe {
-  align-content: flex-end;
-  align-items: flex-end;
+ 
   margin-top: auto;
   margin-left: auto;
 }
+
 
 .NavMe p {
   font-family: "Andale Mono", monospace;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 160%;
-  margin-left: 30px;
-  /* identical to box height, or 29px */
-
-  /* White */
-
   color: #ffffff;
-
-  opacity: 0.9;
+ opacity: 0.9;
+ padding-left: 10px;
 }
 
 .Menu {
@@ -170,7 +165,7 @@
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 756px) and (max-width: 1000px) {
   .ScheduleName {
     justify-content: center;
   }
@@ -180,13 +175,15 @@
   }
 
   .NavMe {
-    background-color: #010b19;
+    border-radius: 4px;
+    background-color: #010b19dc;
     color: white;
+    text-shadow: 0px 0px 30px white;
     justify-content: center;
-    position: absolute;
     text-align: center;
-    z-index: 1;
-    width: 50%;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
     margin: auto;
   }
 
@@ -209,18 +206,24 @@
     width: 100%;
   }
 }
+.NavMe p:hover{
+  scale: 1.05;
+}
 
 @media (max-width: 767px) {
   .NavMe {
-    background-color: #010b19;
+    border-radius: 4px;
+    background-color:  #010b19dc ;
     color: white;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    left: -25px;
+    text-shadow: 0px 0px 30px white;
     text-align: center;
     z-index: 1;
-    width: 100%;
+    width: 115%;
     margin: auto;
-    margin-left: -10px;
+   
   }
 
   .NavMe p {
@@ -240,6 +243,7 @@
 
   .MenuImg {
     width: 100%;
+  
   }
 
   .ScheduleName {
@@ -250,7 +254,6 @@
   .WhatchVideo {
     border: 1px solid white;
     width: 70%;
-
     margin: auto;
     margin-top: 5%;
   }
