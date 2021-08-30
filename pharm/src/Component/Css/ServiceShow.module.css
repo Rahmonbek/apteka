@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ServiceOne {
+    display: none;
+}
+
+.ServiceTwo {
+    display: none;
+}
+
+.ServiceThree {
+    display: none;
+}
+
+.ServiceOne {
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+
+@media(min-width:1024px) {
+    .ServiceOne {
+        display: block;
+    }
+
+    .ServiceTwo {
+        display: none;
+    }
+
+    .ServiceThree {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:767px) {
+    .ServiceOne {
+        display: none;
+    }
+
+    .ServiceTwo {
+        display: none;
+    }
+
+    .ServiceThree {
+        display: block;
+    }
+}
+
+
+
+
+
+.Service {
+    width: 100%;
+    height: 680px;
+
+}
+
+.ServiceMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5px;
+
+}
+
+
+
+.ServiceMenuCard {
+    width: 360px;
+    height: 190px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-content: center center;
+    background: #184e61;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin-top: 1%;
+    overflow: visible;
+    overflow: hidden;
+    transition: transform .5s;
+
+}
+
+.ServiceMenuCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+
+.CardIcons {
+    width: 30%;
+    height: 80%;
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+.CardIcons i {
+    font-size: 7vh;
+    margin-top: 5px;
+    color: white;
+}
+
+.CardText {
+    height: 80%;
+    margin-top: 5%;
+    text-align: start;
+}
+
+.CardTextBold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 150%;
+    /* identical to box height, or 33px */
+
+    /* White */
+
+    color: #ffffff;
+}
+
+.CardTextSmall {
+    font-family: "Andale Mono", monospace;
+    font-style: normal;
+    font-size: 2.3vh;
+    line-height: 150%;
+    margin-top: -10px;
+    /* identical to box height, or 33px */
+
+    /* White */
+
+    color: #ffffff;
+}
+
+.ServiceMenuText {
+    margin-top: 30px;
+}
+
+.ServiceMenuText1 {
+    /* Subtitle / Base */
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    /* or 57px */
+    font-family: "Andale Mono", monospace;
+
+    text-align: center;
+
+    color: #010b19;
+}
+
+.ServiceMenuText2 {
+    width: 80%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vh;
+    line-height: 160%;
+    /* or 29px */
+
+    text-align: center;
+    margin: auto;
+
+    color: #010b19;
+
+    opacity: 0.7;
+}
+
+@media(min-width:1024px) and (max-width:1250px) {
+    .Service {
+        overflow: visible;
+        overflow: hidden;
+    }
+
+    .ServiceMenu {
+        height: 500px;
+        overflow: visible;
+        overflow: scroll;
+
+    }
+
+    .ServiceMenuCard {
+        width: 330px;
+        height: 165;
+
+    }
+
+    .CardTextBold {
+        font-size: 21px;
+    }
+
+    .CardTextSmall {
+        font-size: 16px;
+    }
+
+    .CardText {
+        height: 90%;
+    }
+
+    .CardIcons i {
+        font-size: 40px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+    .Service {
+        overflow: visible;
+        overflow: hidden;
+    }
+
+    .ServiceMenu {
+        height: 410px;
+        overflow: visible;
+        overflow: hidden;
+
+    }
+
+
+    .ServiceMenuCard {
+        width: 330px;
+        height: 165;
+
+    }
+
+    .CardTextBold {
+        font-size: 21px;
+    }
+
+    .CardTextSmall {
+        font-size: 16px;
+    }
+
+    .CardText {
+        height: 90%;
+    }
+
+    .CardIcons i {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .Service {
+        overflow: visible;
+        overflow: hidden;
+    }
+
+    .ServiceMenu {
+        height: 400px;
+        overflow: visible;
+        overflow: scroll;
+
+    }
+
+    .ServiceMenuCard {
+        width: 330px;
+        height: 165;
+        margin: auto;
+        margin-top: 1%;
+
+    }
+
+    .ServiceMenuText1 {
+        font-size: 25px;
+
+    }
+
+    .ServiceMenuText2 {
+
+        width: 100%;
+        font-size: 12px;
+        margin-top: -15px;
+    }
+
+    .CardTextBold {
+        font-size: 21px;
+    }
+
+    .CardTextSmall {
+        font-size: 16px;
+    }
+
+    .CardText {
+        height: 90%;
+    }
+
+    .CardIcons i {
+        font-size: 40px;
+    }
+}
