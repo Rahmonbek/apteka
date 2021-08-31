@@ -41,7 +41,7 @@ export default function ImageSlider() {
           </p>
         </div>
         <Slider className={styles.SliderMenuItem} {...settings}>
-          <div data-aos="zoom-in" className={styles.card_wrapper}>
+          <div className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm1} className="img-fluid" />
@@ -95,7 +95,7 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in" className={styles.card_wrapper}>
+          <div className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm2} class="img-fluid" />
@@ -149,7 +149,7 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in" className={styles.card_wrapper}>
+          <div className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm3} class="img-fluid" />
@@ -203,7 +203,7 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in" className={styles.card_wrapper}>
+          <div className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm} class="img-fluid" />
@@ -257,7 +257,7 @@ export default function ImageSlider() {
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in" className={styles.card_wrapper}>
+          <div className={styles.card_wrapper}>
             <div className={styles.Card}>
               <div className={styles.card_image}>
                 <img src={Rasm4} class="img-fluid" />

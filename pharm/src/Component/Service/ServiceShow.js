@@ -217,7 +217,7 @@ export default function ServiceShow() {
     setPagination({ start: start, end: end });
   };
   AOS.init({
-    duration: 1000,
+    duration: 2000,
   });
   return (
     <div className={styles.Service}>

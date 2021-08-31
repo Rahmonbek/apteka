@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styles from "./Css/LandingPage.module.css";
-import CardGroup from "./CardGroup";
 import Carousell from "./Carousel/Carousel";
+import CardGroup from "./CardTeen/CardGroup";
 import ServiceShow from "./Service/ServiceShow";
 import AOS from "aos";
 import Menu from "./Menu";

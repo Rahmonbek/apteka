@@ -6,7 +6,7 @@
 }
 .CardGroupMenu {
     width: 100%;
-    height: 700px;
+    height: 690px;
     background: linear-gradient(270deg, #0A4FB6 -9.87%, #28859A 111.47%);
 }
 
@@ -26,7 +26,7 @@
 
     text-align: center;
 
-    color: #010B19;
+    color: #FFFFFF;
 }
 
 .CardGroupMenuText2 {
@@ -42,7 +42,7 @@
     text-align: center;
     margin: auto;
 
-    color: #010B19;
+    color: #FFFFFF;
 
     opacity: 0.7;
 }
@@ -53,25 +53,17 @@
     height: auto;
 
     justify-content: space-between;
-    align-content: flex-end;
     }
 .flex_item {
     width: 250px;
     height: 200px;
     position: relative;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    z-index: 3;
     border-radius: 10px;
     overflow: visible;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-}
-.flex_item:hover img {
-    opacity: .5;
-    transition: .5s;
 
 }
 .flex_item img {
@@ -79,17 +71,14 @@
     height: 100%;
     object-fit: cover;
 }
-
 .flex_item:hover img {
+    transition: .4s;
+    opacity: .5;
     transform: translateY(0px);
     transition: .7s;
 }
-.flex_item:hover {
 
-    transform: translateY(-10px);
-    transition: .7s;
-}
-.flex_item div {
+.flex_item .flex_title_item {
     position: absolute;
 
     top: 50%;
@@ -98,18 +87,13 @@
     z-index: 3;
     display: flex;
 }
-.flex_item div a {
+.flex_item .flex_title_item p {
     position: relative;
     display: block;
     line-height: 50px;
-    text-align: center;
-    font-size: 25px;
     color: #333;
-    font-family: 'Andale Mono',
-        monospace;
     display: flex;
     font-style: normal;
-    font-size: 17px;
     font-weight: bold;
     margin: 0 6px;
     transform: translateY(100px);
@@ -118,26 +102,197 @@
     text-align: center;
 
     }
-.flex_item div a p:nth-child(1) {
-    font-size: 20px;
-    margin-top: 15%;
-    margin-left: 5%;
 
-}
-.flex_item div a p:nth-child(2) {
-    font-size: 19px;
-    margin-top: 7.5%;
-    margin-left: 8%;
-    font-family: 'Andale Mono',
-    monospace;
-
-}
-.flex_item:hover div a {
+.flex_item:hover .flex_title_item p {
     width: 200px;
     height: 80px;
     border-radius: 10px;
     background: #60a4d1;
     transform: translateY(-30px);
     color: white;
-    opacity: 0.8
+    opacity: 0.8;
+    font-family: 'Andale Mono',
+    monospace;
+    font-size: 19px;
+    }
+
+    @media(min-width:1023px) and (max-width:1250px) {
+
+
+        .CardGroupMenuText1 {
+            /* Subtitle / Base */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 6vh;
+            line-height: 130%;
+            /* or 57px */
+            font-family: 'Andale Mono', monospace;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .CardGroupMenuText2 {
+
+            width: 90%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+            text-align: center;
+            margin: auto;
+
+            color: #FFFFFF;
+
+            opacity: 0.7;
+        }
+
+        .flex_container {
+            height: 425px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: scroll;
+
+        }
+
+    }
+
+    @media(min-width:768px) and (max-width:1023px) {
+
+        .CardGroupMenuText1 {
+            /* Subtitle / Base */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 6vh;
+            line-height: 110%;
+            /* or 57px */
+            font-family: 'Andale Mono', monospace;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .CardGroupMenuText2 {
+
+            width: 100%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+            text-align: center;
+            margin: auto;
+
+            color: #FFFFFF;
+
+            opacity: 0.7;
+        }
+
+        .flex_container {
+            height: 420px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: scroll;
+            justify-content: space-around;
+        }
+
+    }
+
+    @media(min-width:550px) and (max-width:767px) {
+
+        .CardGroupMenuText1 {
+            /* Subtitle / Base */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 6vh;
+            line-height: 110%;
+            /* or 57px */
+            font-family: 'Andale Mono', monospace;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .CardGroupMenuText2 {
+
+            width: 100%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            /* or 29px */
+
+            text-align: center;
+            margin: auto;
+
+            color: #FFFFFF;
+
+            opacity: 0.7;
+        }
+
+        .flex_container {
+            height: 415px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: scroll;
+            justify-content: space-around;
+        }
+
+    }
+
+    @media(max-width:549px) {
+
+        .CardGroupMenuText1 {
+            /* Subtitle / Base */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 6vh;
+            line-height: 110%;
+            /* or 57px */
+            font-family: 'Andale Mono', monospace;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .CardGroupMenuText2 {
+
+            width: 100%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            /* or 29px */
+
+            text-align: center;
+            margin: auto;
+
+            color: #FFFFFF;
+
+            opacity: 0.7;
+        }
+
+        .flex_container {
+            height: 415px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: scroll;
+            justify-content: space-around;
+        }
+
 }
