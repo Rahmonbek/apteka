@@ -3,12 +3,19 @@ import style from '../Component/Css/FooterA.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Timeline } from 'antd';
 import 'antd/dist/antd.css';
+import PragressGroup from "./PragressGroup";
+import Events from "./Events";
 import logo from "./img/Brand.png";
 import { PhoneFilled,  InstagramOutlined, FacebookOutlined, MailOutlined, TwitterOutlined, YoutubeOutlined} from '@ant-design/icons';
 export default class FooterA extends Component {
   render() {
     return (
       <div>
+         <section id="Testimonials"></section>
+        <PragressGroup />
+        <section id="event"></section>
+        <Events />
+
        <div className={style.footer}>
 <div className={style.block1}><img alt='logo' style={{opacity:'0.6'}} src={logo}/>
 <h3 style={{paddingLeft:'20px',paddingRight:'20px',}}>Manzil: Toshkent shahar Yakkasaroy tumani mahalla idorasi ikkinchi qavat </h3>

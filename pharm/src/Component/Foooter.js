@@ -30,9 +30,9 @@ export default class Obuna extends Component {
   render() {
     return (
       <div>
-        <section id="Testimonials"></section>
+      
         <PragressGroup />
-        <section id="event"></section>
+        
         <Events />
 
         <div className={style.FooterMenu}>
