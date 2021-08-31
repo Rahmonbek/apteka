@@ -19,19 +19,19 @@ function Menu() {
                 <p>
                   <MdTimer />
                 </p>
-                <p style={{ marginLeft: "10px" }}>Dush-Jum (9:00-17:00)</p>
+                <p style={{ marginLeft: "10px" ,letterSpacing:'0.5px'}}>Dush-Jum (9:00-17:00)</p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <IoIosCall />
                 </p>
-                <p style={{ marginLeft: "10px" }}>+998(71)777-77-77</p>
+                <p style={{ marginLeft: "10px",letterSpacing:'0.5px' }}>+998(71)799-88-00</p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <HiOutlineMail />
                 </p>
-                <p style={{ marginLeft: "10px" }}>pharmacyuzb@gmail.com</p>
+                <p style={{ marginLeft: "10px",letterSpacing:'0.5px' }}>pharmacyuzb@gmail.com</p>
               </div>
             </div>
             <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
