@@ -1,0 +1,115 @@
+.footer{
+    margin: 10px;
+    padding:10px;
+    background-color:#184E61;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+        .block1{
+          margin: auto;
+          display: block;
+          width: 40%;
+          margin-top: 80px;
+          text-align: center;
+        }
+        .block1 h3{
+          color:rgb(139, 188, 192);
+          padding-top: 18px;
+          font-size: 18px;
+          font-family:"Andale Mono", monospace;
+        }
+       
+  
+  
+        .block{
+            margin: auto;
+          display: block;
+          margin-top: 80px;
+          width: 20%;
+          
+        
+          text-align: center;
+        }
+        .icons{
+          padding-top: 6px;
+      }
+  
+  .aloqa{
+    font-family:"Andale Mono", monospace;
+    display: flex;
+    font-size: 18px;
+    padding-left: 20px;
+  color:rgb(139, 188, 192);
+  text-align: start;
+  }
+  .aloqa3{
+    display: flex;
+    font-size: 21px;
+  justify-content: center;
+  color:rgb(139, 188, 192);
+  text-align: start;
+  }
+  .aloqa1{
+    font-family:"Andale Mono", monospace;
+    padding-left: 20px;
+    text-align: start;
+    display: flex;
+    font-size: 27px;
+  color:rgb(139, 188, 192);
+  }
+  .aloqa span{
+   padding-left: 15px;
+  }
+  .aloqa:hover{
+    opacity: 0.6;
+    scale: 1.02;
+  }
+  
+  .boglash{
+    justify-content: center;
+    display: flex;
+  }
+  .icbog{
+    font-size: 21px;
+    border: 1px solid rgb(139, 188, 192);
+    color: rgb(139, 188, 192);
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    opacity: 0.6;
+    color: #FFFFFF;
+  }
+  .icbog:hover{
+    opacity: 0.6;
+    scale: 1.4;
+  }
+  @media  (max-width: 1000px) {
+  .icbog{
+ 
+  }
+    .footer{
+    display: block;
+  height: 1300px;
+  }
+  .block{
+    width: 100%;
+  }  
+  .block1{
+    width: 100%;
+  }
+  .aloqa1{
+    display: flex;
+   justify-content: center;
+  }
+  .aloqa{
+   display: flex;
+   justify-content: center;
+   
+  }
+  
+  }
