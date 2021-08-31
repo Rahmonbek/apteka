@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./Component/LandingPage";
 import Footer from "../src/Component/FooterA";
+import Foooter from "./Component/Foooter";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Medicines from "./Medicines/Components/Medicines";
 import InfoMedicine from "./Medicines/Components/InfoMedicine";
@@ -14,7 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <LandingPage />
-            <Footer />
+            <Foooter />
           </Route>
           <Route path="/dorilar">
             <Medicines />

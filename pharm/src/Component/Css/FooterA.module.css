@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .footer{
     margin: 10px;
     padding:10px;

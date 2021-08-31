@@ -207,7 +207,7 @@ export default function ServiceShow() {
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
   ]);
-  const [showPerPage, setShowPerPage] = useState(2);
+  const [showPerPage, setShowPerPage] = useState(6);
   const [pagination, setPagination] = useState({
     start: 0,
     end: showPerPage,

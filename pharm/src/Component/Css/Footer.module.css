@@ -438,6 +438,7 @@ Body {
     line-height: 160%;
     color: #FFFFFF;
     margin-top: 2%;
+    text-align: center;
 }
 
 @media(min-width:1024px) and (max-width:1300px) {
@@ -469,14 +470,22 @@ Body {
     .FooterMenuGroup2 {
         width: 50%;
         height: 300px;
+        text-align: center;
+
     }
 
     .FooterMenuGroup3 {
         width: 50%;
+        margin-top: 20px;
+        margin: auto;
     }
 
     .FooterMenuGroup4 {
         width: 50%;
+        margin-top: 20px;
+        margin: auto;
+        text-align: center;
+
     }
 
     .FooterMenuMe {
@@ -492,19 +501,29 @@ Body {
     .FooterMenuGroup1 {
         width: 100%;
         height: auto;
+        text-align:center;
+
     }
 
     .FooterMenuGroup2 {
         width: 100%;
+        text-align:center;
+        margin-top: 20px;
+
 
     }
 
     .FooterMenuGroup3 {
         width: 100%;
+        text-align:center;
+        margin-top: 20px;
     }
 
     .FooterMenuGroup4 {
         width: 100%;
+        text-align:center;
+        margin-top: 20px;
+
     }
 
     .FooterMenuMe {
@@ -513,5 +532,8 @@ Body {
 
     .FooterMenu {
         height: auto;
+    }
+    .IconsFooterGroup {
+        justify-content: space-around;
     }
 }

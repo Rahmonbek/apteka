@@ -99,6 +99,10 @@
 
 }
 @media(min-width:768px) and (max-width:1023px) {
+    .Events {
+        border: 1px solid black;
+        height: 630px;
+    }
     .EventsMenuItem {
         position: relative;
         display: flex;
@@ -109,20 +113,29 @@
     .EventsMenuItemImg {
         width: 100%;
         border-radius: 20px;
-    }
+        display: none;
+        }
 
+        .EventsMenuItemImg img {
+            display: none;
+        }
 
     .EventsMenuItemText {
-        position: absolute;
-        width: 100%;
+  width: 100%;
         z-index: 3;
+        justify-content: center;
         align-content: space-around;
         align-content: center center;
+        border: 1px solid black;
 
+    }
+    .EventsMenuItemText ul {
+        margin: auto;
+        margin-left: 6%;
     }
 
     .EventsMenuItemText ul li i:nth-child(2) {
-        font-size: 3vh;
+        font-size: 4vh;
         font-family: sans-serif;
         color: #010B19;
         font-weight: bold;
@@ -140,6 +153,10 @@
 }
 
 @media(max-width:767px) {
+    .Events {
+        border: 1px solid black;
+        height: 600px;
+    }
     .EventsMenuItem {
         position: relative;
         display: flex;
@@ -150,12 +167,15 @@
     .EventsMenuItemImg {
         width: 100%;
         border-radius: 20px;
-    }
+        display: none;
+        }
 
+        .EventsMenuItemImg img {
+            display: none;
+        }
 
     .EventsMenuItemText {
-        position: absolute;
-        width: 100%;
+                width: 100%;
         z-index: 3;
         align-content: space-around;
         align-content: center center;
@@ -170,7 +190,7 @@
     }
 
     .EventsMenuItemText ul li i:nth-child(2) {
-        font-size: 2vh;
+        font-size: 3vh;
         font-family: sans-serif;
         color: #010B19;
         font-weight: bold;
@@ -179,6 +199,7 @@
 
     .EventsMenuItemText ul {
         margin-top: 5px;
+        margin-left: 5%;
     }
 
     .EventsMenuItemText ul li {
