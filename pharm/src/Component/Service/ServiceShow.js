@@ -59,7 +59,7 @@ export default function ServiceShow() {
       id: 6,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Ma'lumot Uchun ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -75,7 +75,7 @@ export default function ServiceShow() {
       id: 8,
       icon: <FontAwesomeIcon icon={faHospital} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Ma'lumot Uchun ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -91,7 +91,7 @@ export default function ServiceShow() {
       id: 10,
       icon: <FontAwesomeIcon icon={faHospital} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Ma'lumot Uchun ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -107,7 +107,7 @@ export default function ServiceShow() {
       id: 12,
       icon: <FontAwesomeIcon icon={faHospital} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -123,7 +123,7 @@ export default function ServiceShow() {
       id: 14,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam  ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -131,7 +131,7 @@ export default function ServiceShow() {
       id: 15,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam  ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -147,7 +147,7 @@ export default function ServiceShow() {
       id: 17,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam  ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -163,7 +163,7 @@ export default function ServiceShow() {
       id: 19,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
@@ -179,7 +179,7 @@ export default function ServiceShow() {
       id: 21,
       icon: <FontAwesomeIcon icon={faMedkit} />,
 
-      title: "24 Soatlik Xizmat ",
+      title: "Favqulodda yordam  ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
     {
