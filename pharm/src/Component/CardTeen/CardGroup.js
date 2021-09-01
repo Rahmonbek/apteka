@@ -4,17 +4,18 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Pagination from "./CardGroup/Pagination_1";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Rasm1 from "../img/AA1.png";
-import Rasm2 from "../img/AA2.jpg";
-import Rasm3 from "../img/AA3.jpg";
-import Rasm4 from "../img/Drug1.jpg";
-import Rasm5 from "../img/AA5.png";
-import Rasm6 from "../img/Drug5.jpg";
-import Rasm7 from "../img/Drug8.jpg";
-import Rasm8 from "../img/Drug2.jpg";
-import Rasm9 from "../img/Drug3.jpg";
-import Rasm10 from "../img/Drug4.jpg";
-import Rasm11 from "../img/about.jpg";
+import Rasm1 from "../img/MediciniPng/A13.png";
+import Rasm2 from "../img/MediciniPng/A12.png";
+import Rasm3 from "../img/MediciniPng/A10.png";
+import Rasm4 from "../img/MediciniPng/A3.png";
+import Rasm5 from "../img/MediciniPng/A17.png";
+import Rasm6 from "../img/MediciniPng/A16.png";
+import Rasm7 from "../img/MediciniPng/A21.png";
+import Rasm8 from "../img/MediciniPng/A19.png";
+import Rasm9 from "../img/MediciniPng/A8.png";
+import Rasm10 from "../img/MediciniPng/A3.png";
+import Rasm11 from "../img/MediciniPng/A6.png";
+import Rasm12 from "../img/MediciniPng/A20.png";
 import AOS from "aos";
 
 import {
@@ -36,14 +37,14 @@ export default function ServiceShow() {
       img: Rasm1,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Gripgo",
     },
     {
       userId: 1,
       id: 2,
       img: Rasm2,
       icon: <FontAwesomeIcon icon={faFlask} />,
-      title: "Malumot Uchun",
+      title: "Alsetro",
     },
     {
       userId: 1,
@@ -51,7 +52,7 @@ export default function ServiceShow() {
       img: Rasm3,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Futsis",
     },
     {
       userId: 1,
@@ -59,7 +60,7 @@ export default function ServiceShow() {
       img: Rasm4,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Levonic",
     },
     {
       userId: 1,
@@ -67,7 +68,7 @@ export default function ServiceShow() {
       img: Rasm5,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Rubufin",
     },
     {
       userId: 1,
@@ -75,7 +76,7 @@ export default function ServiceShow() {
       img: Rasm6,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Pentalgin",
     },
     {
       userId: 1,
@@ -83,7 +84,7 @@ export default function ServiceShow() {
       img: Rasm7,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Rotalfen",
     },
     {
       userId: 1,
@@ -91,7 +92,7 @@ export default function ServiceShow() {
       img: Rasm8,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Ketaneym",
     },
     {
       userId: 1,
@@ -99,7 +100,7 @@ export default function ServiceShow() {
       img: Rasm9,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "FosFogliv",
     },
     {
       userId: 1,
@@ -107,7 +108,7 @@ export default function ServiceShow() {
       img: Rasm10,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Levonic",
     },
     {
       userId: 1,
@@ -115,10 +116,18 @@ export default function ServiceShow() {
       img: Rasm11,
       icon: <FontAwesomeIcon icon={faFlask} />,
 
-      title: "Malumot Uchun",
+      title: "Dermazol",
+    },
+    {
+      userId: 1,
+      id: 12,
+      img: Rasm12,
+      icon: <FontAwesomeIcon icon={faFlask} />,
+
+      title: "Sertofen",
     },
   ]);
-  const [showPerPage, setShowPerPage] = useState(10);
+  const [showPerPage, setShowPerPage] = useState(8);
   const [pagination, setPagination] = useState({
     start: 0,
     end: showPerPage,
@@ -147,11 +156,7 @@ export default function ServiceShow() {
           </div>
           <div className={styles.flex_container}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
-              <div
-                data-aos="zoom-in"
-                className={styles.flex_item}
-                key={post.id}
-              >
+              <div className={styles.flex_item} key={post.id}>
                 <img src={post.img} alt="" className="img-fluid" />
                 <div className={styles.flex_title_item}>
                   <p>

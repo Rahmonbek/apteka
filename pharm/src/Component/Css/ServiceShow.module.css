@@ -95,9 +95,9 @@
 
 .ServiceMenuCard:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 
 }
 
@@ -227,7 +227,7 @@
     .ServiceMenu {
         height: 410px;
         overflow: visible;
-        overflow: hidden;
+        overflow: scroll;
 
     }
 
