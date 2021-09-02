@@ -304,3 +304,19 @@
         font-size: 40px;
     }
 }
+#ButtonGroupId {
+    width: 130px;
+    text-align: center;
+    background-color: #5189C6;
+    color: white;
+    opacity: .9;
+
+    font-family: 'Andale Mono',
+        monospace;
+}
+
+#ButtonGroupId:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #649cd8;
+
+}

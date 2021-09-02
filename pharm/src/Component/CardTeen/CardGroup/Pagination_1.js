@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import styles from "../../Css/Cardgroup.module.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -37,16 +38,14 @@ const Pagination = ({ showPerPage, onPaginationChange, total }) => {
     <div className="d-flex justify-content-between">
       <Button
         style={{ marginTop: "10px" }}
-        variant="contained"
-        color="primary"
+        id={styles.ButtonCardGroup}
         onClick={() => onButtonClick("prev")}
       >
         Orqaga
       </Button>
       <Button
         style={{ marginTop: "10px" }}
-        variant="contained"
-        color="primary"
+        id={styles.ButtonCardGroup}
         onClick={() => onButtonClick("next")}
       >
         Keyingisi
