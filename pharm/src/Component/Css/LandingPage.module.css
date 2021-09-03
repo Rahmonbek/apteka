@@ -12,7 +12,7 @@
 .HeaderMenu {
   width: 100%;
   height: 692px;
-  background: linear-gradient(270deg, #1C477E -9.87%, #184E60 111.47%);
+  background: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
 }
 
 .NavbarMenu {
@@ -47,11 +47,9 @@
 }
 
 .NavMe {
- 
   margin-top: auto;
   margin-left: auto;
 }
-
 
 .NavMe p {
   font-family: "Andale Mono", monospace;
@@ -60,8 +58,8 @@
   font-size: 21px;
   line-height: 160%;
   color: #ffffff;
- opacity: 0.9;
- padding-left: 10px;
+  opacity: 0.9;
+  padding-left: 10px;
 }
 
 .Menu {
@@ -206,14 +204,14 @@
     width: 100%;
   }
 }
-.NavMe p:hover{
+.NavMe p:hover {
   scale: 1.05;
 }
 
 @media (max-width: 767px) {
   .NavMe {
     border-radius: 4px;
-    background-color:  #010b19dc ;
+    background-color: #010b19dc;
     color: white;
     justify-content: center;
     position: relative;
@@ -223,7 +221,6 @@
     z-index: 1;
     width: 115%;
     margin: auto;
-   
   }
 
   .NavMe p {
@@ -243,7 +240,6 @@
 
   .MenuImg {
     width: 100%;
-  
   }
 
   .ScheduleName {
