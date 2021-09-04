@@ -63,16 +63,38 @@ function InfoMedicine() {
                     alignItems: "center",
                   }}
                 >
-                  {dorilar[data.id].image.map((item, index) => (
-                    <div key={index}>
-                      <Image
-                        className={`tns-lazy-img`}
-                        src={loadingImage}
-                        data-src={item}
-                        style={{ width: "90%", height: "90%" }}
-                      />
-                    </div>
-                  ))}
+                  <div>
+                    <Image
+                      className={`tns-lazy-img`}
+                      src={loadingImage}
+                      data-src={data.image[3]}
+                      style={{ width: "90%", height: "90%" }}
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      className={`tns-lazy-img`}
+                      src={loadingImage}
+                      data-src={data.image[2]}
+                      style={{ width: "90%", height: "90%" }}
+                    />
+                  </div>{" "}
+                  <div>
+                    <Image
+                      className={`tns-lazy-img`}
+                      src={loadingImage}
+                      data-src={data.image[1]}
+                      style={{ width: "90%", height: "90%" }}
+                    />
+                  </div>{" "}
+                  <div>
+                    <Image
+                      className={`tns-lazy-img`}
+                      src={loadingImage}
+                      data-src={data.image[0]}
+                      style={{ width: "90%", height: "90%" }}
+                    />
+                  </div>
                 </TinySlider>
               </div>
             </Container>

@@ -2,14 +2,6 @@ import React, { useState, useEffect } from "react";
 import Medicine from "./Medicine";
 import { dorilar } from "./../server";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-// import styles from "./Css/LandingPage.module.css";
-// import Rasm from "./img/Brand.png";
-// import { Navbar, Container, Nav } from "react-bootstrap";
-// import { MdTimer } from "react-icons/md";
-// import { IoIosCall } from "react-icons/io";
-// import { HiOutlineMail } from "react-icons/hi";
-// import { BsArrowRight } from "react-icons/bs";
-// import { MdSlowMotionVideo } from "react-icons/md";
 import Menu from "./../../Component/Menu";
 
 function Medicines() {
