@@ -19,19 +19,25 @@ function Menu() {
                 <p>
                   <MdTimer />
                 </p>
-                <p style={{ marginLeft: "10px" ,letterSpacing:'0.5px'}}>Dush-Jum (9:00-17:00)</p>
+                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
+                  Dush-Jum (9:00-17:00)
+                </p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <IoIosCall />
                 </p>
-                <p style={{ marginLeft: "10px",letterSpacing:'0.5px' }}>+998(71)799-88-00</p>
+                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
+                  +998(71)799-88-00
+                </p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <HiOutlineMail />
                 </p>
-                <p style={{ marginLeft: "10px",letterSpacing:'0.5px' }}>pharmacyuzb@gmail.com</p>
+                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
+                  pharmacyuzb@gmail.com
+                </p>
               </div>
             </div>
             <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
@@ -42,9 +48,13 @@ function Menu() {
                 <Navbar.Toggle
                   className={styles.NavbarMenuMedia}
                   aria-controls="responsive-navbar-nav"
-                  style={{color:'#98349400',border:'none'}}
-                > 
-                <i class="fas fa-bars" style={{color:'white',fontSize:'26px'}}></i></Navbar.Toggle>
+                  style={{ color: "#98349400", border: "none" }}
+                >
+                  <i
+                    class="fas fa-bars"
+                    style={{ color: "white", fontSize: "26px" }}
+                  ></i>
+                </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
                     <Nav.Link href="#deets">
@@ -56,8 +66,11 @@ function Menu() {
                     <Nav.Link href="#List">
                       <p>Doctors</p>
                     </Nav.Link>
-                    <Nav.Link >
-                     <Link to="/dorilar"> <p>Dorilar</p></Link>
+                    <Nav.Link>
+                      <Link to="/dorilar">
+                        {" "}
+                        <p>Dorilar</p>
+                      </Link>
                     </Nav.Link>
 
                     <Nav.Link href="#Testimonials">

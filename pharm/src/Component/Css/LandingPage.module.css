@@ -24,6 +24,8 @@
 }
 
 .ScheduleName {
+  padding-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
   height: 25px;
@@ -42,6 +44,7 @@
 }
 
 .ImgBrand {
+  margin-top: -20px;
   width: 130px;
   height: 77px;
 }
@@ -134,7 +137,7 @@
 }
 
 .MenuImg {
-  width: 50%;
+  width: 40%;
   object-fit: contain;
   background-image: url(../img/Person.png);
   background-repeat: no-repeat;
@@ -158,16 +161,19 @@
     margin-left: 10px;
   }
 }
-
 .MenuText1 {
   display: none;
 }
 
 @media (min-width: 756px) and (max-width: 1000px) {
   .ScheduleName {
+    margin-bottom: 0;
+    padding-top: 5px;
     justify-content: center;
   }
-
+  .ImgBrand {
+    margin-top: 0px;
+  }
   .NavbarMenuMedia {
     color: white;
   }
@@ -237,7 +243,6 @@
     width: 100%;
     display: none;
   }
-
   .MenuImg {
     width: 100%;
   }

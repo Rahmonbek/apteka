@@ -1,6 +1,5 @@
 import { Button, Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { dorilar } from "./../server";
 import ReactPlayer from "react-player";
 import { Row, Col } from "react-bootstrap";
 import TinySlider from "tiny-slider-react";
@@ -145,27 +144,30 @@ function InfoMedicine() {
               </ul>
             </Container>
           </div>
-          <Container>
-            <Row className="info_row_video">
-              <Col sm={12} lg={6}>
-                {" "}
-                <ReactPlayer
-                  className="react-player"
-                  url={data.videos[0]}
-                  width="100%"
-                  height="100%"
-                />
-              </Col>
-              <Col sm={12} lg={6}>
-                <ReactPlayer
-                  className="react-player"
-                  url={data.videos[1]}
-                  width="100%"
-                  height="100%"
-                />
-              </Col>
-            </Row>
-          </Container>
+
+          <div className="bg-white">
+            <Container>
+              <Row className="info_row_video">
+                <Col sm={12} lg={6}>
+                  {" "}
+                  <ReactPlayer
+                    className="react-player"
+                    url={data.videos[0]}
+                    width="100%"
+                    height="100%"
+                  />
+                </Col>
+                <Col sm={12} lg={6}>
+                  <ReactPlayer
+                    className="react-player"
+                    url={data.videos[1]}
+                    width="100%"
+                    height="100%"
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </div>
     </div>
