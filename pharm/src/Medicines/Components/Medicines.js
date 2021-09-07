@@ -3,6 +3,7 @@ import Medicine from "./Medicine";
 import { dorilar } from "./../server";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import Menu from "./../../Component/Menu";
+import "./css/medicine.css";
 
 function Medicines() {
   const [loading, setLoading] = useState(false);
@@ -19,8 +20,8 @@ function Medicines() {
           <>
             <Menu />
           </>
-          {data.map((item, index) => (
-            <Medicine key={index} data={item} />
+          {data.map((item) => (
+            <Medicine key={item.id} data={item} />
           ))}
         </>
       ) : (

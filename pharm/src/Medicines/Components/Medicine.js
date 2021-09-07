@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Image, Row, Col } from "react-bootstrap";
+import { Container, Image, Row, Col, Button } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
 import ReactPlayer from "react-player/youtube";
-import "./css/medicine.css";
-import { Button } from "react-bootstrap";
 
 function Medicine({ data }) {
   const handleinfo = (e) => {
@@ -18,10 +16,7 @@ function Medicine({ data }) {
             <Col sm={6} lg={4}>
               <div>
                 <Zoom left duration={1500} delay={1000}>
-                  <Image
-                    style={{ width: "100%", height: "100%" }}
-                    src={data.url}
-                  />
+                  <Image width="100%" height="100%" src={data.url} />
                 </Zoom>
               </div>
             </Col>
