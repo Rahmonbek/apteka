@@ -1,12 +1,12 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import Slider from "react-slick";
-import styles from "../Css/SliderGroup.module.css";
-import Rasm from "../img/slider1.jpg";
-import Rasm1 from "../img/slider2.jpg";
-import Rasm2 from "../img/slider3.jpg";
-import Rasm3 from "../img/slider4.jpg";
-import Rasm4 from "../img/slider5.jpg";
+import styles from "../../Css/SliderGroup.module.css";
+import Rasm from "../../img/slider1.jpg";
+import Rasm1 from "../../img/slider2.jpg";
+import Rasm2 from "../../img/slider3.jpg";
+import Rasm3 from "../../img/slider4.jpg";
+import Rasm4 from "../../img/slider5.jpg";
 
 function ImageSlider() {
   let settings = {

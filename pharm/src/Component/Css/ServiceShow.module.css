@@ -150,19 +150,20 @@
 }
 
 .ServiceMenuText1 {
-    /* Subtitle / Base */
+  /* Subtitle / Base */
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
-    /* or 57px */
-    font-family: "Andale Mono", monospace;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6vh;
+  line-height: 130%;
+  /* or 57px */
+  font-family: "Andale Mono",
+  monospace;
 
-    text-align: center;
+  text-align: center;
 
-    color: #010b19;
+  color: #010b19;
 }
 
 .ServiceMenuText2 {
@@ -182,11 +183,41 @@
     opacity: 0.7;
 }
 
-@media(min-width:1024px) and (max-width:1250px) {
-    .Service {
+@media(min-width:1251px) and (max-width:1400px) {
+
+    .ServiceMenu {
+        height: 500px;
         overflow: visible;
-        overflow: hidden;
+        overflow: scroll;
+
     }
+
+    .ServiceMenuCard {
+        width: 330px;
+        height: 165;
+        margin-top: 0;
+        padding: 1px 1px;
+
+    }
+
+    .CardTextBold {
+        font-size: 21px;
+    }
+
+    .CardTextSmall {
+        font-size: 16px;
+    }
+
+    .CardText {
+        height: 90%;
+    }
+
+    .CardIcons i {
+        font-size: 40px;
+    }
+    }
+
+    @media(min-width:1024px) and (max-width:1250px) {
 
     .ServiceMenu {
         height: 500px;
@@ -219,10 +250,6 @@
 }
 
 @media(min-width:768px) and (max-width:1023px) {
-    .Service {
-        overflow: visible;
-        overflow: hidden;
-    }
 
     .ServiceMenu {
         height: 410px;
@@ -257,19 +284,21 @@
 
 @media(max-width:768px) {
     .Service {
-        overflow: visible;
-        overflow: hidden;
+        height: 600px;
     }
 
     .ServiceMenu {
         height: 400px;
+        width: 80%;
+        margin:auto;
+        justify-content: center;
         overflow: visible;
         overflow: scroll;
 
     }
 
     .ServiceMenuCard {
-        width: 330px;
+        width: 320px;
         height: 165;
         margin: auto;
         margin-top: 1%;
@@ -277,17 +306,35 @@
     }
 
     .ServiceMenuText1 {
-        font-size: 25px;
+        /* Subtitle / Base */
 
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        font-size: 5vh;
+        font-family: "Andale Mono",
+        monospace;
+        text-align: center;
+        color: #010b19;
     }
 
     .ServiceMenuText2 {
+        width: 95%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vh;
+        line-height: 160%;
+        /* or 29px */
 
-        width: 100%;
-        font-size: 12px;
-        margin-top: -15px;
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
     }
-
     .CardTextBold {
         font-size: 21px;
     }
@@ -304,6 +351,46 @@
         font-size: 40px;
     }
 }
+@media(max-width:500px) {
+
+    .ServiceMenuText {
+        margin-top: 1%;
+    }
+
+    .ServiceMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .ServiceMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+}
+
 #ButtonGroupId {
     width: 130px;
     text-align: center;

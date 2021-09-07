@@ -4,7 +4,9 @@ import styles from "../Css/SliderGroup.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
-import Slider from "./ImageSlider";
+import Slider from "./ImageGroup/ImageSlider";
+import Slider1 from "./ImageGroup/ImageSlider1";
+import Slider2 from "./ImageGroup/ImageSlider2";
 export default function ImageSlider() {
   AOS.init({
     duration: 1000,
@@ -23,7 +25,18 @@ export default function ImageSlider() {
             Pharetra gravida volutpat faucibus faucibus.
           </p>
         </div>
-        <Slider />
+        <div className={styles.SliderContainer}>
+          {" "}
+          <Slider />
+        </div>
+        <div className={styles.SliderContainer1}>
+          {" "}
+          <Slider1 />
+        </div>
+        <div className={styles.SliderContainer2}>
+          {" "}
+          <Slider2 />
+        </div>
       </Container>
     </div>
   );

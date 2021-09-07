@@ -118,7 +118,17 @@
     font-size: 19px;
     }
 
-    @media(min-width:1023px) and (max-width:1250px) {
+    @media(min-width:1301px) {
+        .flex_container {
+            height: 455px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: scroll;
+
+        }
+    }
+
+    @media(min-width:1023px) and (max-width:1300px) {
 
 
         .CardGroupMenuText1 {
