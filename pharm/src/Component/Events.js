@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Css/Events.module.css";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import Rasm from "./img/about.jpg";
 import AOS from "aos";
 
@@ -25,7 +25,7 @@ export default function Events() {
           </div>
           <div className={styles.EventsMenuItem}>
             <div data-aos="fade-right" className={styles.EventsMenuItemImg}>
-              <img src={Rasm} className="img-fluid" />
+              <Image src={Rasm} className="img-fluid" />
             </div>
             <div className={styles.EventsMenuItemText}>
               <ul>
