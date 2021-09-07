@@ -77,10 +77,12 @@
 .slick-track div {
   height: 50vh;
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .newspaper {
     column-count: 1;
     column-gap: 50px;
+  }
+  .bg-white {
+    min-height: 330px;
   }
 }

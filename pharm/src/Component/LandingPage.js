@@ -6,7 +6,8 @@ import CardGroup from "./CardTeen/CardGroup";
 import ServiceShow from "./Service/ServiceShow";
 import AOS from "aos";
 import Menu from "./Menu";
-
+import PragressGroup from "./PragressGroup";
+import Events from "./Events";
 export default function LandingPage() {
   AOS.init({
     duration: 1000,
@@ -27,6 +28,11 @@ export default function LandingPage() {
       <section id="medicine"></section>
       <div>
         <CardGroup />
+      </div>
+      <div>
+        <PragressGroup />
+
+        <Events />
       </div>
     </div>
   );

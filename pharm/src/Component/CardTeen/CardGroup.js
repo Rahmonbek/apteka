@@ -18,19 +18,9 @@ import Rasm11 from "../img/MediciniPng/A6.png";
 import Rasm12 from "../img/MediciniPng/A20.png";
 import AOS from "aos";
 
-import {
-  faHeadset,
-  faBook,
-  faCocktail,
-  faFax,
-  faHospital,
-  faMedkit,
-  faPlus,
-  faToilet,
-  faFlask,
-} from "@fortawesome/free-solid-svg-icons";
+import { faFlask } from "@fortawesome/free-solid-svg-icons";
 export default function ServiceShow() {
-  const [posts, setPosts] = useState([
+  const posts = [
     {
       userId: 1,
       id: 1,
@@ -126,8 +116,8 @@ export default function ServiceShow() {
 
       title: "Sertofen",
     },
-  ]);
-  const [showPerPage, setShowPerPage] = useState(8);
+  ];
+  const showPerPage = 8;
   const [pagination, setPagination] = useState({
     start: 0,
     end: showPerPage,

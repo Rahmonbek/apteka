@@ -15,7 +15,7 @@ import {
   faMedkit,
 } from "@fortawesome/free-solid-svg-icons";
 export default function ServiceShow() {
-  const [posts, setPosts] = useState([
+  const posts = [
     {
       userId: 1,
       id: 1,
@@ -206,8 +206,9 @@ export default function ServiceShow() {
       title: "24 Soatlik Xizmat ",
       body: "Biz mijozlarga 24/7 xizmat ko'rsatamiz. Siz bizga isqalgan vaqtda murojaat qilishingiz mumkin.",
     },
-  ]);
-  const [showPerPage, setShowPerPage] = useState(6);
+  ];
+
+  const showPerPage = 6;
   const [pagination, setPagination] = useState({
     start: 0,
     end: showPerPage,

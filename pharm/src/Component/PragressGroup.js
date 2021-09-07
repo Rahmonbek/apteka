@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Css/PragressGroup.module.css";
 import { Container } from "react-bootstrap";
-import PureCounter from "@srexi/purecounterjs";
 import Countup from "react-countup";
 import AOS from "aos";
 
