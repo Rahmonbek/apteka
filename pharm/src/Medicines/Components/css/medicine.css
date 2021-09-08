@@ -1,9 +1,18 @@
 .dorilar_header {
   background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
   width: 100%;
-  height: 100vh;
 }
-.dorilar-nav a,
+.dorilar-nav > a {
+  width: 160px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 3px;
+  border: 1px solid #fff;
+}
+.dorilar-nav > a:hover {
+  background-color: #28859a;
+}
+.dorilar-nav a > a,
 .dorilar-nav span {
   font-family: "Andale Mono", monospace;
   font-style: normal;
@@ -12,9 +21,16 @@
   line-height: 160%;
   color: #ffffff;
   opacity: 0.9;
-  padding-left: 10px;
 }
+.dorilar-main {
+  width: 100%;
+  height: 100%;
 
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brookings.edu%2Fessay%2Fgovernment-regulated-or-negotiated-drug-prices-key-design-considerations%2F&psig=AOvVaw3NvxDmoCnAUiiQarVWTYBJ&ust=1631196822373000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPC85e7H7_ICFQAAAAAdAAAAABAg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
 .medicines {
   background-color: #fff;
 }
@@ -63,13 +79,20 @@
 .info_row_video .col-sm-12 {
   padding: 10px;
 }
+.menu-dorilar {
+  display: none;
+}
+.dorilar-res-menu {
+  padding: 20px;
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .medicines .container {
     width: 100%;
     margin: 0;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 572px) {
   .medicine .col-lg-4:first-child > div,
   .medicine .col-sm-6:first-child > div {
     display: flex;
@@ -81,5 +104,45 @@
   .medicine .col-lg-4,
   .medicine .col-sm-6 {
     padding: 0 15px;
+  }
+  .active {
+    display: none;
+  }
+  .menu-dorilar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .dorilar-res-menu {
+    z-index: 1000;
+    position: fixed;
+    background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+  .dorilar-navbar a > a,
+  .dorilar-navbar span {
+    font-family: "Andale Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 160%;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.2rem;
+  }
+  .dorilar-navbar {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .dorilar-navbar > a {
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    border: 1px solid #ffd;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
