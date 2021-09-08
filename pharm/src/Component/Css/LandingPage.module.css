@@ -136,6 +136,22 @@
   cursor: pointer;
 }
 
+.WhatchVideo p:nth-child(1) {
+
+  font-size: 27px;
+  margin-left: 10%;
+  color: white;
+}
+
+.WhatchVideoP2 {
+
+  font-size: 18px;
+  margin-left: 3%;
+  margin-top: 10px;
+  color: white;
+
+}
+
 .MenuImg {
   width: 40%;
   object-fit: contain;
@@ -215,6 +231,15 @@
 }
 
 @media (max-width: 767px) {
+  .HeaderMenu {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .ImgBrand {
+    width: 115px;
+    height: 65px;
+  }
   .NavMe {
     border-radius: 4px;
     background-color: #010b19dc;
@@ -228,6 +253,9 @@
     width: 115%;
     margin: auto;
   }
+  .MenuTextNextIcons {
+    margin-top: -2.5%;
+  }
 
   .NavMe p {
     justify-content: center;
@@ -238,6 +266,13 @@
     display: block;
     margin-top: 5%;
   }
+  .MenuTextH4 {
+    font-size: 15px;
+  }
+
+  .MenuText1 h1 {
+    font-size: 5vh;
+  }
 
   .MenuText {
     width: 100%;
@@ -246,7 +281,9 @@
   .MenuImg {
     width: 100%;
   }
-
+.TextOnlineBuy {
+  display: none;
+}
   .ScheduleName {
     font-size: 55%;
     justify-content: center;
@@ -254,25 +291,96 @@
 
   .WhatchVideo {
     border: 1px solid white;
-    width: 70%;
+    width: 45%;
     margin: auto;
-    margin-top: 5%;
+    border-radius: 10px;
+
   }
 
   .WhatchWriter {
-    width: 70%;
+    width: 45%;
     margin: auto;
-  }
+    border-radius: 10px;
+    }
+
+    .WhatchVideo:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
   .MenuTextButtons {
     display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 47%;
+    align-content: flex-end;
+    }
+    }
+
+    @media (max-width: 500px) {
+      .ImgBrand {
+        width: 100px;
+        height: 55px;
+      }
+
+      .HeaderMenu {
+        height: 550px;
+        overflow: hidden;
+      }
+
+
+      .ScheduleNameIcon p:nth-child(2) {
+        margin-left: 1px;
+      }
+
+      .ScheduleNameIcon {
+        font-size: 90%;
+        margin-right: 5px;
+        margin-left: 1px;
+      }
+
+      .MenuTextButtons {
+        width: 100%;
+      }
+
+      .WhatchVideo p:nth-child(1) {
+
+        font-size: 22px;
+        margin-left: 10%;
+        color: white;
+      }
+
+      .WhatchWriter {
+        width: 43%;
+        font-size: 15px;
+
+      }
+
+      .WhatchWriter:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .WhatchWriter p {
+        margin-top: 10px;
+      }
+
+      .WhatchVideo {
+        width: 43%;
+      }
+
+      .WhatchVideoP2 {
+
+        font-size: 15px;
+        margin-left: 3%;
+        margin-top: 10px;
+        color: white;
   }
 }
 
+.ScheduleNameIcon p:nth-child(2) {
+  margin-left: 10px;
+}
 /* ----------ServiceMenu------------- */
 
 .ServiceMenu {

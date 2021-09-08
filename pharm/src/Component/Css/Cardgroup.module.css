@@ -124,7 +124,7 @@
             height: 455px;
             display: flex;
             flex-wrap: wrap;
-            overflow: scroll;
+            overflow: hidden;
 
         }
     }
@@ -237,6 +237,7 @@
             color: #FFFFFF;
         }
 
+
         .CardGroupMenuText2 {
 
             width: 100%;
@@ -306,6 +307,12 @@
             flex-wrap: wrap;
             overflow: scroll;
             justify-content: space-around;
+        }
+        #ButtonCardGroup {
+            width: 80px;
+            height: 40px;
+            font-size: 15px;
+            background-color: red;
         }
 
 }

@@ -19,25 +19,19 @@ function Menu() {
                 <p>
                   <MdTimer />
                 </p>
-                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
-                  Dush-Jum (9:00-17:00)
-                </p>
+                <p style={{ letterSpacing: "0.5px" }}>Dush-Jum (9:00-17:00)</p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <IoIosCall />
                 </p>
-                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
-                  +998(71)799-88-00
-                </p>
+                <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
               </div>
               <div className={styles.ScheduleNameIcon}>
                 <p>
                   <HiOutlineMail />
                 </p>
-                <p style={{ marginLeft: "10px", letterSpacing: "0.5px" }}>
-                  pharmacyuzb@gmail.com
-                </p>
+                <p style={{ letterSpacing: "0.5px" }}>pharmacyuzb@gmail.com</p>
               </div>
             </div>
             <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
@@ -149,7 +143,7 @@ function Menu() {
             </div>
             <div className={styles.MenuImg}>
               <div className={styles.MenuText1}>
-                <h4 style={{ color: "white" }}>
+                <h4 className={styles.MenuTextH4} style={{ color: "white" }}>
                   {" "}
                   O'zingiz haqingizda qayg'uring
                 </h4>
@@ -188,25 +182,10 @@ function Menu() {
                     <p>Maslahat Olish</p>
                   </div>
                   <div className={styles.WhatchVideo}>
-                    <p
-                      style={{
-                        fontSize: "27px",
-                        color: "white",
-                        marginLeft: "10%",
-                      }}
-                    >
+                    <p>
                       <MdSlowMotionVideo />
                     </p>
-                    <p
-                      style={{
-                        marginLeft: "10px",
-                        color: "white",
-                        fontSize: "18px",
-                        marginTop: "10px",
-                      }}
-                    >
-                      Videoni Ko'rish
-                    </p>
+                    <p className={styles.WhatchVideoP2}>Videoni Ko'rish</p>
                   </div>
                 </div>
               </div>
