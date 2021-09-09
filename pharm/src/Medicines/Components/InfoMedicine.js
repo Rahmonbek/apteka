@@ -10,7 +10,9 @@ import { connect } from "react-redux";
 function InfoMedicine(props) {
   let id = JSON.parse(localStorage.getItem("id"));
   const data = dorilar.find((item) => item.id === id);
-  console.log(props);
+
+  console.log(props.app);
+
   const onRemove = () => {
     localStorage.removeItem("id");
   };
@@ -158,4 +160,4 @@ const mapState = (state) => {
   return state;
 };
 
-export default connect(mapState, {})(InfoMedicine);
+export default connect(mapState)(InfoMedicine);

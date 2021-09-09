@@ -38,16 +38,14 @@
 }
 .info_container .silder {
   padding: 10px;
-  background: rgba(0, 22, 255, 0.3);
+  background-attachment: fixed;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(0, 0, 0, 0.3) 40%,
-    rgba(0, 0, 0, 0.3) 60%,
-    rgba(255, 255, 255, 0.3) 100%
+    rgba(0, 22, 255, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.3) 65%,
+    rgba(0, 22, 255, 0.3) 100%
   );
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
-  max-height: 50vh;
 }
 .list_info {
   background-color: rgba(0, 0, 0, 0.3);
@@ -90,8 +88,8 @@
   background-position: bottom;
   background-image: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 30%,
-    rgba(0, 22, 255, 0.3) 90%
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 22, 255, 0.4) 100%
   );
 }
 @media screen and (max-width: 992px) {
