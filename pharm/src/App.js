@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Medicines from "./Medicines/Components/Medicines";
 import InfoMedicine from "./Medicines/Components/InfoMedicine";
 import ErrorPage from "./Medicines/Components/ErrorPage";
+import Contact from "./Component/Contact";
 
 function App() {
   return (
@@ -24,9 +25,14 @@ function App() {
             <InfoMedicine />
             <Footer />
           </Route>
+          <Route path="/contact">
+            <Contact />
+            <Footer />
+          </Route>
           <Route path="*">
             <ErrorPage />
           </Route>
+      
         </Switch>
       </Router>
     </div>
