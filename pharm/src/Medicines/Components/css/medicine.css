@@ -84,6 +84,13 @@
 }
 .dorilar-res-menu {
   padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
   display: none;
 }
 @media screen and (max-width: 800px) {
@@ -112,15 +119,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 20px;
   }
   .dorilar-res-menu {
-    z-index: 1000;
-    position: fixed;
-    background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: block;
   }
   .dorilar-navbar a > a,
@@ -135,7 +136,7 @@
     font-size: 1.2rem;
   }
   .dorilar-navbar {
-    margin: 20px auto;
+    margin: 0 auto;
     width: 80%;
   }
   .dorilar-navbar > a {

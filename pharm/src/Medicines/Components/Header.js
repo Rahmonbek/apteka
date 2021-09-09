@@ -9,8 +9,8 @@ function Header() {
 
   return (
     <>
-      {res ? (
-        <div className="dorilar-res-menu">
+      {!res ? (
+        <div className={` ${!res ? "dorilar-res-menu" : ""}`}>
           <div className="menu-dorilar">
             <Button onClick={() => setRes(!res)}>
               <AiOutlineClose />
