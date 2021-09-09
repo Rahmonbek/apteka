@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Image, Row, Col, Button } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
 import ReactPlayer from "react-player/youtube";
+import { changeInfo } from "./../Redux/Actions/infoAction";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
-function Medicine({ data }) {
-  const handleinfo = (e) => {
-    localStorage.setItem("id", JSON.stringify(e));
-    window.location.href = "/ma'lumot";
-  };
+function Medicine(props) {
+  const { data, changeInfo } = props;
+
   return (
     <Fade up duration={1000}>
       <Container>
@@ -42,8 +43,8 @@ function Medicine({ data }) {
             </Col>
           </Row>
           <div className="madicine_button">
-            <Button onClick={() => handleinfo(data)} variant="outline-info">
-              Ma'lumot
+            <Button onClick={() => changeInfo(data.id)} variant="outline-info">
+              <Link to="./ma'lumot"> Ma'lumot</Link>
             </Button>
             <Button variant="outline-primary">Sotib olish</Button>
           </div>
@@ -52,5 +53,8 @@ function Medicine({ data }) {
     </Fade>
   );
 }
+const mapState = (state) => {
+  return state;
+};
 
-export default Medicine;
+export default connect(mapState, { changeInfo })(Medicine);

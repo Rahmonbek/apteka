@@ -37,9 +37,17 @@
   letter-spacing: 1px;
 }
 .info_container .silder {
-  padding: 15px;
-  background-color: #fff;
-  box-shadow: #fff;
+  padding: 10px;
+  background: rgba(0, 22, 255, 0.3);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
+  max-height: 50vh;
 }
 .list_info {
   background-color: rgba(0, 0, 0, 0.3);
@@ -77,12 +85,22 @@
 .slick-track div {
   height: 50vh;
 }
+.bg-white {
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 22, 255, 0.3) 90%
+  );
+}
 @media screen and (max-width: 992px) {
   .newspaper {
     column-count: 1;
     column-gap: 50px;
   }
   .bg-white {
+    padding: 10px;
     min-height: 330px;
   }
 }
