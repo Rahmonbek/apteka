@@ -21,7 +21,7 @@ function Header() {
               <Link to="/">Bosh sahifa</Link>
             </Nav.Link>
             <Nav.Link href="#dorilar">
-              <span>Dorilar</span>
+              <span onClick={() => setRes(!res)}>Dorilar</span>
             </Nav.Link>
           </div>
         </div>

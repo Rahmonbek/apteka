@@ -1,4 +1,4 @@
-import { Button, Container, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { Row, Col } from "react-bootstrap";
@@ -9,12 +9,8 @@ import { useSelector } from "react-redux";
 
 function InfoMedicine() {
   const state = useSelector((state) => state);
-  console.log(state);
   const data = dorilar.find((item) => item.id === state);
 
-  const onRemove = () => {
-    localStorage.removeItem("id");
-  };
   const settings = {
     duration: 1,
     lazyload: true,
@@ -45,9 +41,9 @@ function InfoMedicine() {
     <div className="infoMedicine">
       <div className="contenat_inf">
         <div className="info_button">
-          <Button onClick={onRemove} variant="primary">
-            <Link to="./dorilar">Qaytish</Link>
-          </Button>
+          <Link to="./dorilar" className="btn btn-primary">
+            Qaytish
+          </Link>
         </div>
         <div className="info_container">
           <h1>{data.nomi}</h1>
