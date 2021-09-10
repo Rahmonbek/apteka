@@ -40,6 +40,7 @@
     "react-slider-swiper": "^2.0.6",
     "react-spinners": "^0.11.0",
     "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.0",
     "swiper": "^7.0.2",

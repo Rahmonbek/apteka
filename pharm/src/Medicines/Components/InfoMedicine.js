@@ -5,13 +5,12 @@ import { Row, Col } from "react-bootstrap";
 import TinySlider from "tiny-slider-react";
 import "./css/infoMedicine.css";
 import { dorilar } from "./../server";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-function InfoMedicine(props) {
-  let id = JSON.parse(localStorage.getItem("id"));
-  const data = dorilar.find((item) => item.id === id);
-
-  console.log(props.app);
+function InfoMedicine() {
+  const state = useSelector((state) => state);
+  console.log(state);
+  const data = dorilar.find((item) => item.id === state);
 
   const onRemove = () => {
     localStorage.removeItem("id");
@@ -156,8 +155,4 @@ function InfoMedicine(props) {
   );
 }
 
-const mapState = (state) => {
-  return state;
-};
-
-export default connect(mapState)(InfoMedicine);
+export default InfoMedicine;

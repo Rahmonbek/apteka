@@ -2,13 +2,15 @@ import React from "react";
 import { Container, Image, Row, Col, Button } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
 import ReactPlayer from "react-player/youtube";
-import { changeInfo } from "./../Redux/Actions/infoAction";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 function Medicine(props) {
-  const { data, changeInfo } = props;
-
+  const { data } = props;
+  const dispatch = useDispatch();
+  const changeInfo = (e) => {
+    dispatch({ type: "id", payload: e });
+  };
   return (
     <Fade up duration={1000}>
       <Container>
@@ -53,8 +55,5 @@ function Medicine(props) {
     </Fade>
   );
 }
-const mapState = (state) => {
-  return state;
-};
 
-export default connect(mapState, { changeInfo })(Medicine);
+export default Medicine;
