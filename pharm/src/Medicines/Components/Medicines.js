@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import "./css/medicine.css";
 import Medicine from "./Medicine";
 import { dorilar } from "./../server";

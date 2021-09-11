@@ -1,16 +1,15 @@
-import { Button, Container, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { Row, Col } from "react-bootstrap";
 import TinySlider from "tiny-slider-react";
 import "./css/infoMedicine.css";
-
-let data = JSON.parse(localStorage.getItem("id"));
+import { dorilar } from "./../server";
+import { useSelector } from "react-redux";
 
 function InfoMedicine() {
-  const onRemove = () => {
-    localStorage.removeItem("id");
-  };
+  const state = useSelector((state) => state);
+  const data = dorilar.find((item) => item.id === state);
 
   const settings = {
     duration: 1,
@@ -18,7 +17,7 @@ function InfoMedicine() {
     nav: false,
     mouseDrag: true,
     loop: true,
-    items: 2,
+    items: 1,
     gutter: 1,
     controls: false,
     responsive: {
@@ -42,9 +41,9 @@ function InfoMedicine() {
     <div className="infoMedicine">
       <div className="contenat_inf">
         <div className="info_button">
-          <Button onClick={onRemove} variant="primary">
-            <Link to="./dorilar">Qaytish</Link>
-          </Button>
+          <Link to="./dorilar" className="btn btn-primary">
+            Qaytish
+          </Link>
         </div>
         <div className="info_container">
           <h1>{data.nomi}</h1>
@@ -62,38 +61,16 @@ function InfoMedicine() {
                     alignItems: "center",
                   }}
                 >
-                  <div>
-                    <Image
-                      className={`tns-lazy-img`}
-                      src={loadingImage}
-                      data-src={data.image[3]}
-                      style={{ width: "90%", height: "90%" }}
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      className={`tns-lazy-img`}
-                      src={loadingImage}
-                      data-src={data.image[2]}
-                      style={{ width: "90%", height: "90%" }}
-                    />
-                  </div>{" "}
-                  <div>
-                    <Image
-                      className={`tns-lazy-img`}
-                      src={loadingImage}
-                      data-src={data.image[1]}
-                      style={{ width: "90%", height: "90%" }}
-                    />
-                  </div>{" "}
-                  <div>
-                    <Image
-                      className={`tns-lazy-img`}
-                      src={loadingImage}
-                      data-src={data.image[0]}
-                      style={{ width: "90%", height: "90%" }}
-                    />
-                  </div>
+                  {data.image.map((item, index) => (
+                    <div key={index}>
+                      <Image
+                        className={`tns-lazy-img`}
+                        src={loadingImage}
+                        data-src={item}
+                        style={{ width: "90%", height: "90%" }}
+                      />
+                    </div>
+                  ))}
                 </TinySlider>
               </div>
             </Container>

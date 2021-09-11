@@ -2,11 +2,14 @@ import React from "react";
 import { Container, Image, Row, Col, Button } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
 import ReactPlayer from "react-player/youtube";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-function Medicine({ data }) {
-  const handleinfo = (e) => {
-    localStorage.setItem("id", JSON.stringify(e));
-    window.location.href = "/ma'lumot";
+function Medicine(props) {
+  const { data } = props;
+  const dispatch = useDispatch();
+  const changeInfo = (e) => {
+    dispatch({ type: "id", payload: e });
   };
   return (
     <Fade up duration={1000}>
@@ -42,8 +45,8 @@ function Medicine({ data }) {
             </Col>
           </Row>
           <div className="madicine_button">
-            <Button onClick={() => handleinfo(data)} variant="outline-info">
-              Ma'lumot
+            <Button onClick={() => changeInfo(data.id)} variant="outline-info">
+              <Link to="./ma'lumot"> Ma'lumot</Link>
             </Button>
             <Button variant="outline-primary">Sotib olish</Button>
           </div>
