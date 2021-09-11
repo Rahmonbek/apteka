@@ -1,105 +1,26 @@
 import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
-import Rasm from "./img/Brand.png";
-import { Navbar, Container, Nav, Image, Modal } from "react-bootstrap";
-import { MdTimer } from "react-icons/md";
-import { IoIosCall } from "react-icons/io";
-import { HiOutlineMail } from "react-icons/hi";
+import { Container, Modal } from "react-bootstrap";
+
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
-import { Link } from "react-router-dom";
+import Header from "../Medicines/Components/Header";
 // import { Modal, Button, Space } from "antd";
 function Menu() {
   const [smShow, setSmShow] = useState(false);
   const showModalBot = () => {
     setSmShow(false);
   };
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
+  const headerdata = {
+    bool: true,
   };
 
   return (
     <>
       <div className={styles.HeaderMenu}>
-        <Container>
-          <div className={styles.NavbarMenu}>
-            <div className={styles.ScheduleName}>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <MdTimer />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>Dush-Jum (9:00-17:00)</p>
-              </div>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <IoIosCall />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
-              </div>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <HiOutlineMail />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>pharmacyuzb@gmail.com</p>
-              </div>
-            </div>
-            <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
-              <Container>
-                <Navbar.Brand href="#home">
-                  <Image className={styles.ImgBrand} src={Rasm} />
-                </Navbar.Brand>
-                <Navbar.Toggle
-                  className={styles.NavbarMenuMedia}
-                  aria-controls="responsive-navbar-nav"
-                  style={{ color: "#98349400", border: "none" }}
-                >
-                  <i
-                    class="fas fa-bars"
-                    style={{ color: "white", fontSize: "26px" }}
-                  ></i>
-                </Navbar.Toggle>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className={styles.NavMe}>
-                    <Nav.Link href="#deets">
-                      <p>Menu</p>
-                    </Nav.Link>
-                    <Nav.Link href="#service">
-                      <p>Xizmatlar</p>
-                    </Nav.Link>
-                    <Nav.Link href="#List">
-                      <p>Doctors</p>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link to="/dorilar">
-                        {" "}
-                        <p>Dorilar</p>
-                      </Link>
-                    </Nav.Link>
-
-                    <Nav.Link href="#Testimonials">
-                      <p>Testimonials</p>
-                    </Nav.Link>
-                    <Nav.Link href="#blog">
-                      <p>Blog</p>
-                    </Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Container>
-            </Navbar>
-          </div>
-        </Container>
-
-        <div className={styles.Menu}>
+        <Header data={headerdata} />
+        <div className="py-5" id="deets"></div>
+        <div className={`${styles.Menu}`}>
           <Container className={styles.MenuGroup}>
             <div className={styles.MenuText}>
               <h4 style={{ color: "white" }}>

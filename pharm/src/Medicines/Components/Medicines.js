@@ -25,12 +25,16 @@ function Medicines() {
     setLoading(true);
   }, []);
 
+  const headerdata = {
+    bool: false,
+  };
+
   return (
     <div className="medicines">
       {loading ? (
         <>
-          <Header />
-
+          <Header data={headerdata} />
+          <div className="margin_for"></div>
           <span id="dorilar">
             {data.map((item) => (
               <Medicine key={item.id} data={item} />

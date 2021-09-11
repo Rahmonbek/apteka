@@ -14,7 +14,7 @@ export default class Obuna extends Component {
   render() {
     return (
       <>
-        <div className={style.FooterMenu}>
+        <div id="footer" className={style.FooterMenu}>
           <Container>
             <section id="blog"></section>
             <div className={style.FooterMenuMe}>
