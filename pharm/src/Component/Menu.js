@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
 import Rasm from "./img/Brand.png";
-import { Navbar, Container, Nav, Image } from "react-bootstrap";
+import { Navbar, Container, Nav, Image, Modal } from "react-bootstrap";
 import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { Link } from "react-router-dom";
+// import { Modal, Button, Space } from "antd";
 function Menu() {
+  const [smShow, setSmShow] = useState(false);
+  const showModalBot = () => {
+    setSmShow(false);
+  };
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <>
       <div className={styles.HeaderMenu}>
@@ -118,13 +137,53 @@ function Menu() {
                 dori tanlashingiz mumkin.
               </p>
               <div className={styles.MenuTextButtons}>
-                <div className={styles.WhatchWriter}>
-                  <a>Maslahat Olish</a>
-                </div>
-                <div className={styles.WhatchVideo}>
+                <a className={styles.WhatchWriter}>
+                  <a onClick={() => setSmShow(true)}>Ma'lumot uchun</a>
+
+                  <Modal
+                    className={styles.CardModalItem}
+                    size="sm"
+                    show={smShow}
+                    onHide={() => setSmShow(false)}
+                    aria-labelledby="example-modal-sizes-title-sm"
+                  >
+                    <Modal.Header>
+                      <Modal.Title id="example-modal-sizes-title-sm">
+                        Ma'lumot uchun!
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p className={styles.CardBodyCallIcon}>
+                        {" "}
+                        <i class="fas fa-phone-alt"></i>
+                        <i>+998(78)-645-23-12</i>
+                      </p>
+                      <p className={styles.CardBodyCallIcon}>
+                        {" "}
+                        <i class="fas fa-phone-alt"></i>
+                        <i>+998(78)-645-23-12</i>
+                      </p>
+                      <p className={styles.CardBodyCallIcon}>
+                        {" "}
+                        <i class="fas fa-phone-alt"></i>
+                        <i>+998(78)-645-23-12</i>
+                      </p>
+                    </Modal.Body>
+                    <Modal.Footer
+                      className={styles.CardFooterExitIcon}
+                      onClick={() => showModalBot()}
+                    >
+                      <i class="fas fa-times"></i>
+                    </Modal.Footer>
+                  </Modal>
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
+                  className={styles.WhatchVideo}
+                >
                   <a
-                    target="_blank"
-                    href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
                     style={{
                       fontSize: "27px",
                       color: "white",
@@ -143,7 +202,7 @@ function Menu() {
                   >
                     Videoni Ko'rish
                   </a>
-                </div>
+                </a>
               </div>
             </div>
             <div className={styles.MenuImg}>
@@ -186,7 +245,11 @@ function Menu() {
                   <div className={styles.WhatchWriter}>
                     <p>Maslahat Olish</p>
                   </div>
-                  <div className={styles.WhatchVideo}>
+                  <div
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
+                    className={styles.WhatchVideo}
+                  >
                     <p>
                       <MdSlowMotionVideo />
                     </p>

@@ -75,7 +75,7 @@
 
   .Curved {
     position: relative;
-    margin-top: -13%;
+    margin-top: -15%;
   }
 .MenuText {
   width: 50%;
@@ -105,15 +105,16 @@
 }
 
 .MenuTextButtons {
-  display: flex;
   width: 90%;
+  display: flex;
   justify-content: space-between;
   margin: auto;
-  margin-top: 28%;
-
 }
 
+
+
 .WhatchWriter {
+  position: relative;
   width: 35%;
   height: 50px;
   border: 1px solid white;
@@ -122,7 +123,9 @@
   font-size: 18px;
   align-content: center;
   cursor: pointer;
-}
+  z-index: 3;
+  color: white;
+  }
 
 .WhatchWriter:focus {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -130,14 +133,39 @@
 
 .WhatchWriter:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-}
-
-.WhatchWriter a {
-  margin-top: 8px;
   color: white;
 }
 
+.WhatchWriter a {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -20%;
+  color: red;
+  }
+
+  .CardBodyCallIcon p {
+    cursor: pointer;
+
+  }
+
+  .CardBodyCallIcon i:nth-child(1) {
+    color: #63E6BE;
+    margin-right: 10px;
+
+  }
+
+  .CardModalItem {
+    opacity: .9;
+  }
+
+  .CardFooterExitIcon i {
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+  }
+
 .WhatchVideo {
+  position: relative;
   display: flex;
   width: 35%;
   height: 50px;
@@ -146,6 +174,7 @@
   text-align: center;
   border: 1px solid white;
   cursor: pointer;
+  z-index: 3;
 }
 
 .WhatchVideo a:nth-child(1) {
@@ -166,12 +195,40 @@
 }
 
 .MenuImg {
-  width: 45%;
+  width: 40%;
+  height: 430px;
+  margin-left: 3%;
   object-fit: contain;
   background-image: url(../img/Person.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 91%;
   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.MenuText {
+  height: 460px;
+  margin-top: 15px;
+}
+
+.MenuText h4 {
+  width: 70%;
+  font-size: 3vh;
+}
+
+.MenuText h1 {
+  width: 80%;
+  font-size: 4.5vh;
+}
+
+.MenuTextNextIcons {
+  width: 75%;
+  font-size: 2.5vh;
+  height: 30px;
+  overflow: hidden;
+}
+
+.TextOnlineBuy {
+  font-size: 2.2vh;
 }
 
 .MenuImgRasm {
@@ -181,13 +238,16 @@
 
   @media(min-width:1301px) {
     .MenuTextButtons {
-      margin-top: 15%;
       width: 95%;
+      margin-top: 9%;
     }
 
     .WhatchWriter {
       width: 45%;
       cursor: pointer;
+    }
+    .CardModalItemMe {
+      margin-top: 10px;
     }
 
     .WhatchVideo {
