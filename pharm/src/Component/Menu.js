@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
 import { Container, Modal } from "react-bootstrap";
-
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
 import Header from "../Medicines/Components/Header";
-// import { Modal, Button, Space } from "antd";
+
 function Menu() {
   const [smShow, setSmShow] = useState(false);
   const showModalBot = () => {

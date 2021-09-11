@@ -14,7 +14,9 @@
   height: 722px;
   background: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
 }
-
+.Menu {
+  background: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
+}
 .NavbarMenu {
   width: 100%;
   height: 106px;
@@ -62,9 +64,6 @@
   color: #ffffff;
   opacity: 0.9;
   padding-left: 10px;
-}
-
-.Menu {
 }
 
 .MenuGroup {

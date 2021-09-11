@@ -3,7 +3,7 @@
   width: 100%;
 }
 .margin_for {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 .dorilar-nav > a {
   width: 160px;
@@ -115,7 +115,7 @@
   .medicine .col-sm-6 {
     padding: 0 15px;
   }
-  .active {
+  .actives {
     display: none;
   }
   .menu-dorilar {

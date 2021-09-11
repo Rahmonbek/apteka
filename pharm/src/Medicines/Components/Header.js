@@ -21,27 +21,34 @@ function Header(props) {
             </Button>
           </div>
           <div className="dorilar-navbar">
-            <Nav.Link>
-              {bool ? (
-                <span href="#main">Bosh sahifa </span>
-              ) : (
-                <Link to="/">Bosh sahifa</Link>
-              )}
-            </Nav.Link>
-            <Nav.Link>
-              {bool ? (
-                <span href="#List">Doktorlar </span>
-              ) : (
-                <Link to="/">Doktorlar</Link>
-              )}
-            </Nav.Link>
-            <Nav.Link onClick={() => setRes(!res)}>
-              {!bool ? (
-                <span href="#dorilar">Dorilar</span>
-              ) : (
-                <Link to="/dorilar">Dorilar</Link>
-              )}
-            </Nav.Link>
+            {bool ? (
+              <Nav.Link href="#deets">
+                <span onClick={() => setRes(!res)}>Bosh sahifa </span>
+              </Nav.Link>
+            ) : (
+              <Nav.Link>
+                <Link to="/#deets">Bosh sahifa</Link>
+              </Nav.Link>
+            )}
+            {bool ? (
+              <Nav.Link href="#List">
+                <span onClick={() => setRes(!res)}>Doktorlar </span>
+              </Nav.Link>
+            ) : (
+              <Nav.Link>
+                <Link to="/#List">Doktorlar</Link>
+              </Nav.Link>
+            )}
+
+            {!bool ? (
+              <Nav.Link href="#dorilar">
+                <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
+              </Nav.Link>
+            ) : (
+              <Nav.Link>
+                <Link to="/dorilar#dorilar">Dorilar</Link>
+              </Nav.Link>
+            )}
             <Nav.Link href="#footer">
               <span onClick={() => setRes(!res)}>Contacts</span>
             </Nav.Link>
@@ -62,31 +69,33 @@ function Header(props) {
               </Button>
             </div>
             <div>
-              <div className={`${styles.ScheduleName} active`}>
-                <div className={styles.ScheduleNameIcon}>
-                  <p>
-                    <MdTimer />
-                  </p>
-                  <p style={{ letterSpacing: "0.5px" }}>
-                    Dush-Jum (9:00-17:00)
-                  </p>
+              <span className="actives">
+                <div className={`${styles.ScheduleName} actives`}>
+                  <div className={styles.ScheduleNameIcon}>
+                    <p>
+                      <MdTimer />
+                    </p>
+                    <p style={{ letterSpacing: "0.5px" }}>
+                      Dush-Jum (9:00-17:00)
+                    </p>
+                  </div>
+                  <div className={styles.ScheduleNameIcon}>
+                    <p>
+                      <IoIosCall />
+                    </p>
+                    <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
+                  </div>
+                  <div className={styles.ScheduleNameIcon}>
+                    <p>
+                      <HiOutlineMail />
+                    </p>
+                    <p style={{ letterSpacing: "0.5px" }}>
+                      pharmacyuzb@gmail.com
+                    </p>
+                  </div>
                 </div>
-                <div className={styles.ScheduleNameIcon}>
-                  <p>
-                    <IoIosCall />
-                  </p>
-                  <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
-                </div>
-                <div className={styles.ScheduleNameIcon}>
-                  <p>
-                    <HiOutlineMail />
-                  </p>
-                  <p style={{ letterSpacing: "0.5px" }}>
-                    pharmacyuzb@gmail.com
-                  </p>
-                </div>
-              </div>
-              <Nav className={`dorilar-nav active`}>
+              </span>
+              <Nav className={`dorilar-nav actives`}>
                 {bool ? (
                   <Nav.Link href="#deets">
                     <span>Bosh sahifa </span>
@@ -102,7 +111,7 @@ function Header(props) {
                   </Nav.Link>
                 ) : (
                   <Nav.Link>
-                    <Link to="/">Doktorlar</Link>
+                    <Link to="/#List">Doktorlar</Link>
                   </Nav.Link>
                 )}
 
@@ -112,7 +121,7 @@ function Header(props) {
                   </Nav.Link>
                 ) : (
                   <Nav.Link>
-                    <Link to="/dorilar">Dorilar</Link>
+                    <Link to="/dorilar#dorilar">Dorilar</Link>
                   </Nav.Link>
                 )}
                 <Nav.Link href="#footer">
