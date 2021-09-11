@@ -10,7 +10,7 @@ import Slider2 from "./ImageGroup/ImageSlider2";
 export default function ImageSlider() {
   AOS.init({
     duration: 1000,
-  });
+  }); 
   return (
     <div className={styles.SliderMenu}>
       <Container>

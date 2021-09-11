@@ -7,6 +7,7 @@ import Rasm1 from "../../img/slider2.jpg";
 import Rasm2 from "../../img/slider3.jpg";
 import Rasm3 from "../../img/slider4.jpg";
 import Rasm4 from "../../img/slider5.jpg";
+import { FiPhoneCall } from "react-icons/fi";
 
 function ImageSlider() {
   let settings = {
@@ -31,9 +32,25 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm1} className="img-fluid" />
             </div>
+            <svg
+              className={styles.Curved}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#184E61"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+            <div id={styles.CallMeGroup}>
+              <i>
+                <FiPhoneCall id={styles.CallMeGroupIcon} />
+              </i>
+            </div>
             <div id={styles.CardBody}>
-              <p>Ar-Roziy farm</p>
-              <p>Ish vaqti 8:00 dan 18:00 gacha.</p>
+              <p>Dori-Darmon</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
             <ul
               style={{ listStyleType: "none", textDecoration: "none" }}
@@ -85,9 +102,25 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm2} class="img-fluid" />
             </div>
+            <svg
+              className={styles.Curved}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#184E61"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+            <div id={styles.CallMeGroup}>
+              <i>
+                <FiPhoneCall id={styles.CallMeGroupIcon} />
+              </i>
+            </div>
             <div id={styles.CardBody}>
               <p>Dori-Darmon</p>
-              <p>Ish vaqti 7:00 dan 21:00 gacha.</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
             <ul
               style={{ listStyleType: "none", textDecoration: "none" }}
@@ -139,9 +172,25 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm3} class="img-fluid" />
             </div>
+            <svg
+              className={styles.Curved}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#184E61"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+            <div id={styles.CallMeGroup}>
+              <i>
+                <FiPhoneCall id={styles.CallMeGroupIcon} />
+              </i>
+            </div>
             <div id={styles.CardBody}>
-              <p>Eco Med Dorixona</p>
-              <p>Bizning ish foaliyatimiz 24/7</p>
+              <p>Dori-Darmon</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
             <ul
               style={{ listStyleType: "none", textDecoration: "none" }}
@@ -193,9 +242,25 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm} class="img-fluid" />
             </div>
+            <svg
+              className={styles.Curved}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#184E61"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+            <div id={styles.CallMeGroup}>
+              <i>
+                <FiPhoneCall id={styles.CallMeGroupIcon} />
+              </i>
+            </div>
             <div id={styles.CardBody}>
-              <p>777 Dorixona</p>
-              <p>Ish vaqti 7:00 dan 22:00 gacha.</p>
+              <p>Dori-Darmon</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
             <ul
               style={{ listStyleType: "none", textDecoration: "none" }}
@@ -247,9 +312,25 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm4} class="img-fluid" />
             </div>
+            <svg
+              className={styles.Curved}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#184E61"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+            <div id={styles.CallMeGroup}>
+              <i>
+                <FiPhoneCall id={styles.CallMeGroupIcon} />
+              </i>
+            </div>
             <div id={styles.CardBody}>
-              <p>IMVITANO Dorixona</p>
-              <p>Ish vaqti 7:00 dan 22:00 gacha.</p>
+              <p>Dori-Darmon</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
 
             <ul

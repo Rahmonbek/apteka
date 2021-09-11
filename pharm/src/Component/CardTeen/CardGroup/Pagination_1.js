@@ -36,7 +36,7 @@ const Pagination = ({ showPerPage, onPaginationChange, total }) => {
 
   return (
     <div className="d-flex justify-content-between">
-      <Button
+      {/* <Button
         style={{ marginTop: "10px" }}
         id={styles.ButtonCardGroup}
         onClick={() => onButtonClick("prev")}
@@ -49,7 +49,7 @@ const Pagination = ({ showPerPage, onPaginationChange, total }) => {
         onClick={() => onButtonClick("next")}
       >
         Keyingisi
-      </Button>
+      </Button> */}
     </div>
   );
 };

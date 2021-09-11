@@ -149,7 +149,7 @@ export default function ServiceShow() {
               <div className={styles.flex_item} key={post.id}>
                 <img src={post.img} alt="" className="img-fluid" />
                 <div className={styles.flex_title_item}>
-                  <p>
+                  {/* <p>
                     <i
                       style={{
                         marginLeft: "5%",
@@ -168,7 +168,7 @@ export default function ServiceShow() {
                     >
                       {post.title}
                     </i>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

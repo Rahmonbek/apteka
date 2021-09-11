@@ -40,11 +40,48 @@
   margin: 0 auto;
   width: 48%;
   height: 100%;
-  overflow-y: scroll;
+}
+
+.EventsMenuItemImg {
+  overflow: hidden;
 }
 .EventsMenuItemText ul li {
   list-style-type: none;
-  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  margin-top: 8px;
+  }
+
+  .EventsMenuItemText {
+    overflow: hidden;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(2) {
+    display: none;
+  }
+
+  .EventsMenuItemText ul li:hover i:nth-child(2) {
+    margin-right: 15px;
+    display: block;
+    margin-top: 1%;
+    font-size: 19px;
+    color: #2B9B2B;
+    transition: .3s;
+  }
+
+
+
+  .EventsMenuItemText ul li:hover i:nth-child(1) {
+    display: none;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(1) {
+    margin-top: 1.5%;
+  }
+
+  .EventsMenuItemText ul {
+    height: 100%;
+
 }
 
 .EventsMenuItemText ul li i:nth-child(1) {
@@ -53,7 +90,7 @@
   font-size: 2vh;
 }
 
-.EventsMenuItemText ul li i:nth-child(2) {
+.EventsMenuItemText ul li i:nth-child(3) {
   font-size: 2.5vh;
 }
 
@@ -80,13 +117,24 @@
   }
   .EventsMenuItemText ul {
     margin: auto;
-    margin-left: 6%;
-  }
+    margin-left: 2%;
+    }
 
-  .EventsMenuItemText ul li i:nth-child(2) {
-    font-family: sans-serif;
-    color: #010b19;
-    font-weight: bold;
+    .EventsMenuItemText ul li {
+      margin-top: 5px;
+    }
+
+    .EventsMenuItemText ul li i:nth-child(1) {
+      font-size: 15px;
+    }
+
+    .EventsMenuItemText ul li i:nth-child(3) {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      color: #010b19;
+    margin-top: 1%;
   }
   .Events .EventsMenuText1 {
     font-family: Montserrat;
@@ -119,11 +167,63 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .EventsMenuText1 {
+    /* Subtitle / Base */
 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    font-size: 5vh;
+    /* or 57px */
+    font-family: "Andale Mono",
+    monospace;
+    text-align: center;
+    color: #010b19;
+    }
+
+    .EventsMenuText2 {
+      width: 95%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2vh;
+      line-height: 160%;
+      /* or 29px */
+
+      text-align: center;
+      margin: auto;
+
+      color: #010b19;
+
+      opacity: 0.7;
+    }
   .EventsMenuItemImg {
     width: 100%;
     border-radius: 20px;
     display: none;
+  }
+  .EventsMenuItemText ul {
+    margin: auto;
+    margin-left: 2%;
+  }
+
+  .EventsMenuItemText ul li {
+    margin-top: 5px;
+    margin-left: -6%;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(1) {
+    font-size: 15px;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(3) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #010b19;
+    margin-top: 1%;
   }
 
 
@@ -137,34 +237,197 @@
     z-index: 3;
     align-content: space-around;
   }
-  .EventsMenuItemText ul li i:nth-child(2) {
-    font-size: 10px;
-    line-height: 2px;
-  }
 }
 
 @media(max-width:549px) {
-  .Events .EventsMenuText1 {
+  .EventsMenuItem {
+    height: 410px
+  }
+
+  .EventsMenuText1 {
+    /* Subtitle / Base */
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 4vh;
-    line-height: 110%;
+    line-height: 130%;
+    /* or 57px */
     font-family: "Andale Mono", monospace;
     text-align: center;
     color: #010b19;
+    color: green;
   }
 
   .EventsMenuText2 {
-    width: 90%;
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 2vh;
-    line-height: 130%;
+    line-height: 160%;
+    /* or 29px */
+
     text-align: center;
     margin: auto;
     color: #010b19;
     opacity: 0.7;
+    }
+
+    .EventsMenuItemText ul {
+      margin: auto;
+      margin-left: 2%;
+    }
+
+    .EventsMenuItemText ul li {
+      margin-top: 5px;
+      margin-left: -6%;
+    }
+
+    .EventsMenuItemText ul li i:nth-child(1) {
+      font-size: 2.5vh;
+    }
+
+    .EventsMenuItemText ul li i:nth-child(3) {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5vh;
+      color: #010b19;
+      margin-top: 1%;
+    }
+
+    }
+
+    @media(max-width:440px) {
+      .EventsMenuItem {
+        height: 490px
+      }
+
+      .EventsMenuItemText ul {
+        margin: auto;
+        margin-left: 2%;
+      }
+
+      .EventsMenuItemText ul li {
+        margin-top: 5px;
+        margin-left: -6%;
+      }
+
+      .EventsMenuItemText ul li i:nth-child(1) {
+        font-size: 2.2vh;
+      }
+
+      .EventsMenuItemText ul li i:nth-child(3) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.2vh;
+        color: #010b19;
+        margin-top: 1%;
+      }
+
+    }
+
+    @media(min-width:401px) and (max-width:430px) {
+
+
+      .EventsMenuText1 {
+        /* Subtitle / Base */
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono",
+          monospace;
+
+        text-align: center;
+
+        color: #010b19;
+      }
+
+      .EventsMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vh;
+        line-height: 160%;
+        margin-top: -10px;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+      }
+    }
+
+    @media(max-width:390px) {
+      .EventsMenuItem {
+        height: 490px
+      }
+
+      .EventsMenuItemText ul {
+        margin: auto;
+
+      }
+
+      .EventsMenuItemText ul li {
+        margin-top: 5px;
+        margin-left: -11%;
+      }
+
+      .EventsMenuItemText ul li i:nth-child(1) {
+        font-size: 13px;
+      }
+
+      .EventsMenuItemText ul li i:nth-child(3) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #010b19;
+        margin-top: 1%;
+      }
+
+      .EventsMenuText1 {
+        /* Subtitle / Base */
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3vh;
+  line-height: 130%;
+  /* or 57px */
+  font-family: "Andale Mono",
+  monospace;
+
+  text-align: center;
+
+  color: #010b19;
+  }
+
+  .EventsMenuText2 {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25vh;
+    line-height: 160%;
+    margin-top: -10px;
+    /* or 29px */
+
+  text-align: center;
+  margin: auto;
+
+  color: #010b19;
+
+  opacity: 0.7;
   }
 }

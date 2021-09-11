@@ -31,43 +31,98 @@ export default function Events() {
               <ul>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Bizning ish foaliyatimiz 1995-yil dan beri.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Bizning ish foaliyatimiz 1995-yil, 2-Yanvardan buyon 24/7 da
+                    ishlaydi.
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Bizning hozirgi kunda dorilarimiz juda sifatli.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Bizning Mahsulotlarimiz Jahon standartlari asosida ishlab
+                    chiqariladi.
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hamkorlarimiz va Mijozlarimiz fikri biz uchun muhim.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Hamkorlarimiz va Mijozlarimizning Fikri va istagi biz uchun
+                    juda muhim.
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Online dori zakaz qilsangiz yetkazib berish xizmati.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Mijozlar istagidan inobatga olib, yetkazib berish xizmatini
+                    yo'lga qo'ydik.
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+
+                  <i>
+                    Biz mijozlar uchun chegirmalar mavsumini ham yo'lga
+                    qo'ganmiz
+                  </i>
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
                 </li>
                 <li>
                   <i class="fas fa-check-double"></i>
-                  <i>Hozirgi kunda 100 ga yaqin Filallarimiz bor.</i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
+                </li>
+                <li>
+                  <i class="fas fa-check-double"></i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
+                </li>
+                <li>
+                  <i class="fas fa-check-double"></i>
+                  <i class="fas fa-check"></i>
+                  <i>
+                    Hozirgi kunda shahar bo'ylab 10 ga yaqin filiallarimiz bor.
+                  </i>{" "}
                 </li>
               </ul>
             </div>

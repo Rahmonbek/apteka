@@ -78,7 +78,10 @@ function Menu() {
               </Container>
             </Navbar>
           </div>
-          <div className={styles.Menu}>
+        </Container>
+
+        <div className={styles.Menu}>
+          <Container className={styles.MenuGroup}>
             <div className={styles.MenuText}>
               <h4 style={{ color: "white" }}>
                 {" "}
@@ -116,10 +119,12 @@ function Menu() {
               </p>
               <div className={styles.MenuTextButtons}>
                 <div className={styles.WhatchWriter}>
-                  <p>Maslahat Olish</p>
+                  <a>Maslahat Olish</a>
                 </div>
                 <div className={styles.WhatchVideo}>
-                  <p
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
                     style={{
                       fontSize: "27px",
                       color: "white",
@@ -127,8 +132,8 @@ function Menu() {
                     }}
                   >
                     <MdSlowMotionVideo />
-                  </p>
-                  <p
+                  </a>
+                  <a
                     style={{
                       marginLeft: "10px",
                       color: "white",
@@ -137,7 +142,7 @@ function Menu() {
                     }}
                   >
                     Videoni Ko'rish
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -191,8 +196,19 @@ function Menu() {
               </div>
               {/* <Image classname={styles.MenuImgRasm} src={person} /> */}
             </div>
-          </div>
-        </Container>
+          </Container>
+          <svg
+            className={styles.Curved}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#FFFFFF"
+              fill-opacity="1"
+              d="M0,224L60,202.7C120,181,240,139,360,149.3C480,160,600,224,720,208C840,192,960,96,1080,80C1200,64,1320,128,1380,160L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
       </div>
     </>
   );

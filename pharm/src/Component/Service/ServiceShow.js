@@ -225,9 +225,7 @@ export default function ServiceShow() {
       <Container>
         <div>
           <div className={styles.ServiceMenuText}>
-            <p className={styles.ServiceMenuText1}>
-              Bizning Eng Yaxshi Xizmatlarimiz
-            </p>
+            <p className={styles.ServiceMenuText1}>Bizning Afzalliklarimiz</p>
             <p className={styles.ServiceMenuText2}>
               Semper integer est quis leo, nunc. Quis lectus amet aenean massa
               turpis senectus pulvinar. Pharetra gravida volutpat faucibus

@@ -105,61 +105,49 @@ body {
 #CardBody {
     position: relative;
     width: 90%;
-    height: 100px;
+    height: 45px;
     z-index: 3;
     margin: auto;
     color: white;
     align-content: flex-end;
     justify-content: center;
-    margin-top: 50%;
+    margin-top: 71%;
+    line-height: 10px;
     border-radius: 10px;
-    background: rgba(0, 0, 255, 0.26);
+    transform: translateY(350px);
+
 
 }
+.Card:hover #CardBody {
+    transform: translateY(10px);
+    transition: .7s;
 
+}
 #CardBody p:nth-child(1) {
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
     font-family: 'Andale Mono', monospace;
     font-style: normal;
     font-weight: normal;
 }
 
 #CardBody p:nth-child(2) {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Andale Mono', monospace;
 
 
 }
-
-
-.Card:hover #CardBody {
-    display: none;
-    transition: .3s;
-}
-
 .card_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.card_image:hover img {
-    opacity: .5;
-    transition: .5s;
-}
-
-.Card:hover .card_image {
-    transform: translateY(-100px);
-    transition: all .9s;
-}
-
 .social_icons {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 3;
-    display: flex;
 }
 
 .social_icons li {
@@ -169,52 +157,127 @@ body {
 .social_icons li a {
     position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     line-height: 50px;
     text-align: center;
-    background: white;
+    background: #184E61;
+    color: #FFFFFF;
     font-size: 23px;
-    color: #333;
     font-weight: bold;
-    margin: 0 6px;
-    transform: translateY(200px);
+    margin: 6px 0px;
+    transform: translateX(-200px);
     transition: .7s;
     opacity: 0;
 }
+.social_icons li a i {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: -8px;
+}
 
 .Card:hover .social_icons li a {
-    transform: translateY(-10px);
+    transform: translateX(-200px);
+    opacity: 1;
+}
+
+.Card .social_icons li {
+    transform: translateY(-240px);
     opacity: 1;
 
 
 }
 
-.social_icons li a i {
-    transition: .8s;
+.Card:hover .social_icons li a {
+    transform: translateX(-160px);
+    opacity: 1;
+
 
 }
 
-.social_icons li:nth-child(1) a:hover i {
-    transform: rotate(360deg);
-    color: #0D8BF0;
+.Curved {
+    position: relative;
+    display: block;
+    transform: translateY(350px);
+}
+
+.Card:hover .Curved {
+    position: absolute;
+    transform: translateY(10px);
+    margin-top: 62%;
+    transition: .6s;
+    z-index: 3;
+
+}
+
+#CallMeGroup {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1CC198;
+    display: block;
+    transform: translateY(200px);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    }
+
+    #CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+    }
+
+    #CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 13.5px;
+        margin-top: 15.5px;
+    }
+
+    #CallMeGroup:hover {
+        background-color: #4dd6b4;
+    }
+
+    #CallMeGroup:hover #CallMeGroupIcon {
+        transform: rotate(360deg);
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(170px);
+        margin-top: 45%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .social_icons li a:hover i {
+        transform: rotate(360deg);
+        opacity: .8;
 }
 
 .social_icons li:nth-child(2) a:hover i {
     transform: rotate(360deg);
 
-    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #ffffff;
 }
 
 .social_icons li:nth-child(3) a:hover i {
     transform: rotate(360deg);
-    color: linear-gradient(45deg, #aa72df 0%, #164b92 100%);
+    color: #ffffff;
 
 }
 
 .social_icons li:nth-child(4) a:hover i {
     transform: rotate(360deg);
-    color: #29A1D4;
+    color: #ffffff;
 }
 
 
@@ -368,13 +431,135 @@ body {
 
     .SliderMenu {
         height: 470px;
-    }
+        }
 
-}
+        .Card:hover .Curved {
+            position: absolute;
+            transform: translateY(10px);
+            margin-top: 43%;
+            transition: .6s;
+            z-index: 3;
 
-@media(min-width:1024px) and (max-width:1249px) {
+        }
 
+        #CallMeGroup {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1CC198;
+            display: block;
+            transform: translateY(200px);
+            justify-content: center;
+            align-items: center;
+            margin: auto;
 
+        }
+
+        #CallMeGroup i {
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            color: white;
+        }
+
+        #CallMeGroupIcon {
+            text-align: center;
+            margin: auto;
+            margin-left: 13.5px;
+            margin-top: 15.5px;
+        }
+
+        #CallMeGroup:hover {
+            background-color: #4dd6b4;
+        }
+
+        .social_icons li a {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .social_icons li a i {
+            position: absolute;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 6px;
+            margin-left: -7px;
+        }
+
+        .Card:hover .social_icons li a {
+            transform: translateX(-150px);
+            opacity: 1;
+
+        }
+
+        .Card .social_icons li {
+            transform: translateY(-170px);
+            opacity: 1;
+
+        }
+
+        .Card:hover .social_icons li a {
+            transform: translateX(-170px);
+            opacity: 1;
+
+        }
+
+        #CallMeGroup {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transform: translateY(200px);
+
+        }
+
+        #CallMeGroup i {
+            text-align: center;
+            margin: auto;
+            font-size: 17px;
+            color: white;
+        }
+
+        #CallMeGroupIcon {
+            text-align: center;
+            margin: auto;
+            margin-left: 10.5px;
+            margin-top: 12.5px;
+        }
+
+        .Card:hover #CallMeGroup {
+            position: absolute;
+            transform: translateX(150px);
+            margin-top: 28%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        .Card:hover #CardBody {
+            transform: translateY(80px);
+            transition: .7s;
+
+        }
+
+        #CardBody p:nth-child(1) {
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Andale Mono', monospace;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #CardBody p:nth-child(2) {
+            text-align: center;
+            font-size: 2.5vh;
+            font-family: 'Andale Mono', monospace;
+
+        }
+        }
+
+        @media(min-width:1024px) and (max-width:1249px) {
     #CardBody {
         position: relative;
         margin-top: 48%;
@@ -402,6 +587,229 @@ body {
 
 
     }
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 43%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    #CallMeGroup {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #1CC198;
+        display: block;
+        transform: translateY(200px);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    #CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+    }
+
+    #CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 13.5px;
+        margin-top: 15.5px;
+    }
+
+    #CallMeGroup:hover {
+        background-color: #4dd6b4;
+    }
+
+    .social_icons li a {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .social_icons li a i {
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 6px;
+        margin-left: -7px;
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-150px);
+        opacity: 1;
+
+    }
+
+    .Card .social_icons li {
+        transform: translateY(-170px);
+        opacity: 1;
+
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-170px);
+        opacity: 1;
+
+    }
+
+    #CallMeGroup {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translateY(200px);
+
+    }
+
+    #CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 17px;
+        color: white;
+    }
+
+    #CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 10.5px;
+        margin-top: 12.5px;
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(150px);
+        margin-top: 28%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(25px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        text-align: center;
+        font-size: 2.5vh;
+        font-family: 'Andale Mono', monospace;
+
+
+    }
+    }
+
+    @media(min-width:1024px) and (max-width:1199px) {
+
+        .social_icons li a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .social_icons li a i {
+            position: absolute;
+            font-size: 10px;
+            font-weight: 400;
+            margin-top: 6px;
+            margin-left: -5px;
+        }
+
+        .Card:hover .social_icons li a {
+            transform: translateX(-100px);
+            opacity: 1;
+
+        }
+
+        .Card .social_icons li {
+            transform: translateY(-170px);
+            opacity: 1;
+
+
+        }
+
+        .Card:hover .social_icons li a {
+            transform: translateX(-130px);
+            opacity: 1;
+
+        }
+
+        .Card:hover .Curved {
+            position: absolute;
+            transform: translateY(10px);
+            margin-top: 58%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        #CallMeGroup {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transform: translateY(200px);
+
+        }
+
+        #CallMeGroup i {
+            text-align: center;
+            margin: auto;
+            font-size: 15px;
+            color: white;
+        }
+
+        #CallMeGroupIcon {
+            text-align: center;
+            margin: auto;
+            margin-left: 8.5px;
+            margin-top: 10.5px;
+        }
+
+        .Card:hover #CallMeGroup {
+            position: absolute;
+            transform: translateX(120px);
+            margin-top: 45%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        .Card:hover #CardBody {
+            transform: translateY(60px);
+            transition: .7s;
+
+        }
+
+        #CardBody p:nth-child(1) {
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Andale Mono', monospace;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #CardBody p:nth-child(2) {
+            text-align: center;
+            font-size: 2vh;
+            font-family: 'Andale Mono',
+                monospace;
+
+        }
 
 }
 
@@ -432,9 +840,225 @@ body {
     .SliderMenuItem {
         margin-top: 5%;
     }
+    .social_icons li a {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        background: #184E61;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 6px 0px;
+        transform: translateX(-200px);
+        transition: .7s;
+        opacity: 0;
+    }
+
+    .social_icons li a i {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: -6px;
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-150px);
+        opacity: 1;
+
+    }
+
+    .Card .social_icons li {
+        transform: translateY(-190px);
+        opacity: 1;
 
 
-}
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-200px);
+        opacity: 1;
+
+
+    }
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 30%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    #CallMeGroup {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1CC198;
+        display: block;
+        transform: translateY(200px);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    #CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+        color: white;
+    }
+
+    #CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 9.5px;
+        margin-top: 8.5px;
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(200px);
+        margin-top: 22%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    #CardBody {
+        position: relative;
+        width: 90%;
+        height: 45px;
+        z-index: 3;
+        margin: auto;
+        color: white;
+        align-content: flex-end;
+        justify-content: center;
+
+        line-height: 10px;
+        border-radius: 10px;
+        transform: translateY(350px);
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(180px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        font-size: 15px;
+        font-family: 'Andale Mono', monospace;
+
+
+    }
+
+    }
+
+    @media(max-width:1000px) {
+        .Card:hover #CardBody {
+            transform: translateY(-10px);
+            transition: .7s;
+
+        }
+
+
+    }
+
+    @media(max-width:993px) {
+        .Card:hover .Curved {
+            position: absolute;
+            transform: translateY(10px);
+            margin-top: 49%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        #CardBody {
+            position: relative;
+            width: 90%;
+            height: 45px;
+            z-index: 3;
+            margin: auto;
+            color: white;
+            align-content: flex-end;
+            justify-content: center;
+            line-height: 5px;
+            border-radius: 10px;
+            transform: translateY(350px);
+
+        }
+
+        #CardBody p:nth-child(2) {
+            font-size: 12px;
+
+        }
+
+        #CardBody p:nth-child(1) {
+            font-size: 19px;
+
+        }
+
+        .Card:hover .social_icons li a {
+            transform: translateX(-140px);
+            opacity: 1;
+
+
+        }
+
+        .Card .social_icons li {
+            transform: translateY(-180px);
+            opacity: 1;
+
+
+        }
+
+        .Card:hover #CardBody {
+            transform: translateY(50px);
+            transition: .7s;
+
+        }
+
+        #CardBody p:nth-child(1) {
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Andale Mono', monospace;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #CardBody p:nth-child(2) {
+            font-size: 12px;
+            font-family: 'Andale Mono', monospace;
+        }
+
+        .Card:hover #CallMeGroup {
+            position: absolute;
+            transform: translateX(142px);
+            margin-top: 35%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+    }
 
 @media(min-width:768px) and (max-width:1000px) {
     #CardBody {
@@ -466,7 +1090,7 @@ body {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .SliderContainer {
         display: none;
     }
@@ -505,6 +1129,7 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: 130%;
+        font-size: 5vh;
         /* or 57px */
         font-family: "Andale Mono", monospace;
         text-align: center;
@@ -528,6 +1153,149 @@ body {
         opacity: 0.7;
     }
 
+    .Card:hover .social_icons li a {
+        transform: translateX(-200px);
+        opacity: 1;
+    }
+
+    .Card .social_icons li {
+        transform: translateY(-200px);
+        opacity: 1;
+
+
+    }
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 25%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(215px);
+        margin-top: 18%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    #CallMeGroup {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #1CC198;
+        display: block;
+        transform: translateY(200px);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    #CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+        color: white;
+    }
+
+    #CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 11.5px;
+        margin-top: 13.5px;
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(30px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Andale Mono', monospace;
+
+
+    }
+
+    }
+
+    @media(max-width:550px) {
+
+        .Card:hover .Curved {
+            position: absolute;
+            transform: translateY(10px);
+            margin-top: 28%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        .Card:hover #CardBody {
+            transform: translateY(39px);
+            transition: .7s;
+
+        }
+
+        #CardBody p:nth-child(2) {
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Andale Mono', monospace;
+
+
+        }
+
+        .Card:hover #CallMeGroup {
+            position: absolute;
+            transform: translateX(210px);
+            margin-top: 18%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+    }
+
+    @media(max-width:515px) {
+        .Card:hover .Curved {
+            position: absolute;
+            transform: translateY(10px);
+            margin-top: 30%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
+        .Card:hover #CardBody {
+            transform: translateY(45px);
+            transition: .7s;
+
+        }
+
+        .Card:hover #CallMeGroup {
+            position: absolute;
+            transform: translateX(200px);
+            margin-top: 18%;
+            transition: .6s;
+            z-index: 3;
+
+        }
+
 }
 
 @media(max-width:500px) {
@@ -538,7 +1306,7 @@ body {
     }
 
     .SliderMenu {
-        height: 470px;
+        height: 450px;
     }
 
     .SliderMenuItem {
@@ -595,6 +1363,387 @@ body {
 
         opacity: 0.7;
     }
+.Card:hover .Curved {
+    position: absolute;
+    transform: translateY(10px);
+    margin-top: 33%;
+    transition: .6s;
+    z-index: 3;
+
+}
+
+.Card:hover #CardBody {
+    transform: translateY(40px);
+    transition: .7s;
+
+}
+
+.Card:hover #CallMeGroup {
+    position: absolute;
+    transform: translateX(190px);
+    margin-top: 18%;
+    transition: .6s;
+    z-index: 3;
+
+}
+}
+
+@media(max-width:475px) {
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 37%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+}
+
+@media(max-width:475px) {
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 37%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(55px);
+        transition: .7s;
+
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(185px);
+        margin-top: 23%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-185px);
+        opacity: 1;
+
+
+    }
+
+}
+
+@media(max-width:446px) {
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 40%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(60px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 17px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        text-align: center;
+        font-size: 13.5px;
+        font-family: 'Andale Mono', monospace;
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-160px);
+        opacity: 1;
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(165px);
+        margin-top: 25%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+}
+
+@media(max-width:401px) and (max-width:430px) {
+    .SliderMenu {
+        height: 570px;
+    }
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vh;
+        line-height: 160%;
+        margin-top: -10px;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+
+}
+
+
+@media(max-width:430px) {
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 43%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(74px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Andale Mono', monospace;
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(155px);
+        margin-top: 27%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+}
+
+@media(width:414px) {
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+
+    .SliderMenu {
+        height: 550px;
+    }
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 84%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(150px);
+        margin-top: 65%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(210px);
+        transition: .7s;
+
+    }
+
+    .Card .social_icons li {
+        transform: translateY(-255px);
+        opacity: 1;
+
+
+    }
+
+}
+
+@media(width:411px) {
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+
+    .SliderMenu {
+        height: 550px;
+    }
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 97%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(150px);
+        margin-top: 75%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(255px);
+        transition: .7s;
+
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-145px);
+        opacity: 1;
+
+
+    }
+
+    .Card .social_icons li {
+        transform: translateY(-280px);
+        opacity: 1;
+
+
+    }
+}
+
+@media(max-width:410px) {
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 45%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(70px);
+        transition: .7s;
+
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Andale Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    #CardBody p:nth-child(2) {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Andale Mono', monospace;
+    }
+
 }
 
 @media(max-width:400px) {
@@ -612,17 +1761,350 @@ body {
         margin-top: 5%;
     }
 
-    #CardBody p:nth-child(1) {
-        font-size: 18px;
-        font-family: 'Andale Mono', monospace;
-        font-style: normal;
-        font-weight: normal;
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 48%;
+        transition: .6s;
+        z-index: 3;
+
     }
 
-    #CardBody p:nth-child(2) {
-        font-size: 14px;
-        font-family: 'Andale Mono', monospace;
+    .Card:hover #CardBody {
+        transform: translateY(35px);
+        transition: .7s;
 
+    }
+
+    #CardBody p:nth-child(1) {
+        font-size: 16px;
+        font-family: 'Andale Mono',
+        monospace;
+        font-style: normal;
+        font-weight: normal;
+        }
+
+        #CardBody p:nth-child(2) {
+            font-size: 12px;
+            font-family: 'Andale Mono', monospace;
+
+
+        }
+
+        .SliderMenuText1 {
+            /* Subtitle / Base */
+            width: 100%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            /* or 57px */
+            font-family: "Andale Mono",
+            monospace;
+
+            text-align: center;
+
+            color: #010b19;
+            }
+
+            .SliderMenuText2 {
+                width: 100%;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5vh;
+                line-height: 160%;
+                margin-top: -10px;
+                /* or 29px */
+
+                text-align: center;
+                margin: auto;
+
+                color: #010b19;
+
+                opacity: 0.7;
+            }
+
+            .Card:hover #CallMeGroup {
+                position: absolute;
+                transform: translateX(145px);
+                margin-top: 32%;
+                transition: .6s;
+                z-index: 3;
+
+            }
+
+            .Card:hover .social_icons li a {
+                transform: translateX(-150px);
+                opacity: 1;
+
+
+            }
+            }
+
+            @media(max-width:387px) {
+
+                .Card:hover .Curved {
+                    position: absolute;
+                    transform: translateY(10px);
+                    margin-top: 51%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .Card:hover #CardBody {
+                    transform: translateY(39px);
+                    transition: .7s;
+
+                }
+
+                #CardBody p:nth-child(1) {
+                    font-size: 15px;
+                    text-align: center;
+                    font-family: 'Andale Mono',
+                        monospace;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+
+                #CardBody p:nth-child(2) {
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: 'Andale Mono',
+                        monospace;
+                }
+
+                #CallMeGroup {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #1CC198;
+                    display: block;
+                    transform: translateY(200px);
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+
+                }
+
+                #CallMeGroup i {
+                    text-align: center;
+                    margin: auto;
+                    font-size: 18px;
+                    color: white;
+                }
+
+                #CallMeGroupIcon {
+                    text-align: center;
+                    margin: auto;
+                    margin-left: 10px;
+                    margin-top: 12.5px;
+                }
+
+                .Card:hover #CallMeGroup {
+                    position: absolute;
+                    transform: translateX(144px);
+                    margin-top: 35%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .social_icons li a {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                .social_icons li a i {
+                    position: absolute;
+                    font-size: 15px;
+                    margin-top: 9px;
+                    margin-left: -7px;
+                }
+
+                .Card:hover .social_icons li a {
+                    transform: translateX(-150px);
+                    opacity: 1;
+
+
+                }
+
+                .Card .social_icons li {
+                    transform: translateY(-190px);
+                    opacity: 1;
+
+
+                }
+            }
+
+            @media(width:375px) {
+                .Card:hover .Curved {
+                    position: absolute;
+                    transform: translateY(10px);
+                    margin-top: 85%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .Card:hover #CallMeGroup {
+                    position: absolute;
+                    transform: translateX(130px);
+                    margin-top: 70%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .Card .social_icons li {
+                    transform: translateY(-240px);
+                    opacity: 1;
+
+
+                }
+
+                .Card:hover #CardBody {
+                    transform: translateY(150px);
+                    transition: .7s;
+
+                }
+            }
+
+            @media(max-width:374px) {
+                .Card:hover .Curved {
+                    position: absolute;
+                    transform: translateY(10px);
+                    margin-top: 54%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .Card:hover #CallMeGroup {
+                    position: absolute;
+                    transform: translateX(134px);
+                    margin-top: 35%;
+                    transition: .6s;
+                    z-index: 3;
+
+                }
+
+                .Card:hover #CardBody {
+                    transform: translateY(50px);
+                    transition: .7s;
+
+                }
+
+                .Card:hover .social_icons li a {
+                    transform: translateX(-145px);
+                    opacity: 1;
+
+
+                }
+
+                #CardBody p:nth-child(1) {
+                    font-size: 15x;
+                    text-align: center;
+                    font-family: 'Andale Mono',
+                        monospace;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+
+            #CardBody p:nth-child(2) {
+                font-size: 11.5px;
+                font-family: 'Andale Mono',
+                monospace;
+                }
+                }
+
+                @media(max-width:361px) {
+                    #CardBody p:nth-child(2) {
+                        font-size: 11px;
+                        font-family: 'Andale Mono', monospace;
+                    }
+
+                    .Card:hover #CallMeGroup {
+                        position: absolute;
+                        transform: translateX(128px);
+                        margin-top: 35%;
+                        transition: .6s;
+                        z-index: 3;
+
+                    }
+
+                    .Card:hover .social_icons li a {
+                        transform: translateX(-140px);
+                        opacity: 1;
+
+
+                    }
+                }
+
+                @media(width:360px) {
+                    .Card:hover .Curved {
+                        position: absolute;
+                        transform: translateY(10px);
+                        margin-top: 85%;
+                        transition: .6s;
+                        z-index: 3;
+
+                    }
+
+                    .Card:hover #CallMeGroup {
+                        position: absolute;
+                        transform: translateX(130px);
+                        margin-top: 60%;
+                        transition: .6s;
+                        z-index: 3;
+
+                    }
+
+                    .Card:hover #CardBody {
+                        transform: translateY(140px);
+                        transition: .7s;
+
+                    }
+                }
+
+                @media(max-width:358px) {
+                    #CardBody p:nth-child(2) {
+                        font-size: 11px;
+        font-family: 'Andale Mono', monospace;
+    }
+
+    .Card:hover #CallMeGroup {
+        position: absolute;
+        transform: translateX(128px);
+        margin-top: 35%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover .social_icons li a {
+        transform: translateX(-140px);
+        opacity: 1;
+
+
+    }
+
+    .Card:hover .Curved {
+        position: absolute;
+        transform: translateY(10px);
+        margin-top: 56%;
+        transition: .6s;
+        z-index: 3;
+
+    }
+
+    .Card:hover #CardBody {
+        transform: translateY(55px);
+        transition: .7s;
 
     }
 }

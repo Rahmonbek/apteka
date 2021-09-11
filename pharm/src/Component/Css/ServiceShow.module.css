@@ -17,7 +17,6 @@
 
 .ServiceOne {
     width: 100%;
-    border: 1px solid black;
 }
 
 
@@ -216,7 +215,12 @@
         font-size: 40px;
     }
     }
+@media(min-width:1000px) {
+    .ServiceMenuText {
+        margin-top: 8%;
 
+    }
+    }
     @media(min-width:1024px) and (max-width:1250px) {
 
     .ServiceMenu {
@@ -363,7 +367,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
-        font-size: 4vh;
+        font-size: 5vh;
         line-height: 130%;
         /* or 57px */
         font-family: "Andale Mono", monospace;
@@ -391,6 +395,50 @@
     }
 }
 
+@media(max-width:420px) {
+    .Service {
+        height: 550px;
+    }
+
+    .ServiceMenuText {
+        margin-top: 5%;
+    }
+
+    .ServiceMenuText1 {
+        /* Subtitle / Base */
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+        border: 1px solid black;
+    }
+
+    .ServiceMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vh;
+        line-height: 160%;
+        margin-top: -10px;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+}
 #ButtonGroupId {
     width: 130px;
     text-align: center;
