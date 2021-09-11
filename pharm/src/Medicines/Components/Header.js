@@ -36,7 +36,7 @@ function Header(props) {
               </Nav.Link>
             ) : (
               <Nav.Link>
-                <Link to="/#List">Doktorlar</Link>
+                <Link to="/">Doktorlar</Link>
               </Nav.Link>
             )}
 
@@ -46,7 +46,7 @@ function Header(props) {
               </Nav.Link>
             ) : (
               <Nav.Link>
-                <Link to="/dorilar#dorilar">Dorilar</Link>
+                <Link to="/dorilar">Dorilar</Link>
               </Nav.Link>
             )}
             <Nav.Link href="#footer">
@@ -111,7 +111,7 @@ function Header(props) {
                   </Nav.Link>
                 ) : (
                   <Nav.Link>
-                    <Link to="/#List">Doktorlar</Link>
+                    <Link to="/">Doktorlar</Link>
                   </Nav.Link>
                 )}
 
@@ -121,7 +121,7 @@ function Header(props) {
                   </Nav.Link>
                 ) : (
                   <Nav.Link>
-                    <Link to="/dorilar#dorilar">Dorilar</Link>
+                    <Link to="/dorilar">Dorilar</Link>
                   </Nav.Link>
                 )}
                 <Nav.Link href="#footer">
