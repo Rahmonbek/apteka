@@ -14,7 +14,7 @@ export default class Obuna extends Component {
   render() {
     return (
       <>
-        <div className={style.FooterMenu}>
+        <div id="footer" className={style.FooterMenu}>
           <Container>
             <section id="blog"></section>
             <div className={style.FooterMenuMe}>
@@ -106,7 +106,7 @@ export default class Obuna extends Component {
               <p className={style.Copyright}>
                 {" "}
                 <RiCopyrightLine style={{ marginRight: "10px" }} />
-                Copyright 2021 The LOGO All Rights Reserved.
+                By It-Tower tamonidan tayyorlangan mahsulot
               </p>
             </div>
           </Container>
