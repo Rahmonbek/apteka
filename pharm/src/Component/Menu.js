@@ -1,25 +1,87 @@
 import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
-import { Container, Modal } from "react-bootstrap";
+import Rasm from "./img/Brand.png";
+import { Navbar, Container, Nav, Image, Modal } from "react-bootstrap";
+import { MdTimer } from "react-icons/md";
+import { IoIosCall } from "react-icons/io";
+import { HiOutlineMail } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
-import Header from "../Medicines/Components/Header";
-
+import { Link } from "react-router-dom";
+// import { Modal, Button, Space } from "antd";
 function Menu() {
   const [smShow, setSmShow] = useState(false);
   const showModalBot = () => {
     setSmShow(false);
   };
-  const headerdata = {
-    bool: true,
-  };
 
   return (
     <>
       <div className={styles.HeaderMenu}>
-        <Header data={headerdata} />
-        <div className="py-5" id="deets"></div>
-        <div className={`${styles.Menu}`}>
+        <Container>
+          <div className={styles.NavbarMenu}>
+            <div className={styles.ScheduleName}>
+              <div className={styles.ScheduleNameIcon}>
+                <p>
+                  <MdTimer />
+                </p>
+                <p style={{ letterSpacing: "0.5px" }}>Dush-Jum (9:00-17:00)</p>
+              </div>
+              <div className={styles.ScheduleNameIcon}>
+                <p>
+                  <IoIosCall />
+                </p>
+                <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
+              </div>
+              <div className={styles.ScheduleNameIcon}>
+                <p>
+                  <HiOutlineMail />
+                </p>
+                <p style={{ letterSpacing: "0.5px" }}>pharmacyuzb@gmail.com</p>
+              </div>
+            </div>
+            <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
+              <Container>
+                <Navbar.Brand href="#home">
+                  <Image className={styles.ImgBrand} src={Rasm} />
+                </Navbar.Brand>
+                <Navbar.Toggle
+                  className={styles.NavbarMenuMedia}
+                  aria-controls="responsive-navbar-nav"
+                  style={{ color: "#98349400", border: "none" }}
+                >
+                  <i
+                    class="fas fa-bars"
+                    style={{ color: "white", fontSize: "26px" }}
+                  ></i>
+                </Navbar.Toggle>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className={styles.NavMe}>
+                    <Nav.Link href="#deets">
+                      <p>Bosh sahifa</p>
+                    </Nav.Link>
+
+                    <Nav.Link href="/Doctors">
+                      <p>Doctors</p>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link to="/dorilar">
+                        {" "}
+                        <p>Dorilar</p>
+                      </Link>
+                    </Nav.Link>
+
+                    <Nav.Link href="/Contact">
+                      <p>Kantakt</p>
+                    </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </div>
+        </Container>
+
+        <div className={styles.Menu}>
           <Container className={styles.MenuGroup}>
             <div className={styles.MenuText}>
               <h4 style={{ color: "white" }}>
@@ -58,7 +120,12 @@ function Menu() {
               </p>
               <div className={styles.MenuTextButtons}>
                 <a className={styles.WhatchWriter}>
-                  <a onClick={() => setSmShow(true)}>Ma'lumot uchun</a>
+                  <a
+                    className={styles.CardModalItemMe}
+                    onClick={() => setSmShow(true)}
+                  >
+                    Ma'lumot uchun
+                  </a>
 
                   <Modal
                     className={styles.CardModalItem}
@@ -99,11 +166,12 @@ function Menu() {
                 </a>
 
                 <a
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
                   className={styles.WhatchVideo}
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a
+                  <p
                     style={{
                       fontSize: "27px",
                       color: "white",
@@ -111,8 +179,8 @@ function Menu() {
                     }}
                   >
                     <MdSlowMotionVideo />
-                  </a>
-                  <a
+                  </p>
+                  <p
                     style={{
                       marginLeft: "10px",
                       color: "white",
@@ -121,7 +189,7 @@ function Menu() {
                     }}
                   >
                     Videoni Ko'rish
-                  </a>
+                  </p>
                 </a>
               </div>
             </div>

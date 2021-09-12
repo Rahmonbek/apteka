@@ -6,7 +6,7 @@ import AOS from "aos";
 
 export default function Events() {
   AOS.init({
-    duration: 2000,
+    duration: 1000,
   });
   return (
     <div className={styles.Events}>
@@ -24,7 +24,7 @@ export default function Events() {
             </p>
           </div>
           <div className={styles.EventsMenuItem}>
-            <div data-aos="fade-right" className={styles.EventsMenuItemImg}>
+            <div data-aos="zoom-in" className={styles.EventsMenuItemImg}>
               <Image src={Rasm} className="img-fluid" />
             </div>
             <div className={styles.EventsMenuItemText}>

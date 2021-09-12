@@ -127,7 +127,7 @@ export default function ServiceShow() {
     setPagination({ start: start, end: end });
   };
   AOS.init({
-    duration: 2000,
+    duration: 1000,
   });
   return (
     <div className={styles.CardGroupMenu}>
@@ -146,7 +146,11 @@ export default function ServiceShow() {
           </div>
           <div className={styles.flex_container}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
-              <div className={styles.flex_item} key={post.id}>
+              <div
+                data-aos="zoom-in"
+                className={styles.flex_item}
+                key={post.id}
+              >
                 <img src={post.img} alt="" className="img-fluid" />
                 <div className={styles.flex_title_item}>
                   {/* <p>

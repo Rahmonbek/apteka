@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import styles from './Css/contact.module.css'
 import contact1 from './img/contact1-removebg-preview.png'
-import { Container,Row,Col } from 'react-bootstrap'
-import Menu from './Menu'
+import { Container, Row, Col } from "react-bootstrap";
 import { YMaps, Map } from 'react-yandex-maps';
 import Rasm from "./img/Brand.png";
 import { Navbar,Nav, Image } from "react-bootstrap";
 import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsArrowRight } from "react-icons/bs";
-import { MdSlowMotionVideo } from "react-icons/md";
+// import { BsArrowRight } from "react-icons/bs";
+// import { MdSlowMotionVideo } from "react-icons/md";
 import { Link } from "react-router-dom";
 import contact2 from './img/Contact_Customers-removebg-preview.png'
 import { Form, Input, Button, Select } from 'antd';

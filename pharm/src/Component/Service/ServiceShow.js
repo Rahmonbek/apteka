@@ -218,7 +218,7 @@ export default function ServiceShow() {
     setPagination({ start: start, end: end });
   };
   AOS.init({
-    duration: 2000,
+    duration: 1000,
   });
   return (
     <div className={styles.Service}>
@@ -235,7 +235,11 @@ export default function ServiceShow() {
           </div>
           <div className={styles.ServiceMenu}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
-              <div className={styles.ServiceMenuCard} key={post.id}>
+              <div
+                data-aos="zoom-in"
+                className={styles.ServiceMenuCard}
+                key={post.id}
+              >
                 <div className={styles.CardIcons}>
                   <i>{post.icon}</i>
                 </div>
