@@ -10,7 +10,6 @@ import styles from "../../Component/Css/LandingPage.module.css";
 
 function Header(props) {
   const [res, setRes] = useState(true);
-  const { bool } = props.data;
   return (
     <div className="fixed-top">
       {!res ? (
@@ -30,8 +29,8 @@ function Header(props) {
             <Nav.Link href="#dorilar">
               <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
             </Nav.Link>
-            <Nav.Link href="#footer">
-              <span onClick={() => setRes(!res)}>Contacts</span>
+            <Nav.Link>
+              <Link to="/Contact">Kontakt</Link>
             </Nav.Link>
           </div>
         </div>
@@ -86,8 +85,8 @@ function Header(props) {
                 <Nav.Link href="#dorilar">
                   <span>Dorilar</span>{" "}
                 </Nav.Link>
-                <Nav.Link href="#footer">
-                  <span>Contacts</span>
+                <Nav.Link>
+                  <Link to="/Contact">Kontakt</Link>
                 </Nav.Link>
               </Nav>
             </div>

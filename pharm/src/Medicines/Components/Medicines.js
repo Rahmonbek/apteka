@@ -33,15 +33,12 @@ function Medicines() {
   const showModalBot = () => {
     setSmShow(false);
   };
-  const headerdata = {
-    bool: false,
-  };
 
   return (
     <div className="medicines">
       {loading ? (
         <>
-          <Header data={headerdata} />
+          <Header />
           <div className="margin_for"></div>
           <div className={`${styles.Menu}`}>
             <Container className={styles.MenuGroup}>
