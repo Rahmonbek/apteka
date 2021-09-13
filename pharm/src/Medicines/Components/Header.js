@@ -106,17 +106,17 @@ function Header(props) {
                   </Nav.Link>
                 )}
                 {bool ? (
-                  <Nav.Link href="/doctors">
+                  <Nav.Link href="#doctors">
                     <span>Doktorlar </span>
                   </Nav.Link>
                 ) : (
                   <Nav.Link>
-                    <Link to="/">Doktorlar</Link>
+                    <Link to="/doctors">Doktorlar</Link>
                   </Nav.Link>
                 )}
 
                 {!bool ? (
-                  <Nav.Link href="/dorilar">
+                  <Nav.Link href="#dorilar">
                     <span>Dorilar</span>{" "}
                   </Nav.Link>
                 ) : (
@@ -124,7 +124,7 @@ function Header(props) {
                     <Link to="/dorilar">Dorilar</Link>
                   </Nav.Link>
                 )}
-                <Nav.Link href="/footer">
+                <Nav.Link href="#footer">
                   <span>Contacts</span>
                 </Nav.Link>
               </Nav>
