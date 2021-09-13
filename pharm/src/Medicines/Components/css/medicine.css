@@ -81,7 +81,7 @@
 .menu-dorilar {
   display: none;
 }
-.dorilar-res-menu {
+/* .dorilar-res-menu {
   padding: 20px;
   position: fixed;
   top: 0;
@@ -91,7 +91,74 @@
   z-index: 1000;
   background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
   display: none;
+} */
+.findout {
+  height: 90vh;
+  max-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+.findout_col {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.findout_item {
+  color: #fff;
+  margin-bottom: 100px;
+}
+.findout_item h1 {
+  margin-bottom: 50px;
+  font-weight: 800;
+  color: #fff;
+  font-size: 2.4rem;
+}
+.findout_item input {
+  padding: 20px;
+}
+.findout_item button {
+  width: 120px;
+}
+.find_container {
+  position: relative;
+}
+.coverage_row {
+  z-index: 100;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+}
+.coverage_col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.coverage_col h1 {
+  margin-right: 15px;
+  align-self: flex-start;
+}
+.dorilar_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://thumbs.dreamstime.com/b/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80-%D1%87%D0%B5-%D0%BE%D0%B2%D0%B5%D0%BA-%D1%81-%D1%81%D1%82%D0%B5%D1%82%D0%BE%D1%81%D0%BA%D0%BE%D0%BF-84232406.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%); */
+}
+.dorilar-page_bottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 @media screen and (max-width: 800px) {
   .medicines .container {
     width: 100%;
