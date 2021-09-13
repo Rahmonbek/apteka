@@ -23,15 +23,34 @@ function Medicines() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
+  const [bool, setBool] = useState(true);
   const inputRef = useRef(null);
 
   useEffect(() => {
-    setData(dorilar);
+    setData(
+      dorilar.sort((a, b) =>
+        a.nomi.toLowerCase() > b.nomi.toLowerCase() ? 1 : -1
+      )
+    );
     setLoading(true);
   }, []);
 
   const handleInput = () => {
-    setValue(inputRef.current.value);
+    let value = inputRef.current.value;
+    setValue(value);
+    let newData = dorilar.filter((item) =>
+      item.nomi.toLowerCase().includes(value.toLowerCase())
+    );
+    if (newData.length > 0) {
+      setData(
+        newData.sort((a, b) =>
+          a.nomi.toLowerCase() > b.nomi.toLowerCase() ? 1 : -1
+        )
+      );
+      setBool(true);
+    } else {
+      setBool(false);
+    }
   };
 
   return (
@@ -86,11 +105,17 @@ function Medicines() {
             </div>
           </div>
 
-          <span>
-            {data.map((item) => (
-              <Medicine key={item.id} data={item} />
-            ))}
-          </span>
+          {bool ? (
+            <span>
+              {data.map((item) => (
+                <Medicine key={item.id} data={item} />
+              ))}
+            </span>
+          ) : (
+            <h1 className="text-center py-5">
+              Bunday nomdagi dori mavjud emas
+            </h1>
+          )}
           <BackTop>
             <div style={style}>
               <h4>
