@@ -7,8 +7,9 @@ import Brand from "./img/Brand.png";
 import { MdCall } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
-import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { FiFacebook, FiLinkedin,FiMail } from "react-icons/fi";
 import { RiCopyrightLine } from "react-icons/ri";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default class Obuna extends Component {
   render() {
@@ -21,8 +22,8 @@ export default class Obuna extends Component {
               <div className={style.FooterMenuGroup1}>
                 <Image id={style.FooterBrand} src={Brand} />
                 <p>
-                  Manzil: Toshkent shahar, Yakkasaroy tumani, Qarotash Mavzuse,
-                  ikkinchi tor kucha 45-uy{" "}
+                  <b>Manzil:</b> Toshkent shahar, Yakkasaroy tumani, Qarotash
+                  Mavzuse, ikkinchi tor kucha 45-uy{" "}
                 </p>
                 <p>
                   <i>
@@ -67,12 +68,6 @@ export default class Obuna extends Component {
                 <p>
                   <a href="#href">Jadval</a>
                 </p>
-                <p>
-                  <a href="#href">Testimonials</a>
-                </p>
-                <p>
-                  <a href="#href">Blog</a>
-                </p>
               </div>
               <div className={style.FooterMenuGroup4}>
                 <p>
@@ -86,17 +81,17 @@ export default class Obuna extends Component {
                 </p>
                 <p className={style.IconsFooterGroup}>
                   <p>
-                    <AiOutlineTwitter className={style.IconsFooter} />
+                    <FiFacebook  className={style.IconsFooter} />
                   </p>
                   <p>
                     {" "}
-                    <FiFacebook className={style.IconsFooter} />
+                    <AiOutlineInstagram className={style.IconsFooter} />
                   </p>{" "}
                   <p>
-                    <AiOutlineInstagram className={style.IconsFooter} />
+                    <FiMail className={style.IconsFooter} />
                   </p>
                   <p>
-                    <FiLinkedin className={style.IconsFooter} />
+                    <FaTelegramPlane className={style.IconsFooter} />
                   </p>
                 </p>
               </div>

@@ -22,16 +22,16 @@ function Header(props) {
           </div>
           <div className="dorilar-navbar">
             {bool ? (
-              <Nav.Link href="#deets">
+              <Nav.Link href="/menu">
                 <span onClick={() => setRes(!res)}>Bosh sahifa </span>
               </Nav.Link>
             ) : (
               <Nav.Link>
-                <Link to="/#deets">Bosh sahifa</Link>
+                <Link to="/menu">Bosh sahifa</Link>
               </Nav.Link>
             )}
             {bool ? (
-              <Nav.Link href="#List">
+              <Nav.Link href="/doctors">
                 <span onClick={() => setRes(!res)}>Doktorlar </span>
               </Nav.Link>
             ) : (
@@ -41,7 +41,7 @@ function Header(props) {
             )}
 
             {!bool ? (
-              <Nav.Link href="#dorilar">
+              <Nav.Link href="/dorilar">
                 <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
               </Nav.Link>
             ) : (
@@ -49,7 +49,7 @@ function Header(props) {
                 <Link to="/dorilar">Dorilar</Link>
               </Nav.Link>
             )}
-            <Nav.Link href="#footer">
+            <Nav.Link href="/footer">
               <span onClick={() => setRes(!res)}>Contacts</span>
             </Nav.Link>
           </div>
@@ -97,7 +97,7 @@ function Header(props) {
               </span>
               <Nav className={`dorilar-nav actives`}>
                 {bool ? (
-                  <Nav.Link href="#deets">
+                  <Nav.Link href="/menu">
                     <span>Bosh sahifa </span>
                   </Nav.Link>
                 ) : (
@@ -106,7 +106,7 @@ function Header(props) {
                   </Nav.Link>
                 )}
                 {bool ? (
-                  <Nav.Link href="#List">
+                  <Nav.Link href="/doctors">
                     <span>Doktorlar </span>
                   </Nav.Link>
                 ) : (
@@ -116,7 +116,7 @@ function Header(props) {
                 )}
 
                 {!bool ? (
-                  <Nav.Link href="#dorilar">
+                  <Nav.Link href="/dorilar">
                     <span>Dorilar</span>{" "}
                   </Nav.Link>
                 ) : (
@@ -124,7 +124,7 @@ function Header(props) {
                     <Link to="/dorilar">Dorilar</Link>
                   </Nav.Link>
                 )}
-                <Nav.Link href="#footer">
+                <Nav.Link href="/footer">
                   <span>Contacts</span>
                 </Nav.Link>
               </Nav>
