@@ -8,16 +8,15 @@ import { Navbar,Nav, Image } from "react-bootstrap";
 import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-// import { BsArrowRight } from "react-icons/bs";
-// import { MdSlowMotionVideo } from "react-icons/md";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from "react-router-dom";
 import contact2 from './img/Contact_Customers-removebg-preview.png'
-import { Form, Input, Button, Select } from 'antd';
+import { Form, Input, Button } from 'antd';
 import map from './img/5860108.jpg'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {AiOutlineInstagram,AiOutlineMail} from 'react-icons/ai'
-import {FaSignInAlt,FaTelegramPlane,FaPhoneAlt} from 'react-icons/fa'
-const { Option } = Select;
+import {FaTelegramPlane,FaPhoneAlt} from 'react-icons/fa'
+const { TextArea } = Input;
 const layout = {
   labelCol: {
     span: 8,
@@ -125,12 +124,8 @@ export default class Contact extends Component {
                         <p>Dorilar</p>
                       </Link>
                     </Nav.Link>
-
-                    <Nav.Link href="#Testimonials">
-                      <p>Testimonials</p>
-                    </Nav.Link>
                     <Nav.Link href="#blog">
-                      <p>Blog</p>
+                      <p>Aloqa</p>
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -145,7 +140,7 @@ export default class Contact extends Component {
                 </div>
               </Col>
               <Col lg={6}>
-                  <img src={contact1}/>
+                  <img className={styles.headerImg} src={contact1}/>
               </Col>
           </Row>
         </Container>
@@ -155,7 +150,7 @@ export default class Contact extends Component {
         <Container>
           <Row>
             <Col lg={6}>
-              <img src={map} style={{width:'100%'}}/>
+              <img className={styles.mapImg} src={map} style={{width:'100%'}}/>
             </Col>
             <Col lg={6}>
               <h2 style={{fontFamily: 'Arial, Helvetica, sans-serif',marginTop:'50px'}}>Manzilimiz:</h2>
@@ -173,12 +168,12 @@ export default class Contact extends Component {
       
           <Container>
               <Row>
-                  <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                  <Col className={styles.leftForm} lg={6}  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                       <img src={contact2} style={{marginTop:'80px'}}/>
                   </Col>
-                  <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+                  <Col className={styles.rightForm} lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                       <h3 style={{color:'white'}}>Bizga xabar qoldiring</h3>
-                  <Form style={{width:'100%',marginLeft:'170px'}} {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
+                  <Form className={styles.formInput}  style={{width:'100%',marginLeft:'170px'}} {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
         <Form.Item
           name="name"
           rules={[
@@ -200,10 +195,13 @@ export default class Contact extends Component {
           <Input style={{borderRadius:'10px',padding:'8px'}}/>
         </Form.Item>
         <Form.Item name="text">
-        <Input.TextArea style={{borderRadius:'10px',padding:'20px'}}/>
+        <TextArea
+        style={{borderRadius:'10px',padding:'8px'}}
+          autoSize={{ minRows: 3, maxRows: 3 }}
+        />
       </Form.Item>
         <Form.Item {...tailLayout}>
-          <Button htmlType="submit" style={{backgroundColor:'white',color:'#1C487A',fontWeight:'800',width:'100px'}}>
+          <Button className={styles.btnForm} htmlType="submit" style={{backgroundColor:'white',color:'#1C487A',fontWeight:'800',width:'100px'}}>
             Submit
           </Button>
         </Form.Item>
@@ -219,26 +217,27 @@ export default class Contact extends Component {
                      <Col lg={12} className={styles.aloqa}>
                             <h1>Biz bilan aloqa</h1>
                             <Row>
-                                <Col lg={2}  md={4} sm={6} className={styles.aloqacard}>
+                                <Col lg={2}  md={4} sm={6} xs={6} className={styles.aloqacard}>
                                     <div><HiOutlineLocationMarker style={{color:'white'}}/></div>
                                     <p><b>Manzil: </b> Yakkasaroy tumani</p>
                                 </Col>
-                                <Col lg={2}  md={4} sm={6} className={styles.aloqacard}>
+                                <Col lg={2}  md={4} sm={6} xs={6} className={styles.aloqacard}>
                                     <div><FaPhoneAlt style={{color:'white'}}/></div>
                                     <p><b>Telefon: </b>+9983398567165</p>
                                 </Col>
-                                <Col lg={2}  md={4} sm={6} className={styles.aloqacard}>
+                                <Col lg={2}  md={4} sm={6} xs={6} className={styles.aloqacard}>
                                     <div><AiOutlineMail style={{color:'white'}}/></div>
                                     <p><b>E-mail: </b>kathfygfbqb@gmail.com</p>
                                 </Col>
-                                <Col lg={2}  md={4} sm={6} className={styles.aloqacard}>
+                                <Col lg={2}  md={4} sm={6} xs={6} className={styles.aloqacard}>
                                     <div><FaTelegramPlane style={{color:'white'}}/></div>
                                     <p><b>Telegram: </b>@it_tower</p>
                                 </Col>
-                                <Col lg={2}  md={4} sm={6} className={styles.aloqacard}>
+                                <Col lg={2}  md={4} sm={6} xs={6} className={styles.aloqacard}>
                                     <div><AiOutlineInstagram style={{color:'white'}}/></div>
                                     <p><b>Instagram: </b>@it_tower</p>
                                 </Col>
+                                
                             </Row>
                      </Col>
                  </Row>
