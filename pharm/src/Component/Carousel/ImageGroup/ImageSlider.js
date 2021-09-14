@@ -25,12 +25,12 @@ function ImageSlider() {
   const x = "#";
 
   return (
-    <>
+    <div className={styles.SliderMenu}>
       <Slider className={styles.SliderMenuItem} {...settings}>
         <div className={styles.card_wrapper}>
           <div className={styles.Card}>
             <div className={styles.card_image}>
-              <Image src={Rasm1} className="img-fluid" />
+              {/* <Image src={Rasm1} className="img-fluid" /> */}
             </div>
 
             <svg
@@ -53,7 +53,6 @@ function ImageSlider() {
               <p>Dori-Darmon</p>
               <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
-
             <ul
               style={{ listStyleType: "none", textDecoration: "none" }}
               className={styles.social_icons}
@@ -82,7 +81,7 @@ function ImageSlider() {
                 </a>
               </li>
             </ul>
-            <div id={styles.details}>
+            {/* <div id={styles.details}>
               <h5>
                 <p className={styles.AddressPlace}> Manzil:</p>
                 <p className={styles.JobTitle}>
@@ -99,7 +98,7 @@ function ImageSlider() {
                   <p>Xaritada ko'rish</p>
                 </a>
               </h5>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.card_wrapper}>
@@ -155,7 +154,7 @@ function ImageSlider() {
                 </a>
               </li>
             </ul>
-            <div id={styles.details}>
+            {/* <div id={styles.details}>
               <h5>
                 <p className={styles.AddressPlace}> Manzil:</p>
                 <p className={styles.JobTitle}>
@@ -172,7 +171,7 @@ function ImageSlider() {
                   <p>Xaritada ko'rish</p>
                 </a>
               </h5>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.card_wrapper}>
@@ -180,17 +179,19 @@ function ImageSlider() {
             <div className={styles.card_image}>
               <Image src={Rasm3} class="img-fluid" />
             </div>
-            <svg
-              className={styles.Curved}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-            >
-              <path
-                fill="#184E61"
-                fill-opacity="1"
-                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              ></path>
-            </svg>
+            <div className={styles.Curved1}>
+              <svg
+                className={styles.Curved}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+              >
+                <path
+                  fill="#184E61"
+                  fill-opacity="1"
+                  d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+            </div>
             <div id={styles.CallMeGroup}>
               <i>
                 <FiPhoneCall id={styles.CallMeGroupIcon} />
@@ -228,7 +229,7 @@ function ImageSlider() {
                 </a>
               </li>
             </ul>
-            <div id={styles.details}>
+            {/* <div id={styles.details}>
               <h5>
                 <p className={styles.AddressPlace}> Manzil:</p>
                 <p className={styles.JobTitle}>
@@ -245,7 +246,7 @@ function ImageSlider() {
                   <p>Xaritada ko'rish</p>
                 </a>
               </h5>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.card_wrapper}>
@@ -301,7 +302,7 @@ function ImageSlider() {
                 </a>
               </li>
             </ul>
-            <div id={styles.details}>
+            {/* <div id={styles.details}>
               <h5>
                 <p className={styles.AddressPlace}> Manzil:</p>
                 <p className={styles.JobTitle}>
@@ -318,7 +319,7 @@ function ImageSlider() {
                   <p>Xaritada ko'rish</p>
                 </a>
               </h5>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.card_wrapper}>
@@ -332,6 +333,7 @@ function ImageSlider() {
               viewBox="0 0 1440 320"
             >
               <path
+                
                 fill="#184E61"
                 fill-opacity="1"
                 d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
@@ -375,7 +377,7 @@ function ImageSlider() {
                 </a>
               </li>
             </ul>
-            <div id={styles.details}>
+            {/* <div id={styles.details}>
               <h5>
                 <p className={styles.AddressPlace}> Manzil:</p>
                 <p className={styles.JobTitle}>
@@ -392,11 +394,11 @@ function ImageSlider() {
                   <p>Xaritada ko'rish</p>
                 </a>
               </h5>
-            </div>
+            </div> */}
           </div>
         </div>
       </Slider>
-    </>
+    </div>
   );
 }
 

@@ -3,8 +3,547 @@
      padding: 0;
      box-sizing: border-box;
  }
+.news {
+    margin-top: 1px;
+    border: 1px solid black;
+}
 
- #IdGroup {
-     justify-content: start;
-     text-align: start;
- }
+.Card {
+    overflow: hidden;
+}
+
+.Card Img {
+    height: 350px;
+
+}
+
+
+.news_item {
+    position: relative;
+    margin: 1px 10px;
+    border-radius: 5%;
+    cursor: pointer;
+    overflow: hidden;
+    border: .3px solid #DFDFDF;
+
+}
+
+.SliderMenuText {
+    margin-top: 1px;
+}
+
+.SliderMenuText1 {
+    /* Subtitle / Base */
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6vh;
+    line-height: 110%;
+    /* or 57px */
+    font-family: "Andale Mono", monospace;
+    text-align: center;
+    color: #010b19;
+}
+
+.SliderMenuText2 {
+    width: 80%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vh;
+    line-height: 130%;
+    text-align: center;
+    margin: auto;
+    color: #010b19;
+    opacity: 0.7;
+    margin-top: -1%;
+}
+
+.CarosuelMe {
+    height: 690px;
+}
+
+
+.CarouselMenu {
+    height: 470px;
+    margin-top: 3%;
+
+
+}
+
+.Curved {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.Card:hover .Curved {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: -70px;
+    z-index: 1;
+    transition: .5s;
+}
+
+.CardFooterText1 {
+    width: 100%;
+    height: auto;
+    line-height: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.CardFooterText1 p:nth-child(1) {
+    font-size: 3.5vh;
+}
+
+.CardFooterText1 p:nth-child(2) {
+    font-size: 2.5vh;
+}
+
+.Card:hover .CardFooterText1 p:nth-child(1) {
+    font-size: 3vh;
+}
+
+.Card:hover .CardFooterText1 p:nth-child(2) {
+    font-size: 2.2vh;
+}
+
+.Card:hover .CardFooterText1 {
+    margin-top: -57px;
+    z-index: 3;
+    color: white;
+}
+
+.social_icons_Item {
+    position: absolute;
+
+}
+
+.social_icons {
+    z-index: 3;
+}
+
+.social_icons li {
+    list-style-type: none;
+    z-index: 4;
+}
+
+.social_icons li a {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    background: #184E61;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    transform: translateX(-160px);
+    margin: 6px 0px;
+    transition: .7s;
+    opacity: 0;
+}
+
+.social_icons li a i {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: -8px;
+}
+
+.social_icons li a:hover i {
+    color: #ebe0e0;
+
+}
+
+.Card .social_icons li {
+    opacity: 1;
+
+}
+
+.Card:hover .social_icons li a {
+    transform: translateX(0);
+    transition: .5s;
+    opacity: 1;
+}
+
+.CallMeGroup {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1CC198;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: .5s;
+    display: none;
+}
+
+.CallMeGroup i {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+}
+
+.CallMeGroup:hover {
+    background-color: #4ed3b2;
+
+
+}
+
+.CallMeGroupIcon {
+    text-align: center;
+    margin: auto;
+    margin-left: 13.5px;
+    margin-top: 15.5px;
+}
+
+.Card:hover .CallMeGroup {
+    position: absolute;
+    margin-top: -50px;
+    justify-content: center;
+    margin: auto;
+    display: block;
+    z-index: 4;
+    transition: .7s;
+    margin-left: 46.5%;
+    transform: translateY(200px);
+
+
+}
+
+@media(max-width:1200px) {
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5.5vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+
+    .Card:hover .CardFooterText1 {
+        margin-top: -50px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 3vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 2vh;
+    }
+
+}
+
+@media(max-width:768px) {
+    .Card:hover .CardFooterText1 {
+        margin-top: -56px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 2.7vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 1.8vh;
+
+    }
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4.5vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+}
+
+@media(max-width:700px) {
+    .Card:hover .Curved {
+        margin-top: -84px;
+    }
+
+    .Card:hover .CardFooterText1 {
+        margin-top: -60px;
+        line-height: 10px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 3.5vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 3vh;
+
+    }
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.7vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.7vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+}
+
+@media(max-width:400px) {
+    .Card:hover .Curved {
+        margin-top: -64px;
+    }
+
+    .Card:hover .CardFooterText1 {
+        margin-top: -55px;
+        line-height: 10px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 3vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 2.5vh;
+
+    }
+
+    .CallMeGroup {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1CC198;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transition: .5s;
+        display: none;
+
+    }
+
+    .CallMeGroup i {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .CallMeGroup:hover {
+        background-color: #4ed3b2;
+
+    }
+
+    .CallMeGroupIcon {
+        text-align: center;
+        margin: auto;
+        margin-left: 8.5px;
+        margin-top: 9.5px;
+    }
+
+    .social_icons li a {
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        background: #184E61;
+        color: #FFFFFF;
+        font-size: 23px;
+        font-weight: bold;
+        transform: translateX(-160px);
+        margin: 6px 0px;
+        transition: .7s;
+        opacity: 0;
+    }
+
+    .social_icons li a i {
+        position: absolute;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 7px;
+        margin-left: -6px;
+    }
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+
+}
+
+@media(max-width:350px) {
+    .Card:hover .Curved {
+        margin-top: -64px;
+    }
+
+    .Card:hover .CardFooterText1 {
+        margin-top: -51px;
+        line-height: 10px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 2.5vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 1.6vh;
+
+    }
+
+    .CardFooterText1 p:nth-child(1) {
+        font-size: 3vh;
+
+    }
+
+    .CardFooterText1 p:nth-child(2) {
+        font-size: 2vh;
+
+    }
+
+    .SliderMenuText1 {
+        /* Subtitle / Base */
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.8vh;
+        line-height: 130%;
+        /* or 57px */
+        font-family: "Andale Mono", monospace;
+
+        text-align: center;
+
+        color: #010b19;
+    }
+
+    .SliderMenuText2 {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2vh;
+        line-height: 160%;
+        /* or 29px */
+
+        text-align: center;
+        margin: auto;
+
+        color: #010b19;
+
+        opacity: 0.7;
+    }
+}

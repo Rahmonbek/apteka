@@ -230,19 +230,61 @@ function Menu() {
                   chiqmasdan dori tanlashingiz mumkin.
                 </p>
                 <div className={styles.MenuTextButtons}>
-                  <div className={styles.WhatchWriter}>
-                    <p>Maslahat Olish</p>
-                  </div>
-                  <div
+                  <a className={styles.WhatchWriter}>
+                    <a
+                      className={styles.CardModalItemMe}
+                      onClick={() => setSmShow(true)}
+                    >
+                      Ma'lumot uchun
+                    </a>
+
+                    <Modal
+                      className={styles.CardModalItem}
+                      size="sm"
+                      show={smShow}
+                      onHide={() => setSmShow(false)}
+                      aria-labelledby="example-modal-sizes-title-sm"
+                    >
+                      <Modal.Header>
+                        <Modal.Title id="example-modal-sizes-title-sm">
+                          Ma'lumot uchun!
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                      </Modal.Body>
+                      <Modal.Footer
+                        className={styles.CardFooterExitIcon}
+                        onClick={() => showModalBot()}
+                      >
+                        <i class="fas fa-times"></i>
+                      </Modal.Footer>
+                    </Modal>
+                  </a>
+                  <a
                     target="_blank"
-                    href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
+                    href="https://www.youtube.com"
                     className={styles.WhatchVideo}
                   >
                     <p>
                       <MdSlowMotionVideo />
                     </p>
                     <p className={styles.WhatchVideoP2}>Videoni Ko'rish</p>
-                  </div>
+                  </a>
                 </div>
               </div>
               {/* <Image classname={styles.MenuImgRasm} src={person} /> */}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sliderHomiy {
+    width: 100%;
+    border-top: 2px solid #CCCCCC;
+    padding-top: 50px;
+    border-bottom: 2px solid #CCCCCC;
+    padding-bottom: 50px;
+    height: max-content;
+    text-align: center;
+}
+
+.toolpat {
+    border-radius: 10%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+
+
+.sliderHomiy p {
+    color: rgb(139, 139, 140);
+    font-size: 13px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sliderHomiy img {
+    color: blanchedalmond;
+    width: 100%;
+    height: auto;
+}
