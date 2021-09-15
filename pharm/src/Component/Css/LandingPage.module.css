@@ -230,6 +230,7 @@
 .MenuText h1 {
   width: 80%;
   font-size: 4.5vh;
+  text-align: start;
 }
 
 .MenuTextNextIcons {
