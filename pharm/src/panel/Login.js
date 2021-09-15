@@ -22,7 +22,7 @@ export default class RouterA extends Component {
                 <label for="">Parolingiz:</label>
             </div>
           <Button variand='danger'>
-<NavLink to="/panel" >Submit</NavLink>
+<NavLink to="/panel" >Kirish</NavLink>
 
           </Button>
         </form>
