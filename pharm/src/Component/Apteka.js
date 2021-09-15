@@ -122,27 +122,26 @@ export default class Apteka extends Component {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
-                    <Nav.Link href="#deets">
-                      <p>Menu</p>
-                    </Nav.Link>
-                    <Nav.Link href="#service">
-                      <p>Xizmatlar</p>
-                    </Nav.Link>
-                    <Nav.Link href="#List">
-                      <p>Doctors</p>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link to="/dorilar">
-                        {" "}
-                        <p>Dorilar</p>
-                      </Link>
-                    </Nav.Link>
-                    <Nav.Link href="#blog">
-                      <p>Aloqa</p>
-                    </Nav.Link>
-                    <Nav.Link href="#apteka">
-                      <p>Dorixonalar</p>
-                    </Nav.Link>
+                  <Nav.Link href="#deets">
+                        <p>Bosh sahifa</p>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Doctors">
+                        <p>Doctors</p>
+                      </Nav.Link>
+                      <Nav.Link>
+                        <Link to="/dorilar">
+                          {" "}
+                          <p>Dorilar</p>
+                        </Link>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Contact">
+                        <p>Kantakt</p>
+                      </Nav.Link>
+                      <Nav.Link href="/apteka">
+                        <p>Dorixonalar</p>
+                      </Nav.Link>
                   </Nav>
                   
                 </Navbar.Collapse>
@@ -151,7 +150,7 @@ export default class Apteka extends Component {
           </div> 
           <Row>
               <Col lg={6}>
-                  <h1 className={styles.headertext}>Eng sifatli xizmat va dorilar HEALTH  dorixonalarida!</h1>
+                  <h1 className={styles.headertext} style={{textAlign:'left'}}>Eng sifatli xizmat va dorilar HEALTH  dorixonalarida!</h1>
                   <div className={styles.MenuTextButtons}>
                 <a className={styles.WhatchWriter}>
                   <a
@@ -205,7 +204,7 @@ export default class Apteka extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p
+                  <p  className={styles.WhatchVideop1}
                     style={{
                       fontSize: "27px",
                       color: "white",
@@ -214,7 +213,7 @@ export default class Apteka extends Component {
                   >
                     <MdSlowMotionVideo />
                   </p>
-                  <p
+                  <p className={styles.WhatchVideop2}
                     style={{
                       marginLeft: "10px",
                       color: "white",

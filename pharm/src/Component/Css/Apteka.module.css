@@ -276,8 +276,7 @@
     }
   }
   
-  @media (min-width: 768px) and (max-width: 1050px) {
-  }
+  
   @media (min-width: 756px) and (max-width: 1000px) {
     .ScheduleName {
       margin-bottom: 0;
@@ -327,8 +326,10 @@
       width: 100%;
       margin: auto;
     }
-    .WhatchWriter a {
-      margin-top: 3%;
+    
+    .WhatchWriter a{
+      margin-top: 4%;
+    margin-left: -30%;
     }
   
     .Menu {
@@ -441,7 +442,7 @@
     }
   
     .WhatchWriter {
-      width: 45%;
+      width: 30%;
       margin: auto;
       border-radius: 10px;
     }
@@ -509,6 +510,10 @@
       width: 38%;
       font-size: 14px;
     }
+    .WhatchWriter a{
+      margin-top: 6%;
+    margin-left: -40%;
+    }
   
     .WhatchWriter:hover {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -521,16 +526,18 @@
     .WhatchVideo {
       width: 38%;
     }
-    .WhatchVideo p {
-      font-size: 13px;
+  
+    .WhatchVideop1{
+      font-size: 18px !important;
+      margin-left: 5px !important;
+      margin-top: 2px;
+    }
+    .WhatchVideop2{
+      font-size: 14px !important;
+      margin-left: 5px !important;
     }
   
-    .WhatchVideoP2 {
-      font-size: 12px;
-      margin-left: 0.8%;
-      margin-top: 10px;
-      color: white;
-    }
+ 
   }
   
   .ScheduleNameIcon p:nth-child(2) {
@@ -556,7 +563,8 @@
  
  
     .headertext{
-      font-size: 45px;
+      font-size: 30px;
+      text-align: center;
     }
     
   }
@@ -568,7 +576,10 @@
     .headertext{
       font-size: 45px;
     }
-    
+    .headertext{
+      font-size: 30px;
+      text-align: center;
+    }
   }
   @media screen and (min-width:767px) {
     .HeaderMenu{
