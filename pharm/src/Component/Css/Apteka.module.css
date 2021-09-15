@@ -5,12 +5,12 @@
   }
   
   .BodyHeader {
-    width: 100%;
+    width: 100% !important;
     height: auto;
   }
   
   .HeaderMenu {
-    width: 100%;
+    width: 100% !important;
     height: 722px;
     background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
   }
@@ -170,6 +170,11 @@
     cursor: pointer;
   }
   
+.CardFooterExitIcon i {
+  font-size: 22px;
+  cursor: pointer;
+}
+  
   .MenuImg {
     width: 40%;
     height: 430px;
@@ -184,6 +189,7 @@
   .MenuText {
     height: 460px;
     margin-top: 15px;
+    
   }
   
   .MenuText h4 {
@@ -216,6 +222,7 @@
       height: 85%;
      border-radius: 30% 70% 70% 30% / 44% 62% 38% 56%     ;
   }
+  
   
   @media (min-width: 1301px) {
     .MenuTextButtons {
@@ -531,12 +538,6 @@
   }
   
     
-   
-    
-    /*-------------- List Menu Group---------------- */
-    
-  
-    
     .headertext{
       font-family: sharp sans en,sharp sans accents,sharp sans symbols,sharp sans,Arial,sans-serif;
       line-height: calc(1em + 8px);
@@ -547,8 +548,7 @@
     }
   
     
-   
-  
+ 
   @media screen and (max-width:566px) {
     .HeaderMenu{
       height: max-content !important;
@@ -602,4 +602,39 @@
   
   }
 
+    /* ---------------- Cards ------------- */
+
+    .cardApteka h1{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 6vh;
+      line-height: 130%;
+      font-family: "Andale Mono", monospace;
+      text-align: center;
+      color: #010b19;
+     }
+    
+     .root {
+      width: 70% !important;
+   
+    }
+    .root:hover{
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+    .media {
+      height: 0;
+      padding-top: 56.25%;
+     
+    }
+    .expand {
+      transform: rotate(0 deg);
+      margin-left: auto;
+     }
+    .expandOpen {
+      transform: rotate(180 deg);
+    }
+    .MuiAvatar-square{
+      width: 60px !important;
+    }
   

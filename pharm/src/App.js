@@ -8,7 +8,8 @@ import ErrorPage from "./Medicines/Components/ErrorPage";
 import Contact from "./Component/Contact";
 import Partner from "./Component/Partner";
 import Apteka from "./Component/Apteka";
-
+import Login from "./panel/Login";
+import Panel from "./panel/Panel";
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,12 @@ function App() {
           <Route path="/apteka">
             <Apteka />
             <Footer />
+          </Route>
+          <Route path="/admin">
+            <Login />
+          </Route>
+          <Route path="/panel">
+            <Panel />
           </Route>
           <Route path="*">
             <ErrorPage />

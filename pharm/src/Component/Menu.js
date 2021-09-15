@@ -95,7 +95,7 @@ function Menu() {
           </Container>
         </div>
 
-        <div className={styles.Menu} >
+        <div className={styles.Menu}>
           <Container className={styles.MenuGroup}>
             <div className={styles.MenuText}>
               <h4 style={{ color: "white" }}>
