@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import '../App.css'
+import '../App.css'
 import styles from './Css/Apteka.module.css'
 import { Container, Row, Col,Navbar,Nav, Image, Modal, Button, Tooltip, OverlayTrigger } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';

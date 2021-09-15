@@ -74,6 +74,9 @@ function Menu() {
                     <Nav.Link href="/Contact">
                       <p>Kantakt</p>
                     </Nav.Link>
+                    <Nav.Link href="/apteka">
+                      <p>Dorixonalar</p>
+                    </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
