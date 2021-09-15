@@ -2,13 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.App {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-}
+
 
   .user {
       border: 2px solid black;
