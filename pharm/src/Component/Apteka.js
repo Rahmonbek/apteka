@@ -150,7 +150,7 @@ export default class Apteka extends Component {
           </div> 
           <Row>
               <Col lg={6}>
-                  <h1 className={styles.headertext}>Eng sifatli xizmat va dorilar HEALTH  dorixonalarida!</h1>
+                  <h1 className={styles.headertext} style={{textAlign:'left'}}>Eng sifatli xizmat va dorilar HEALTH  dorixonalarida!</h1>
                   <div className={styles.MenuTextButtons}>
                 <a className={styles.WhatchWriter}>
                   <a
@@ -204,7 +204,7 @@ export default class Apteka extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p
+                  <p  className={styles.WhatchVideop1}
                     style={{
                       fontSize: "27px",
                       color: "white",
@@ -213,7 +213,7 @@ export default class Apteka extends Component {
                   >
                     <MdSlowMotionVideo />
                   </p>
-                  <p
+                  <p className={styles.WhatchVideop2}
                     style={{
                       marginLeft: "10px",
                       color: "white",
