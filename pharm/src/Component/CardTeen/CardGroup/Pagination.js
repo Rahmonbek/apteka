@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Pagination = ({ showPerPage, onPaginationChange, total }) => {
   const [counter, setCounter] = useState(1);
-  const [numberOfButtons, setNumberOfButoons] = useState(
-    Math.ceil(total / showPerPage)
-  );
+  const numberOfButtons = Math.ceil(total / showPerPage);
 
   useEffect(() => {
     const value = showPerPage * counter;

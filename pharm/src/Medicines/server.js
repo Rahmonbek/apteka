@@ -1,7 +1,7 @@
 export const dorilar = [
   {
     id: 1,
-    nomi: "Eszol",
+    nomi: "Aszol",
     url: "http://apteka.uz/upload/iblock/1d8/1d8d10731132d320280a448fd1c4a71a.png",
     image: [
       "http://kusumhealthcare.com/wp-content/uploads/2020/12/Eszol-Tablets.jpg",
@@ -163,7 +163,7 @@ export const dorilar = [
   },
   {
     id: 4,
-    nomi: "Sibutin",
+    nomi: "Sininpar",
     url: "http://apteka.uz/upload/iblock/95a/95a361a1a15686bd379425023f57e7e7.png",
     image: [
       "http://compendium.com.ua/img/inf/kvz_sibutin.jpg",
@@ -217,7 +217,7 @@ export const dorilar = [
   },
   {
     id: 5,
-    nomi: "Eszol",
+    nomi: "Parasetamol",
     url: "http://apteka.uz/upload/iblock/1d8/1d8d10731132d320280a448fd1c4a71a.png",
     image: [
       "http://kusumhealthcare.com/wp-content/uploads/2020/12/Eszol-Tablets.jpg",

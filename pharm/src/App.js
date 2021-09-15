@@ -7,6 +7,7 @@ import InfoMedicine from "./Medicines/Components/InfoMedicine";
 import ErrorPage from "./Medicines/Components/ErrorPage";
 import Contact from "./Component/Contact";
 import Partner from "./Component/Partner";
+import Apteka from "./Component/Apteka";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+            <Footer />
+          </Route>
+          <Route path="/apteka">
+            <Apteka />
             <Footer />
           </Route>
           <Route path="*">

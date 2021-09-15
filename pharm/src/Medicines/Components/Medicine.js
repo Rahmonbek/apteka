@@ -56,4 +56,4 @@ function Medicine(props) {
   );
 }
 
-export default Medicine;
+export default React.memo(Medicine);

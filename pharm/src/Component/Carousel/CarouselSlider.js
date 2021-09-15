@@ -48,13 +48,13 @@ export default function CarouselSlider() {
       <Carousel
         className={style.CarouselMenu}
         infinite={true}
-        autoPlay={true}
+        autoPlay={false}
         autoPlaySpeed={5000}
         responsive={responsive1}
       >
         <div className={style.news_item}>
           <Card className={style.Card}>
-            <Card.Img variant="top" src={Rasm} />
+            <Card.Img variant="top" src={Rasm} className="img-fluid" />
             <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,9 @@ export default function CarouselSlider() {
                 fill="#184E61"
                 fill-opacity="1"
                 d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              ></path>
+              >
+                {" "}
+              </path>
             </svg>
             <div className={style.CardFooterText1}>
               <p>Dori-Darmon</p>

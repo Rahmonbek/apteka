@@ -10,7 +10,6 @@ import styles from "../../Component/Css/LandingPage.module.css";
 
 function Header(props) {
   const [res, setRes] = useState(true);
-  const { bool } = props.data;
   return (
     <div className="fixed-top">
       {!res ? (
@@ -21,36 +20,17 @@ function Header(props) {
             </Button>
           </div>
           <div className="dorilar-navbar">
-            {bool ? (
-              <Nav.Link href="/menu">
-                <span onClick={() => setRes(!res)}>Bosh sahifa </span>
-              </Nav.Link>
-            ) : (
-              <Nav.Link>
-                <Link to="/menu">Bosh sahifa</Link>
-              </Nav.Link>
-            )}
-            {bool ? (
-              <Nav.Link href="/doctors">
-                <span onClick={() => setRes(!res)}>Doktorlar </span>
-              </Nav.Link>
-            ) : (
-              <Nav.Link>
-                <Link to="/">Doktorlar</Link>
-              </Nav.Link>
-            )}
-
-            {!bool ? (
-              <Nav.Link href="/dorilar">
-                <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
-              </Nav.Link>
-            ) : (
-              <Nav.Link>
-                <Link to="/dorilar">Dorilar</Link>
-              </Nav.Link>
-            )}
-            <Nav.Link href="/footer">
-              <span onClick={() => setRes(!res)}>Contacts</span>
+            <Nav.Link>
+              <Link to="/">Bosh sahifa</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/">Doktorlar</Link>
+            </Nav.Link>
+            <Nav.Link href="#dorilar">
+              <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/Contact">Kontakt</Link>
             </Nav.Link>
           </div>
         </div>
@@ -96,36 +76,17 @@ function Header(props) {
                 </div>
               </span>
               <Nav className={`dorilar-nav actives`}>
-                {bool ? (
-                  <Nav.Link href="/menu">
-                    <span>Bosh sahifa </span>
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <Link to="/">Bosh sahifa</Link>
-                  </Nav.Link>
-                )}
-                {bool ? (
-                  <Nav.Link href="/doctors">
-                    <span>Doktorlar </span>
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <Link to="/">Doktorlar</Link>
-                  </Nav.Link>
-                )}
-
-                {!bool ? (
-                  <Nav.Link href="/dorilar">
-                    <span>Dorilar</span>{" "}
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <Link to="/dorilar">Dorilar</Link>
-                  </Nav.Link>
-                )}
-                <Nav.Link href="/footer">
-                  <span>Contacts</span>
+                <Nav.Link>
+                  <Link to="/">Bosh sahifa</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/">Doktorlar</Link>
+                </Nav.Link>
+                <Nav.Link href="#dorilar">
+                  <span>Dorilar</span>{" "}
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/Contact">Kontakt</Link>
                 </Nav.Link>
               </Nav>
             </div>

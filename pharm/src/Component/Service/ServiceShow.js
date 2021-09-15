@@ -223,7 +223,7 @@ export default function ServiceShow() {
   return (
     <div className={styles.Service}>
       <Container>
-        <div>
+        <div className={styles.ServiceMe}>
           <div className={styles.ServiceMenuText}>
             <p className={styles.ServiceMenuText1}>Bizning Afzalliklarimiz</p>
             <p className={styles.ServiceMenuText2}>
