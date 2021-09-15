@@ -25,7 +25,6 @@
 
 .Menu {
   background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
-  border: 1px sol black;
   margin-top: 105px;
 }
 
@@ -249,7 +248,18 @@
   height: 90%;
 }
 
+@media(min-width:1700px) {
+  .HeaderMenu {
+    height: 700px;
+    overflow: hidden;
+  }
 
+  .Curved {
+    position: relative;
+    margin-top: -15%;
+  }
+
+}
 @media(min-width:1301px) {
   .MenuTextButtons {
     width: 95%;

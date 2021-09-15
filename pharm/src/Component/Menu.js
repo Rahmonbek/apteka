@@ -303,7 +303,7 @@ function Menu() {
               </div>
               {/* <Image classname={styles.MenuImgRasm} src={person} /> */}
             </div>
-          </Container>
+          </Container>{" "}
           <svg
             className={styles.Curved}
             xmlns="http://www.w3.org/2000/svg"

@@ -114,6 +114,7 @@
 }
 
 .CardText {
+    width: 60%;
     height: 80%;
     margin-top: 5%;
     text-align: start;
@@ -188,7 +189,23 @@
         height: 700px;
         overflow: hidden;
     }
+ .CardText {
+     line-height: 10px;
+ }
 
+
+
+ .CardIcons {
+     width: 25%;
+     margin-top: 2%;
+ }
+
+    .CardText {
+        width: 70%;
+        height: 90%;
+        margin-top: 2%;
+        overflow: hidden;
+    }
     .ServiceMe {
         padding: 20px;
         margin-bottom: 20px;
@@ -209,9 +226,12 @@
     .ServiceMenuCard {
         width: 380px;
     }
+    .CardTextBold {
+        font-size: 2.7vh;
+    }
 
     .CardTextSmall {
-        margin-top: 1px;
+        margin-top: -2%;
         font-size: 2vh;
     }
 
