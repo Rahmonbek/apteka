@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Layout, Menu ,Card } from "antd";
-import foto from '../doctor logo.png';
+import foto from './doctorlogo.jpg';
 import Bosh from './Bosh'
 import Apteka from './Apteka'
 import Card1 from './Card1.js'
@@ -20,14 +20,14 @@ export default class Panel extends Component {
   render() {
     return (<div>
       <BrowserRouter>
-      <Layout >
+      <Layout style={{ Width:'100vw',height:'100vh' }} >
       <Header
         className="site-layout-sub-header-background header"
-        style={{ padding: 0 }}
+        
       > 
       
       <div className="imgh1">
-      <img src={foto} className='foto'/><h1 className="text">O'zbekiston Respublikasi Sog'liqni saqlash vazirligi</h1></div>
+      <img src={foto} style={{width:'50px',height:'50px',borderRadius:'50%',marginLeft:'10%'}} className='foto'/><h1 className="text">O'zbekiston Respublikasi Sog'liqni saqlash vazirligi</h1></div>
       
       </Header>
         
