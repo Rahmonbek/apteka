@@ -250,13 +250,43 @@
 
 @media(min-width:1700px) {
   .HeaderMenu {
-    height: 700px;
+    height: 900px;
     overflow: hidden;
-  }
+    }
+
+.MenuImg {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-left: 3%;
+  background-size: 100%;
+}
+
+
+.MenuText {
+  height: 650px;
+}
+
+.MenuText h4 {
+  width: 100%;
+}
+
+.MenuText h1 {
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.MenuTextNextIcons {
+  width: 100%;
+}
+
+.MenuTextNextIcons p:nth-child(2) {
+  font-size: 5vh;
+}
 
   .Curved {
     position: relative;
-    margin-top: -15%;
+    margin-top: -7%;
   }
 
 }
