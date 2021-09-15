@@ -188,37 +188,12 @@ export default class Contact extends Component {
             </Col>
             <Col lg={6}>
               <h2 style={{fontFamily: 'Arial, Helvetica, sans-serif',marginTop:'50px'}}>Manzilimiz:</h2>
-              <YMaps >
-        <Map
-          width='100vw'
-          height='100vh'
-          defaultState={{
-            center: [41.311151, 69.279716],
-            zoom: 8
-          }}
-        >
-          <Clusterer options={{  preset: 'islands#invertedVioletClusterIcons',  groupByCoordinates: false, }}  >
-            {this.state.points.map((coordinates, index) => (
-              
-              <Placemark  balloonContent= '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />'
-              iconContent= {coordinates.name}   key={index}
-               geometry={coordinates.param} 
-               options={{preset: "islands#blueStretchyIcon",
-               // Отключаем кнопку закрытия балуна.
-               balloonCloseButton: false,
-                // Балун будем открывать и закрывать кликом по иконке метки.
-               hideIconOnBalloonOpen: false,
-               openBalloonOnClick:true}}/>
-            ))}
-          </Clusterer> 
-          <GeolocationControl options={{ float: 'left' }} />
-          <TypeSelector options={{ float: 'right' }} />
-          <TrafficControl options={{ float: 'right' }} />
-          <RouteButton options={{ float: 'right' }} />
-          <ZoomControl options={{ float: 'left' }} />
-  
-        </Map>
-    </YMaps>
+              <YMaps>
+    <div style={{width:'100%',height:'400px',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
+     
+      <Map width='100%' height='100%' defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
+    </div>
+  </YMaps>
             </Col>
 
           </Row>
