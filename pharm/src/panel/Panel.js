@@ -12,7 +12,7 @@ import {
   
 } from "@ant-design/icons";
 import "../App.css";
-import { BrowserRouter,NavLink,Route,Switch } from "react-router-dom";
+import { BrowserRouter,NavLink,Link,Route,Switch } from "react-router-dom";
 const { Header, Content,  Sider } = Layout;
 const { Meta } = Card;
 export default class Panel extends Component {
@@ -46,15 +46,15 @@ export default class Panel extends Component {
       
       
         <Menu theme="dark" mode="inline" className='menu' defaultSelectedKeys={["4"]} >
-          <Menu.Item key="1" href="/bosh" as={NavLink} to="/bosh" icon={<HomeOutlined />}>
-           Bosh sahifa
+          <Menu.Item key="1" href="/bosh1" as={NavLink} to="/bosh" icon={<HomeOutlined />}>
+          <Link to="/bosh1">  Bosh sahifa</Link>
           </Menu.Item>
-          <Menu.Item key="2" as={NavLink} to="/dorilar" icon={<PlusOutlined />}>
-          
-            Dorilar
+          <Menu.Item ke
+          y="2" as={NavLink} to="/dorilar1" icon={<PlusOutlined />}>
+          <Link to="/dorilar1">  Dorilar</Link>
           </Menu.Item>
           <Menu.Item key="3" as={NavLink} to="/apteka" icon={<EnvironmentOutlined />}>
-          Aptekalar
+          <Link to="/apteka1">Aptekalar</Link>
         </Menu.Item>
          
         </Menu>
@@ -70,9 +70,10 @@ export default class Panel extends Component {
             minHeight: 280,
           }}
         > <Switch>
-          <Route exact path="/bosh" component={Bosh}/>
-          <Route exact path="/dorilar" component={Card1}/> 
-          <Route exact path="/apteka" component={Apteka}/> </Switch>
+          <Route exact path="/bosh1" component={Bosh}/>
+          <Route exact path="/dorilar1" component={Card1}/> 
+          <Route exact path="/apteka1" component={Apteka}/>
+           </Switch>
           </Content>
           
       </Layout> 
