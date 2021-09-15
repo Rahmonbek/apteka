@@ -11,12 +11,25 @@
 
 .HeaderMenu {
   width: 100%;
-  height: 722px;
+  height: 652px;
   background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
 }
+
+#NavbarMe {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+
+}
+
+
 .Menu {
   background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  border: 1px sol black;
+  margin-top: 105px;
 }
+
+
 .NavbarMenu {
   width: 100%;
   height: 106px;
@@ -43,6 +56,7 @@
 
 .NavbarGroup {
   height: 77px;
+
 }
 
 .ImgBrand {
@@ -78,6 +92,7 @@
   position: relative;
   margin-top: -15%;
 }
+
 .MenuText {
   width: 50%;
   height: 100%;
@@ -233,6 +248,14 @@
   height: 90%;
 }
 
+
+@media(min-width:1301px) {
+  .MenuTextButtons {
+    width: 95%;
+    margin-top: 10%;
+  }
+}
+
 @media (min-width: 1301px) {
   .MenuTextButtons {
     width: 95%;
@@ -248,11 +271,75 @@
     margin-top: 10px;
   }
 
+  .MenuTextNextIcons p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+
+  .TextOnlineBuy {
+    font-size: 14px;
+    margin-top: 3%;
+  }
+
   .WhatchVideo {
     width: 45%;
     cursor: pointer;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .HeaderMenu {
+    height: 650px;
+    overflow: hidden;
+  }
+
+  .NavbarMenu {}
+
+  .Menu {}
+
+  .MenuText {
+    margin-top: 1px;
+  }
+
+  .MenuText h4 {
+    font-size: 18px;
+  }
+
+  .MenuText h1 {
+    font-size: 23px;
+    margin-top: 4%;
+  }
+
+  .TextOnlineBuy {
+    font-size: 14px;
+    margin-top: 4%;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 15px;
+    margin-top: 4%;
+  }
+
+  .MenuImg {
+    width: 50%;
+    background-size: 85%;
+
+  }
+
+  .CardModalItemMe {
+    margin-top: 10px;
+  }
+
+  .WhatchVideo {
+    width: 45%;
+    cursor: pointer;
+  }
+}
+
 @media (min-width: 1000px) and (max-width: 1300px) {
   .ScheduleName {
     justify-content: center;
@@ -263,6 +350,7 @@
     color: white;
     margin-left: 10px;
   }
+
   .MenuTextButtons {
     margin-top: 15%;
     width: 95%;
@@ -275,19 +363,32 @@
   .WhatchVideo {
     width: 45%;
   }
+
+  .Curved {
+    margin-top: -18%;
+  }
 }
+
 .MenuText1 {
   display: none;
 }
+
 @media (max-width: 1200px) {
   .NavMe {
     width: 70%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1050px) {
+@media (min-width:768px) and (max-width: 1023px) {
+  .ImgBrand {
+    margin-top: 0px;
+    width: 110px;
+    height: 65px;
+  }
 }
+
 @media (min-width: 756px) and (max-width: 1000px) {
+
   .ScheduleName {
     margin-bottom: 0;
     padding-top: 5px;
@@ -295,15 +396,39 @@
   }
 
   .HeaderMenu {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .Menu {
+    overflow: hidden;
+  }
+
+  .Curved {
+    margin-top: -29%;
+  }
+
+  .HeaderMenu {
     height: 600px;
     overflow: hidden;
   }
+
   .TextOnlineBuy {
     display: none;
   }
 
   .Curved {
     margin-top: -34%;
+  }
+
+
+
+
+  .MenuImg {
+    width: 65%;
+    background-size: 65%;
+    margin: auto;
+    margin-top: 1px;
   }
 
   .MenuTextButtons {
@@ -318,12 +443,15 @@
 
     overflow: hidden;
   }
+
   .ImgBrand {
     margin-top: 0px;
   }
+
   .NavbarMenuMedia {
     color: white;
   }
+
   .NavMe {
     border-radius: 4px;
     background-color: #010b19dc;
@@ -336,12 +464,13 @@
     width: 100%;
     margin: auto;
   }
+
   .WhatchWriter a {
     margin-top: 3%;
   }
 
   .Menu {
-    height: 480px;
+    height: 500px;
   }
 
   .WhatchVideo p:nth-child(2) {
@@ -367,12 +496,22 @@
   .MenuImg {
     width: 100%;
   }
+
   .MenuTextButtons {
     margin-top: 15%;
   }
 }
+
 .NavMe p:hover {
   scale: 1.05;
+}
+
+@media(max-width:850px) {
+  .Curved {
+    margin-top: -30%;
+  }
+
+
 }
 
 @media (max-width: 767px) {
@@ -380,19 +519,25 @@
     height: 600px;
     overflow: hidden;
   }
+
   .MenuGroup {
-    height: 450px;
+    height: auto;
+  }
+
+  .Curved {
+    margin-top: -12%;
   }
 
   .MenuImg {
     width: 80%;
-    background-size: 90%;
+    background-size: 85%;
   }
 
   .ImgBrand {
     width: 115px;
     height: 65px;
   }
+
   .NavMe {
     border-radius: 4px;
     background-color: #010b19dc;
@@ -406,6 +551,7 @@
     width: 115%;
     margin: auto;
   }
+
   .MenuTextNextIcons {
     margin-top: -2.5%;
   }
@@ -419,27 +565,44 @@
     display: block;
     margin-top: 5%;
   }
+
   .MenuTextH4 {
-    font-size: 15px;
+    font-size: 4.2vh;
   }
 
   .MenuText1 h1 {
-    font-size: 5vh;
+    margin-top: 4%;
+    font-size: 5.3vh;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 2.7vh;
+    margin-top: 4%;
   }
 
   .MenuText {
     width: 100%;
     display: none;
   }
+
   .MenuImg {
     width: 100%;
   }
+
   .TextOnlineBuy {
     display: none;
   }
+
   .ScheduleName {
     font-size: 55%;
     justify-content: center;
+  }
+
+  .MenuTextButtons {
+    display: block;
+    display: flex;
+    margin-top: 20%;
+    align-content: flex-end;
   }
 
   .WhatchVideo {
@@ -453,6 +616,131 @@
     width: 45%;
     margin: auto;
     border-radius: 10px;
+  }
+
+  .WhatchVideo:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+@media(max-width:625px) {
+  .HeaderMenu {
+    height: 550px;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .HeaderMenu {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .ImgBrand {
+    width: 90px;
+    height: 50px;
+  }
+
+  .MenuText1 h4 {
+    font-size: 3.9vh;
+    width: 70%;
+  }
+
+  .MenuText1 h1 {
+    font-size: 4.8vh;
+    margin-top: 4%;
+  }
+
+  .MenuTextNextIcons {
+    width: 100%;
+    margin-top: 4%;
+    font-size: 3vh;
+  }
+
+
+  .MenuGroup {
+    height: 380px;
+    margin-top: 110px;
+  }
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: 1px;
+  }
+
+  .ScheduleNameIcon {
+    font-size: 1.3vh;
+    margin-right: 5px;
+    margin-left: 1px;
+  }
+
+  .MenuTextButtons {
+    margin-top: 26%;
+    justify-content: start;
+    margin-left: 1px;
+  }
+
+  .WhatchWriter {
+    width: 38%;
+    height: 9vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WhatchWriter .CardModalItemMe {
+    width: 100%;
+    margin: auto;
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+    margin-top: 2vh;
+    margin-left: -50%;
+
+  }
+
+  .WhatchWriter:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .WhatchVideo {
+    width: 38%;
+    height: 9vh;
+    text-align: center;
+
+  }
+
+  .WhatchVideo p:nth-child(1) {
+    font-size: 4vh;
+    color: white;
+    margin-top: 3px;
+  }
+
+  .WhatchVideo p:nth-child(2) {
+    margin-left: 5px;
+    font-size: 2.8vh;
+  }
+
+
+
+  .Curved {
+    margin-top: 1%;
+  }
+}
+
+@media (width: 414px) {
+  .ImgBrand {
+    width: 90px;
+    height: 47px;
+  }
+
+
+  .NavbarGroup {
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .HeaderMenu {
+    height: 450px;
   }
 
   .WhatchVideo:hover {
@@ -485,12 +773,13 @@
   }
 
   .HeaderMenu {
-    height: 500px;
+    height: 490px;
     overflow: hidden;
   }
 
   .MenuGroup {
     height: 380px;
+
   }
 
   .ScheduleNameIcon p:nth-child(2) {
@@ -530,6 +819,7 @@
   .WhatchVideo {
     width: 38%;
   }
+
   .WhatchVideo p {
     font-size: 13px;
   }
@@ -540,220 +830,360 @@
     margin-top: 10px;
     color: white;
   }
+
+
+  .MenuText1 h4 {
+    width: 100%;
+  }
+
+  .MenuText1 h4 {
+    font-size: 16px;
+  }
+
+  .MenuText1 h1 {
+    font-size: 19px;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 17px;
+  }
+
+  .WhatchWriter {
+    width: 40%;
+    height: 40px;
+  }
+
+  .WhatchWriter .CardModalItemMe {
+    font-size: 15px;
+    margin-top: 6px;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+    height: 40px;
+
+  }
+
+  .WhatchVideo p:nth-child(1) {
+    font-size: 3vh;
+    margin-top: -2px;
+  }
+
+  .CardModalItem {
+    width: 60%;
+    margin: auto;
+    opacity: .7;
+  }
+
+  .CardFooterExitIcon i {
+    color: red;
+  }
+
+  .WhatchVideo p:nth-child(2) {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+  .MenuTextButtons {
+    margin: auto;
+    margin-top: 26%;
+  }
+
+  .MenuGroup {
+    margin-top: -10px;
+  }
+
+  .Curved {
+    margin-top: -21%;
+  }
+
+
+  .ScheduleNameIcon {
+    font-size: 1vh;
+  }
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: -2px;
+  }
 }
+
+@media (max-width: 410px) {
+  #NavbarMe {
+    height: 90px;
+  }
+
+  .MenuText1 h4 {
+    width: 100%;
+  }
+
+  .WhatchWriter {
+    width: 40%;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+
+
+
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  .ImgBrand {
+    width: 80px;
+    height: 45px;
+  }
+
+
+
+  .NavbarGroup {
+    height: auto;
+  }
+
+  .HeaderMenu {
+    height: 450px;
+  }
+
+  .MenuText1 h4 {
+    width: 100%;
+  }
+
+  .WhatchWriter {
+    width: 40%;
+  }
+
+  .WhatchWriter .CardModalItemMe {
+    font-size: 2.5vh;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+  .WhatchVideo p:nth-child(1) {
+    font-size: 3vh;
+    margin-top: 1.5vh;
+  }
+
+  .WhatchVideo p:nth-child(2) {
+    font-size: 2.5vh;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+  .MenuTextButtons {
+    margin: auto;
+    margin-top: 20%;
+  }
+
+  .MenuGroup {
+    margin-top: -10px;
+  }
+
+  .Curved {
+    margin-top: -38%;
+  }
+
+
+
+
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: 5px;
+  }
+}
+
+@media (width: 375px) {
+  .ImgBrand {
+    width: 80px;
+    height: 45px;
+  }
+
+
+  .NavbarGroup {
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .HeaderMenu {
+    height: 450px;
+  }
+
+  .MenuText1 h4 {
+    width: 100%;
+  }
+
+  .MenuText1 h4 {
+    font-size: 16px;
+  }
+
+  .MenuText1 h1 {
+    font-size: 19px;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 17px;
+  }
+
+  .WhatchWriter {
+    width: 40%;
+    height: 35px;
+  }
+
+  .WhatchWriter .CardModalItemMe {
+    font-size: 2vh;
+    margin-top: 6px;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+    height: 35px;
+
+  }
+
+  .WhatchVideo p:nth-child(1) {
+    font-size: 3vh;
+    margin-top: 1.5vh;
+    margin-top: 1px;
+  }
+
+  .WhatchVideo p:nth-child(2) {
+    margin-top: 8px;
+    font-size: 1.7vh;
+
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+  .MenuTextButtons {
+    margin: auto;
+    margin-top: 20%;
+  }
+
+  .MenuGroup {
+    margin-top: -10px;
+  }
+
+  .Curved {
+    margin-top: -38%;
+  }
+
+
+
+  .ScheduleNameIcon {
+    font-size: 1vh;
+  }
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: -2px;
+  }
+}
+
+@media (width: 360px) {
+  .ImgBrand {
+    width: 80px;
+    height: 45px;
+  }
+
+
+
+  .NavbarGroup {
+    height: auto;
+  }
+
+  .HeaderMenu {
+    height: 450px;
+  }
+
+  .MenuText1 h4 {
+    width: 100%;
+  }
+
+  .MenuText1 h4 {
+    font-size: 16px;
+  }
+
+  .MenuText1 h1 {
+    font-size: 19px;
+  }
+
+  .MenuTextNextIcons {
+    font-size: 17px;
+  }
+
+  .WhatchWriter {
+    width: 40%;
+    height: 35px;
+  }
+
+  .WhatchWriter .CardModalItemMe {
+    font-size: 2vh;
+    margin-top: 6px;
+  }
+
+  .WhatchVideo {
+    width: 40%;
+    height: 35px;
+
+  }
+
+  .WhatchVideo p:nth-child(1) {
+    font-size: 3vh;
+    margin-top: 1.5vh;
+    margin-top: 1px;
+  }
+
+  .WhatchVideo p:nth-child(2) {
+    margin-top: 8px;
+    font-size: 1.7vh;
+
+  }
+
+  .WhatchVideo {
+    width: 40%;
+  }
+
+  .MenuTextButtons {
+    margin: auto;
+    margin-top: 20%;
+  }
+
+  .MenuGroup {
+    margin-top: -10px;
+  }
+
+  .Curved {
+    margin-top: -38%;
+  }
+
+
+
+  .ScheduleNameIcon {
+    font-size: 1vh;
+  }
+
+  .ScheduleNameIcon p:nth-child(2) {
+    margin-left: -2px;
+  }
+}
+
+
+
+
 
 .ScheduleNameIcon p:nth-child(2) {
   margin-left: 10px;
 }
-/* ----------ServiceMenu------------- */
-
-.ServiceMenu {
-  height: auto;
-}
-
-.ServiceMenuText {
-  margin-top: 30px;
-}
-
-.ServiceMenuText1 {
-  /* Subtitle / Base */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
-  /* or 57px */
-  font-family: "Andale Mono", monospace;
-
-  text-align: center;
-
-  color: #010b19;
-}
-
-.ServiceMenuText2 {
-  width: 80%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.5vh;
-  line-height: 160%;
-  /* or 29px */
-
-  text-align: center;
-  margin: auto;
-
-  color: #010b19;
-
-  opacity: 0.7;
-}
-
-.ServiceMenuCard {
-  flex-wrap: wrap;
-}
-
-.ServiceMenuCard1 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-.Card {
-  width: 30%;
-  height: 190px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-  align-content: center center;
-  background: #184e61;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.CardIcons {
-  width: 30%;
-  height: 80%;
-  font-size: 30px;
-  margin-top: 5%;
-}
-
-.CardIcons i {
-  margin-top: 5px;
-  color: white;
-}
-
-.CardText {
-  height: 80%;
-  margin-top: 5%;
-  text-align: start;
-}
-
-.CardTextBold {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;
-  /* identical to box height, or 33px */
-
-  /* White */
-
-  color: #ffffff;
-}
-
-.CardTextSmall {
-  font-family: "Andale Mono", monospace;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 150%;
-  margin-top: -10px;
-  /* identical to box height, or 33px */
-
-  /* White */
-
-  color: #ffffff;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .Card {
-    width: 47%;
-  }
-
-  .Card:nth-child(3) {
-    display: none;
-  }
-
-  .ServiceMenuCard1 {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 767px) {
-  .Card {
-    width: 100%;
-    margin-top: 5%;
-  }
-
-  .ServiceMenuCard1 {
-    flex-wrap: wrap;
-    margin-top: 5%;
-  }
-}
-
-/*-------------- List Menu Group---------------- */
-
-.Listmenu {
-  width: 100%;
-  height: 600px;
-  border: 1px solid black;
-}
-.ListMenuImg {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.SliderMenu {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.ListMenuText {
-  margin-top: 30px;
-}
-
-.ListMenuText1 {
-  /* Subtitle / Base */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 6vh;
-  line-height: 130%;
-  /* or 57px */
-  font-family: "Andale Mono", monospace;
-
-  text-align: center;
-
-  color: #010b19;
-}
-
-.ListMenuText2 {
-  width: 80%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.5vh;
-  line-height: 160%;
-  /* or 29px */
-
-  text-align: center;
-  margin: auto;
-
-  color: #010b19;
-
-  opacity: 0.7;
-}
-
-.ListMenuCard {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4%;
-  margin-bottom: 50px;
-}
-
-@media (min-width: 768px) and (max-width: 1000px) {
-  .CardMenuList {
-    width: 300px;
-  }
-
-  .ListMenuCard {
-    flex-wrap: wrap;
-  }
-}
-
-.CardMenuList {
-  width: 22%;
-}
-
-/* -----------------MedicineMenu--------------- */

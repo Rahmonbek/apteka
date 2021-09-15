@@ -1,88 +1,99 @@
 import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
 import Rasm from "./img/Brand.png";
-import { Navbar, Container, Nav, Image, Modal } from "react-bootstrap";
+import { Navbar, Container, Nav, Image, Modal, NavLink } from "react-bootstrap";
 import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+
 // import { Modal, Button, Space } from "antd";
 function Menu() {
   const [smShow, setSmShow] = useState(false);
   const showModalBot = () => {
     setSmShow(false);
   };
-
+  AOS.init({
+    duration: 1000,
+  });
   return (
     <>
       <div className={styles.HeaderMenu}>
-        <Container>
-          <div className={styles.NavbarMenu}>
-            <div className={styles.ScheduleName}>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <MdTimer />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>Dush-Jum (9:00-17:00)</p>
+        <div className="fixed-top" id={styles.NavbarMe}>
+          <Container>
+            <div className={styles.NavbarMenu}>
+              <div className={styles.ScheduleName}>
+                <div className={styles.ScheduleNameIcon}>
+                  <p>
+                    <MdTimer />
+                  </p>
+                  <p style={{ letterSpacing: "0.5px" }}>
+                    Dush-Jum (9:00-17:00)
+                  </p>
+                </div>
+                <div className={styles.ScheduleNameIcon}>
+                  <p>
+                    <IoIosCall />
+                  </p>
+                  <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
+                </div>
+                <div className={styles.ScheduleNameIcon}>
+                  <p>
+                    <HiOutlineMail />
+                  </p>
+                  <p style={{ letterSpacing: "0.5px" }}>
+                    pharmacyuzb@gmail.com
+                  </p>
+                </div>
               </div>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <IoIosCall />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>+998(71)799-88-00</p>
-              </div>
-              <div className={styles.ScheduleNameIcon}>
-                <p>
-                  <HiOutlineMail />
-                </p>
-                <p style={{ letterSpacing: "0.5px" }}>pharmacyuzb@gmail.com</p>
-              </div>
+              <Navbar
+                className={styles.NavbarGroup}
+                collapseOnSelect
+                expand="lg"
+              >
+                <Container>
+                  <Navbar.Brand href="#home">
+                    <Image className={styles.ImgBrand} src={Rasm} />
+                  </Navbar.Brand>
+                  <Navbar.Toggle
+                    className={styles.NavbarMenuMedia}
+                    aria-controls="responsive-navbar-nav"
+                    style={{ color: "#98349400", border: "none" }}
+                  >
+                    <i
+                      class="fas fa-bars"
+                      style={{ color: "white", fontSize: "26px" }}
+                    ></i>
+                  </Navbar.Toggle>
+                  <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className={styles.NavMe}>
+                      <Nav.Link href="#deets">
+                        <p>Bosh sahifa</p>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Doctors">
+                        <p>Doctors</p>
+                      </Nav.Link>
+                      <Nav.Link>
+                        <Link to="/dorilar">
+                          {" "}
+                          <p>Dorilar</p>
+                        </Link>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Contact">
+                        <p>Kantakt</p>
+                      </Nav.Link>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Container>
+              </Navbar>
             </div>
-            <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
-              <Container>
-                <Navbar.Brand href="#home">
-                  <Image className={styles.ImgBrand} src={Rasm} />
-                </Navbar.Brand>
-                <Navbar.Toggle
-                  className={styles.NavbarMenuMedia}
-                  aria-controls="responsive-navbar-nav"
-                  style={{ color: "#98349400", border: "none" }}
-                >
-                  <i
-                    class="fas fa-bars"
-                    style={{ color: "white", fontSize: "26px" }}
-                  ></i>
-                </Navbar.Toggle>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className={styles.NavMe}>
-                    <Nav.Link href="#deets">
-                      <p>Bosh sahifa</p>
-                    </Nav.Link>
-
-                    <Nav.Link href="/Doctors">
-                      <p>Doctors</p>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link to="/dorilar">
-                        {" "}
-                        <p>Dorilar</p>
-                      </Link>
-                    </Nav.Link>
-
-                    <Nav.Link href="/Contact">
-                      <p>Kantakt</p>
-                    </Nav.Link>
-                    <Nav.Link href="/apteka">
-                      <p>Dorixonalar</p>
-                    </Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Container>
-            </Navbar>
-          </div>
-        </Container>
+          </Container>
+        </div>
 
         <div className={styles.Menu}>
           <Container className={styles.MenuGroup}>
@@ -233,19 +244,61 @@ function Menu() {
                   chiqmasdan dori tanlashingiz mumkin.
                 </p>
                 <div className={styles.MenuTextButtons}>
-                  <div className={styles.WhatchWriter}>
-                    <p>Maslahat Olish</p>
-                  </div>
-                  <div
+                  <a className={styles.WhatchWriter}>
+                    <a
+                      className={styles.CardModalItemMe}
+                      onClick={() => setSmShow(true)}
+                    >
+                      Ma'lumot uchun
+                    </a>
+
+                    <Modal
+                      className={styles.CardModalItem}
+                      size="sm"
+                      show={smShow}
+                      onHide={() => setSmShow(false)}
+                      aria-labelledby="example-modal-sizes-title-sm"
+                    >
+                      <Modal.Header>
+                        <Modal.Title id="example-modal-sizes-title-sm">
+                          Ma'lumot uchun!
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                        <p className={styles.CardBodyCallIcon}>
+                          {" "}
+                          <i class="fas fa-phone-alt"></i>
+                          <i>+998(78)-645-23-12</i>
+                        </p>
+                      </Modal.Body>
+                      <Modal.Footer
+                        className={styles.CardFooterExitIcon}
+                        onClick={() => showModalBot()}
+                      >
+                        <i class="fas fa-times"></i>
+                      </Modal.Footer>
+                    </Modal>
+                  </a>
+                  <a
                     target="_blank"
-                    href="https://www.youtube.com/watch?v=ytYBPNj7p3g"
+                    href="https://www.youtube.com"
                     className={styles.WhatchVideo}
                   >
                     <p>
                       <MdSlowMotionVideo />
                     </p>
                     <p className={styles.WhatchVideoP2}>Videoni Ko'rish</p>
-                  </div>
+                  </a>
                 </div>
               </div>
               {/* <Image classname={styles.MenuImgRasm} src={person} /> */}

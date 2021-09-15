@@ -92,7 +92,16 @@
 .EventsMenuItemText ul li i:nth-child(3) {
   font-size: 2.5vh;
 }
+@media(min-width:1700px) {
 
+.EventsMenuItemText ul li i:nth-child(1) {
+  font-size: 1.9vh;
+}
+
+.EventsMenuItemText ul li i:nth-child(3) {
+  font-size: 1.7vh;
+}
+}
 @media (max-width: 992px) {
   .EventsMenuItem {
     display: flex;
@@ -355,17 +364,14 @@
 
 
   .EventsMenuText1 {
-    /* Subtitle / Base */
     width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 130%;
-    /* or 57px */
     font-family: "Andale Mono",
       monospace;
-
     text-align: center;
 
     color: #010b19;
@@ -375,7 +381,8 @@
     @media(max-width:390px) {
       .EventsMenuText1 {
         position: relative;
-        font-size: 12px;
+        font-size: 10px;
+        color: red;
       }
       .EventsMenuItem {
         height: 400px;
@@ -392,7 +399,7 @@
       }
 
       .EventsMenuItemText ul li i:nth-child(1) {
-        font-size: 12px;
+        font-size: 10px;
       }
 
       .EventsMenuItemText ul li i:nth-child(3) {

@@ -16,6 +16,8 @@ body {
 .SliderMenu {
     width: 100%;
     height: 650px;
+    border: 1px solid green;
+    overflow: hidden;
 
 }
 
@@ -106,6 +108,7 @@ body {
     position: relative;
     width: 90%;
     height: 45px;
+    border: 1px solid green;
     z-index: 3;
     margin: auto;
     color: white;
@@ -119,7 +122,11 @@ body {
 
 }
 .Card:hover #CardBody {
-    transform: translateY(10px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
     transition: .7s;
 
 }
@@ -137,6 +144,16 @@ body {
 
 
 }
+
+.card_image {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    background-image: url(../img/slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 .card_image img {
     width: 100%;
     height: 100%;
@@ -179,10 +196,6 @@ body {
     margin-left: -8px;
 }
 
-.Card:hover .social_icons li a {
-    transform: translateX(-200px);
-    opacity: 1;
-}
 
 .Card .social_icons li {
     transform: translateY(-240px);
@@ -194,31 +207,33 @@ body {
 .Card:hover .social_icons li a {
     transform: translateX(-160px);
     opacity: 1;
-
-
 }
 
-.Curved {
-    position: relative;
-    display: block;
-    transform: translateY(350px);
+.Curved1 {
+    width: 100%;
+    height: 100%;
+    align-content: flex-end;
+    border: 1px solid green;
 }
 
-.Card:hover .Curved {
-    position: absolute;
-    transform: translateY(10px);
-    margin-top: 62%;
-    transition: .6s;
+    .Curved {
+        border: 1px solid red;
+}
+
+    .Card:hover .Curved {
+        position: relative;
     z-index: 3;
+    border: 1px solid red;
+    transition: .7s;
 
-}
+    }
 
 #CallMeGroup {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #1CC198;
+    background-color: yellow;
     display: block;
     transform: translateY(200px);
     justify-content: center;
@@ -249,12 +264,11 @@ body {
         transform: rotate(360deg);
     }
 
-    .Card:hover #CallMeGroup {
-        position: absolute;
-        transform: translateX(170px);
-        margin-top: 45%;
-        transition: .6s;
-        z-index: 3;
+    .Card:hover #CallMeGroup i {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        border: 1px solid black;
 
     }
 
@@ -447,7 +461,7 @@ body {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: #1CC198;
+            background-color:brown;
             display: block;
             transform: translateY(200px);
             justify-content: center;
@@ -601,7 +615,7 @@ body {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #1CC198;
+        background-color: red;
         display: block;
         transform: translateY(200px);
         justify-content: center;
@@ -826,7 +840,10 @@ body {
         display: none;
 
     }
+.SliderMenu {
+    border: 1px solid black;
 
+}
     #CardBody {
         position: relative;
         margin-top: 33%;
@@ -900,7 +917,7 @@ body {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #1CC198;
+        background-color: blue;
         display: block;
         transform: translateY(200px);
         justify-content: center;
@@ -983,13 +1000,22 @@ body {
 
     @media(max-width:993px) {
         .Card:hover .Curved {
-            position: absolute;
-            transform: translateY(10px);
-            margin-top: 49%;
-            transition: .6s;
-            z-index: 3;
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
 
-        }
+            }
+
+            .SliderMenuItem {
+                height: auto;
+                border: 1px solid red;
+                overflow: hidden;
+            }
+
+
+            .Card {
+                border: 1px solid black;
+            }
 
         #CardBody {
             position: relative;
@@ -1005,17 +1031,6 @@ body {
             transform: translateY(350px);
 
         }
-
-        #CardBody p:nth-child(2) {
-            font-size: 12px;
-
-        }
-
-        #CardBody p:nth-child(1) {
-            font-size: 19px;
-
-        }
-
         .Card:hover .social_icons li a {
             transform: translateX(-140px);
             opacity: 1;
@@ -1031,13 +1046,13 @@ body {
         }
 
         .Card:hover #CardBody {
-            transform: translateY(50px);
+            transform: translateY(54px);
             transition: .7s;
 
         }
 
         #CardBody p:nth-child(1) {
-            font-size: 16px;
+            font-size: 3vh;
             text-align: center;
             font-family: 'Andale Mono', monospace;
             font-style: normal;
@@ -1045,7 +1060,7 @@ body {
         }
 
         #CardBody p:nth-child(2) {
-            font-size: 12px;
+            font-size: 2.3vh;
             font-family: 'Andale Mono', monospace;
         }
 
@@ -1060,37 +1075,20 @@ body {
 
     }
 
-@media(min-width:768px) and (max-width:1000px) {
-    #CardBody {
-        position: relative;
-        margin-top: 45%;
-        height: 80px;
-    }
 
-    .SliderMenu {
-        height: 470px;
-    }
-
-    .SliderMenuItem {
-        margin-top: 5%;
-    }
-
-    #CardBody p:nth-child(1) {
-        font-size: 18px;
-        font-family: 'Andale Mono', monospace;
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    #CardBody p:nth-child(2) {
-        font-size: 14px;
-        font-family: 'Andale Mono', monospace;
-
-
-    }
-}
 
 @media(max-width:767px) {
+    .Card:hover .Curved {
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        margin-bottom: 10px;
+
+        }
+        .Card {
+            border: 1px solid green;
+        }
+
     .SliderContainer {
         display: none;
     }
@@ -1164,33 +1162,11 @@ body {
 
 
     }
-
-    .Card:hover .Curved {
-        position: absolute;
-        transform: translateY(10px);
-        margin-top: 25%;
-        transition: .6s;
-        z-index: 3;
-
-    }
-
-    .Card:hover #CallMeGroup {
-        position: absolute;
-        transform: translateX(215px);
-        margin-top: 18%;
-        transition: .6s;
-        z-index: 3;
-
-    }
-
     #CallMeGroup {
-        position: absolute;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: #1CC198;
+
+        width: 100%;
+        height: 100%;
         display: block;
-        transform: translateY(200px);
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -1198,17 +1174,25 @@ body {
     }
 
     #CallMeGroup i {
+        width: 65px;
+        height: 65px;
+        padding: 10px 10px;
+        border-radius: 50%;
+        background-color: green;
         text-align: center;
         margin: auto;
         font-size: 18px;
         color: white;
     }
+    .Card:hover #CallMeGroup {
+        width: 100%;
+        height: 100%;
+
+    }
 
     #CallMeGroupIcon {
         text-align: center;
         margin: auto;
-        margin-left: 11.5px;
-        margin-top: 13.5px;
     }
 
     .Card:hover #CardBody {
@@ -1238,13 +1222,11 @@ body {
     @media(max-width:550px) {
 
         .Card:hover .Curved {
-            position: absolute;
-            transform: translateY(10px);
-            margin-top: 28%;
-            transition: .6s;
-            z-index: 3;
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
 
-        }
+            }
 
         .Card:hover #CardBody {
             transform: translateY(39px);
