@@ -122,27 +122,26 @@ export default class Apteka extends Component {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
-                    <Nav.Link href="#deets">
-                      <p>Menu</p>
-                    </Nav.Link>
-                    <Nav.Link href="#service">
-                      <p>Xizmatlar</p>
-                    </Nav.Link>
-                    <Nav.Link href="#List">
-                      <p>Doctors</p>
-                    </Nav.Link>
-                    <Nav.Link>
-                      <Link to="/dorilar">
-                        {" "}
-                        <p>Dorilar</p>
-                      </Link>
-                    </Nav.Link>
-                    <Nav.Link href="#blog">
-                      <p>Aloqa</p>
-                    </Nav.Link>
-                    <Nav.Link href="#apteka">
-                      <p>Dorixonalar</p>
-                    </Nav.Link>
+                  <Nav.Link href="#deets">
+                        <p>Bosh sahifa</p>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Doctors">
+                        <p>Doctors</p>
+                      </Nav.Link>
+                      <Nav.Link>
+                        <Link to="/dorilar">
+                          {" "}
+                          <p>Dorilar</p>
+                        </Link>
+                      </Nav.Link>
+
+                      <Nav.Link href="/Contact">
+                        <p>Kantakt</p>
+                      </Nav.Link>
+                      <Nav.Link href="/apteka">
+                        <p>Dorixonalar</p>
+                      </Nav.Link>
                   </Nav>
                   
                 </Navbar.Collapse>
