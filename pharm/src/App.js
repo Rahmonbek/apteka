@@ -8,7 +8,8 @@ import InfoMedicine from "./Medicines/Components/InfoMedicine";
 import ErrorPage from "./Medicines/Components/ErrorPage";
 import Contact from "./Component/Contact";
 import Apteka from "./Component/Apteka";
-
+import Login from './panel/Login'
+import Panel from './panel/Panel'
 function App() {
   return (
     <div className="App">
@@ -34,9 +35,16 @@ function App() {
             <Apteka />
             <Footer />
           </Route>
+           <Route path="/admin">
+            <Login />
+          </Route>
+          <Route path="/panel">
+            <Panel/>
+          </Route>
           <Route path="*">
             <ErrorPage />
           </Route>
+         
       
         </Switch>
       </Router>
