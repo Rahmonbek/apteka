@@ -124,6 +124,7 @@
   cursor: pointer;
   z-index: 3;
   color: white;
+  padding-top: 8px !important;
 }
 
 .WhatchWriter:focus {
@@ -642,7 +643,9 @@
    margin-bottom: 20px;
   }
   .headertext{
-    font-size: 45px;
+    font-size: 45px !important;
+    text-align: left !important;
+    width: 360px !important;
   }
   .form{
     height: 500px !important;
@@ -686,7 +689,9 @@
    margin-bottom: 20px;
   }
   .headertext{
-    font-size: 45px;
+    font-size: 45px !important;
+    text-align: left !important;
+    width: 360px !important;
   }
   .form{
     height: 830px !important
@@ -705,6 +710,10 @@
   .aloqacard{
     width: 35% !important;
   }
+  .aloqa{
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
   
 }
 @media screen and (min-width:567px) {
@@ -718,7 +727,9 @@
    margin-bottom: 20px;
   }
   .headertext{
-    font-size: 45px;
+    font-size: 45px !important;
+    text-align: left !important;
+    width: 360px !important;
   }
   .form{
     height: 780px !important;
@@ -737,6 +748,10 @@
   .aloqacard{
     width: 35% !important;
   }
+  .aloqa{
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
 
 }
 @media screen and (min-width:767px) {
@@ -750,7 +765,9 @@
    margin-bottom: 20px;
   }
   .headertext{
-    font-size: 45px;
+    font-size: 45px !important;
+    text-align: left !important;
+    width: 360px !important;
   }
   .form{
     height: 860px !important
@@ -776,7 +793,10 @@
   .wave{
     width: 158% !important;
   }
-  
+  .aloqa{
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width:992px) {
   .HeaderMenu{
@@ -784,6 +804,12 @@
   }
   .headerImg{
   width: 120%;
+  margin-left: -70px;
+  }
+  .headertext{
+    font-size: 55px !important;
+    text-align: left !important;
+    width: 360px !important;
   }
   .map{
    margin-bottom: 20px;
@@ -827,6 +853,10 @@
   .mapImg{
     width: 100% !important;
     margin-left: 0%;
+  }
+  .aloqa{
+    margin-top: -100px;
+    margin-bottom: 20px;
   }
   .aloqacard{
     width: 17% !important;
