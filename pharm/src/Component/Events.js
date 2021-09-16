@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Css/Events.module.css";
+import style from "./Css/Cardgroup.module.css";
 import { Container, Image } from "react-bootstrap";
 import Rasm from "./img/about.jpg";
 import AOS from "aos";
@@ -12,11 +13,12 @@ export default function Events() {
     <div className={styles.Events}>
       <Container>
         <div className={styles.EventsMenu}>
-          <div className={styles.EventsMenuText}>
-            <p className={styles.EventsMenuText1}>
-              Bizning Tariximiz va Afzalliklarimiz
+          {/* Buning style Cardgroup.module.css da yozilgan  */}
+          <div className={style.CardGroupMenuText}>
+            <p style={{ color: "black" }} className={style.CardGroupMenuText1}>
+              Bizning Tariximiz va Afzalliklarimiz!
             </p>
-            <p className={styles.EventsMenuText2}>
+            <p style={{ color: "black" }} className={style.CardGroupMenuText2}>
               Semper integer est quis leo, nunc. Quis lectus amet aenean massa
               turpis senectus pulvinar. Pharetra gravida volutpat faucibus
               faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.

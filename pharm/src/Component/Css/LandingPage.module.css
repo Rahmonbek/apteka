@@ -250,8 +250,13 @@
 
 @media(min-width:1700px) {
   .HeaderMenu {
-    height: 900px;
+    width: 100%;
+    height: 1250px;
     overflow: hidden;
+    }
+
+    .MenuGroup {
+      height: 950px;
     }
 
 .MenuImg {
@@ -261,27 +266,74 @@
   margin-left: 3%;
   background-size: 100%;
 }
-
-
-.MenuText {
-  height: 650px;
-}
-
 .MenuText h4 {
+  font-size: 35px;
   width: 100%;
 }
 
+.MenuTextButtons {}
+
+.WhatchWriter {
+  width: 48%;
+  height: 100px;
+  overflow: hidden;
+  text-align: left;
+
+}
+
+.WhatchWriter a {
+
+  width: auto;
+  height: auto;
+  font-size: 28px;
+  margin-left: 20px;
+  margin-top: 23px;
+
+}
+
+.WhatchVideo {
+  width: 48%;
+  height: 100%;
+}
+
+.WhatchVideo p:nth-child(1) {
+  width: auto;
+  height: auto;
+  font-size: 28px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+.WhatchVideoP2 {
+  font-size: 28px;
+  margin-top: 20px;
+
+}
 .MenuText h1 {
   width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  margin-top: 3%;
+  font-family:"Andale Mono",
+  monospace;
+
+  text-transform: uppercase;
 }
 
 .MenuTextNextIcons {
   width: 100%;
+  margin-top: 3%;
+  height: 10%;
+
 }
 
 .MenuTextNextIcons p:nth-child(2) {
-  font-size: 5vh;
+  font-size: 30px;
+  }
+
+  .TextOnlineBuy {
+    margin-top: 5%;
+    font-size: 30px;
 }
 
   .Curved {
@@ -290,14 +342,14 @@
   }
 
 }
-@media(min-width:1301px) {
+@media(min-width:1301px) and (max-width:1699) {
   .MenuTextButtons {
     width: 95%;
     margin-top: 10%;
   }
 }
 
-@media (min-width: 1301px) {
+@media (min-width: 1301px) and(max-width:1699px) {
   .MenuTextButtons {
     width: 95%;
     margin-top: 9%;
@@ -311,10 +363,11 @@
     width: 45%;
     cursor: pointer;
   }
-  .MenuGroup {}
 
-  .CardModalItemMe {
+  .WhatchWriter a {
     margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid black;
   }
 
   .MenuTextNextIcons p:nth-child(2) {

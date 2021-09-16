@@ -62,7 +62,23 @@
     font-family: 'Andale Mono', monospace;
 
 }
+@media(min-width:1700px) {
+    .CountUp_itemGroup {
+        font-size: 5vh;
+    }
 
+    .CountUp_item {
+        margin-top: 1%;
+    }
+
+    .CountUp_item p {
+        font-size: 3vh;
+    }
+
+    .containerMe {
+        height: 400px;
+    }
+    }
 @media (min-width: 1024px) {
     .containerMe {
         background-attachment: fixed;

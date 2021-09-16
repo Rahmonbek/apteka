@@ -101,6 +101,17 @@
 .EventsMenuItemText ul li i:nth-child(3) {
   font-size: 1.7vh;
 }
+.EventsMenuText1 {
+  width: 100%;
+}
+
+.EventsMenuItem {
+  margin-top: 4%;
+}
+
+.EventsMenuText2 {
+  width: 100%;
+}
 }
 @media (max-width: 992px) {
   .EventsMenuItem {

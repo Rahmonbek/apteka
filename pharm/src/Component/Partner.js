@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from "./Css/Partner.module.css";
+import styles from "./Css/Cardgroup.module.css";
 import Rasm1 from "./img/Homiy9.png";
 import Rasm2 from "./img/Homiy7.png";
 import Rasm3 from "./img/Homiy6.png";
@@ -9,6 +10,7 @@ import Rasm4 from "./img/Homiy8.png";
 import Rasm5 from "./img/Homiy5.png";
 import Rasm6 from "./img/Homiy10.png";
 import AOS from "aos";
+import { Container } from "react-bootstrap";
 
 export default function Partner() {
   const responsive2 = {
@@ -35,6 +37,22 @@ export default function Partner() {
   });
   return (
     <div>
+      <div>
+        <Container>
+          {/* Buning style Cardgroup.module.css da yozilgan  */}
+          <div className={styles.CardGroupMenuText}>
+            <p style={{ color: "black" }} className={styles.CardGroupMenuText1}>
+              Bizning Hamkorlarimiz!
+            </p>
+            <p style={{ color: "black" }} className={styles.CardGroupMenuText2}>
+              Semper integer est quis leo, nunc. Quis lectus amet aenean massa
+              turpis senectus pulvinar. Pharetra gravida volutpat faucibus
+              faucibus. Quis lectus amet aenean massa turpis senectus pulvinar.
+              Pharetra gravida volutpat faucibus faucibus.
+            </p>
+          </div>
+        </Container>
+      </div>
       <div data-aos="zoom-in" className={style.sliderHomiy}>
         <Carousel
           responsive={responsive2}

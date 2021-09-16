@@ -185,8 +185,9 @@
 @media(min-width:1700px) {
 
     .Service {
-        margin-top: 10%;
-        height: 700px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        height: 1000px;
         overflow: hidden;
     }
  .CardText {
@@ -216,6 +217,7 @@
     }
 
     .ServiceMenuText2 {
+        width: 100%;
         margin-top: -5px;
     }
 
@@ -224,15 +226,20 @@
     }
 
     .ServiceMenuCard {
-        width: 380px;
-    }
+        width: 400px;
+        height: 250px;
+        }
+.CardIcons i {
+    font-size: 5vh;
+}
     .CardTextBold {
-        font-size: 2.7vh;
+        font-size: 2.3vh;
     }
 
     .CardTextSmall {
-        margin-top: -2%;
-        font-size: 2vh;
+        position: relative;
+        margin-top: -10%;
+        font-size: 1.7vh;
     }
 
 

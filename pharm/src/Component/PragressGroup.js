@@ -31,7 +31,7 @@ export default function PragressGroup() {
               end={1500}
               duration={5}
             />
-            <p>Bizning Kunlik mijozlar</p>
+            <p> Kunlik mijozlar</p>
           </div>
 
           <div className={styles.CountUp_item}>
