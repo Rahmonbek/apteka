@@ -379,11 +379,6 @@
 }
 
     @media(max-width:390px) {
-      .EventsMenuText1 {
-        position: relative;
-        font-size: 10px;
-        color: red;
-      }
       .EventsMenuItem {
         height: 400px;
       }
@@ -410,4 +405,17 @@
         color: #010b19;
         margin-top: 1%;
         }
+}
+@media(max-width:322px) {
+  .EventsMenuItemText ul li {
+    margin-top: 5px;
+    margin-left: -9%;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(3) {
+    font-size: 1.7vh;
+  }
+
+
+
 }

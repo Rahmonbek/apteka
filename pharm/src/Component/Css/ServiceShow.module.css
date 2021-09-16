@@ -344,7 +344,7 @@
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .Service {
         height: 600px;
     }
@@ -414,6 +414,16 @@
     }
 }
 @media(max-width:500px) {
+    .Service {
+        height: auto;
+    }
+
+    .ServiceMe {}
+
+    .ServiceMenu {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
     .ServiceMenuText {
         margin-top: 1%;
@@ -425,13 +435,11 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
-        font-size: 5vh;
+        font-size: 4vh;
         line-height: 130%;
-        /* or 57px */
-        font-family: "Andale Mono", monospace;
-
+        font-family: "Andale Mono",
+        monospace;
         text-align: center;
-
         color: #010b19;
     }
 
@@ -441,14 +449,10 @@
         font-style: normal;
         font-weight: normal;
         font-size: 2vh;
-        line-height: 160%;
-        /* or 29px */
-
+        line-height: 120%;
         text-align: center;
         margin: auto;
-
         color: #010b19;
-
         opacity: 0.7;
     }
 }
@@ -456,7 +460,11 @@
 @media(max-width:420px) {
     .Service {
         height: 550px;
-    }
+}
+
+.ServiceMenuCard {
+    height: 150px;
+}
 
     .ServiceMenuText {
         margin-top: 5%;
@@ -495,6 +503,50 @@
 
         opacity: 0.7;
     }
+    .CardIcons {
+        width: 25%;
+    }
+
+    .CardText {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .CardTextBold {
+        font-size: 15px;
+    }
+
+    .CardTextSmall {
+        font-size: 13px;
+    }
+    }
+
+    @media(max-width:322px) {
+        .ServiceMenuCard {
+            width: 260px;
+            height: 150px;
+        }
+
+        .CardIcons {
+            width: 20%;
+            margin-left: 1px;
+        }
+
+        .CardIcons i {
+            font-size: 30px;
+        }
+
+        .CardText {
+            overflow: hidden;
+        }
+
+        .CardTextBold {
+            font-size: 2.8vh;
+        }
+
+        .CardTextSmall {
+            font-size: 11px;
+        }
 }
 #ButtonGroupId {
     width: 130px;

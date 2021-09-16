@@ -124,3 +124,28 @@
     }
 
 }
+@media(max-width:375px) {
+    .containerMe {
+        height: auto;
+        overflow: hidden;
+
+    }
+
+    .CountUp_item {
+        height: auto;
+
+    }
+
+    .CountUp {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .CountUp_itemGroup {
+        font-size: 30px;
+    }
+
+    .CountUp_item p {
+        font-size: 15px;
+    }
+}

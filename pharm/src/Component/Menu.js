@@ -73,10 +73,6 @@ function Menu() {
                       <Nav.Link href="#deets">
                         <p>Bosh sahifa</p>
                       </Nav.Link>
-
-                      <Nav.Link href="/Doctors">
-                        <p>Doctors</p>
-                      </Nav.Link>
                       <Nav.Link>
                         <Link to="/dorilar">
                           {" "}
@@ -221,10 +217,9 @@ function Menu() {
                     color: "white",
                   }}
                 >
-                  Biz har bir mijoz <br />
+                  Biz har bir mijoz
                   <b>
-                    {" "}
-                    Istagi va Hohishini amalga{" "}
+                    <br /> Istagi va Hohishini amalga{" "}
                     <a href="#kun" style={{ color: "white" }}>
                       Oshiramiz
                     </a>

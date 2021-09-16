@@ -233,17 +233,17 @@ export default function ServiceShow() {
               Pharetra gravida volutpat faucibus faucibus.
             </p>
           </div>
-          <div className={styles.ServiceMenu}>
+          <div data-aos="zoom-in" className={styles.ServiceMenu}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
               <div
-                data-aos="zoom-in"
+                
                 className={styles.ServiceMenuCard}
                 key={post.id}
               >
                 <div className={styles.CardIcons}>
                   <i>{post.icon}</i>
                 </div>
-                <div className={styles.CardText} style={{ width: "60%" }}>
+                <div className={styles.CardText}>
                   <p className={styles.CardTextBold}>{post.title}</p>
                   <p className={styles.CardTextSmall}>{post.body}</p>
                 </div>

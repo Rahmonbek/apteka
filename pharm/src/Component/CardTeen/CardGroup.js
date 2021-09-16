@@ -144,10 +144,10 @@ export default function ServiceShow() {
               Pharetra gravida volutpat faucibus faucibus.
             </p>
           </div>
-          <div className={styles.flex_container}>
+          <div  data-aos="zoom-in" className={styles.flex_container}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
               <div
-                data-aos="zoom-in"
+               
                 className={styles.flex_item}
                 key={post.id}
               >
