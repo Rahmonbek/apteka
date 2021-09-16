@@ -132,7 +132,7 @@
   height: 50px;
   border: 1px solid white;
   border-radius: 7px;
-  text-align: center;
+  text-align: start;
   font-size: 18px;
   align-content: center;
   cursor: pointer;
@@ -151,9 +151,11 @@
 
 .WhatchWriter a {
   position: absolute;
-  margin-top: 2%;
-  margin-left: -20%;
+  width: 100%;
+  text-align: center;
   color: white;
+  margin-top: 10px;
+  align-items: center center;
 }
 
 .WhatchWriter:hover a {
@@ -270,8 +272,6 @@
   font-size: 35px;
   width: 100%;
 }
-
-.MenuTextButtons {}
 
 .WhatchWriter {
   width: 48%;
@@ -509,9 +509,7 @@
     padding-top: 5px;
     justify-content: center;
   }
-  .Menu {
 
-  }
 
   .HeaderMenu {
     height: 700px;

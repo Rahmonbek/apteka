@@ -37,7 +37,7 @@ export default function Partner() {
   });
   return (
     <div>
-      <div>
+      <div className={style.TextPartner}>
         <Container>
           {/* Buning style Cardgroup.module.css da yozilgan  */}
           <div className={styles.CardGroupMenuText}>

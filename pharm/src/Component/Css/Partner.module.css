@@ -39,9 +39,13 @@
     width: 100%;
     height: auto;
 }
+.TextPartner {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
 @media (min-width:1700px) {
     .sliderHomiy {
-        margin-top: 4%;
-        margin-bottom: 4%;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Css/LandingPage.module.css";
 import Rasm from "./img/Brand.png";
-import { Navbar, Container, Nav, Image, Modal, NavLink } from "react-bootstrap";
+import { Navbar, Container, Nav, Image, Modal } from "react-bootstrap";
 import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
