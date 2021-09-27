@@ -361,20 +361,22 @@
 
 @media(max-width:700px) {
     .Card:hover .Curved {
-        margin-top: -84px;
+        margin-top: -97px;
     }
 
     .Card:hover .CardFooterText1 {
-        margin-top: -60px;
+        position: relative;
+        margin-top: -63px;
         line-height: 10px;
+        line-height: 5px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
-        font-size: 3vh;
+        font-size: 2vh;
 
     }
 
@@ -411,26 +413,62 @@
         opacity: 0.7;
     }
 }
+@media(max-width:572px) {
+    .Card:hover .Curved {
+        margin-top: -95px;
+    }
 
+    .Card:hover .CardFooterText1 {
+        position: relative;
+        margin-top: -70px;
+        height: auto;
+        line-height: 5px;
+        margin-bottom: 10px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        font-size: 2.5vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 2vh;
+
+    }
+    }
+
+    @media(max-width:500px) {
+        .Card:hover .Curved {
+            margin-top: -84px;
+        }
+
+        .Card:hover .CardFooterText1 p:nth-child(1) {
+            margin-top: 10px;
+        }
+
+        .Card:hover .CardFooterText1 {
+            margin-top: 60px;
+            border-bottom: 1px;
+        }
+    }
 @media(max-width:400px) {
     .CarosuelMe {
         height: 590px;
     }
     .Card:hover .Curved {
-        margin-top: -64px;
+        margin-top: -74px;
     }
 
     .Card:hover .CardFooterText1 {
         margin-top: -55px;
-        line-height: 10px;
+        line-height: 7px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        font-size: 3vh;
+        font-size: 2.3vh;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
-        font-size: 2.5vh;
+        font-size: 1.8vh;
 
     }
 
@@ -535,29 +573,19 @@
     }
 
     .Card:hover .CardFooterText1 {
-        margin-top: -51px;
-        line-height: 10px;
+        margin-top: 10px;
+        line-height: 5px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        font-size: 2.5vh;
+        margin-top: 17px;
+        font-size: 2vh;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
         font-size: 1.6vh;
 
     }
-
-    .CardFooterText1 p:nth-child(1) {
-        font-size: 3vh;
-
-    }
-
-    .CardFooterText1 p:nth-child(2) {
-        font-size: 2vh;
-
-    }
-
     .SliderMenuText1 {
         /* Subtitle / Base */
 
@@ -589,5 +617,23 @@
         color: #010b19;
 
         opacity: 0.7;
+    }
+}
+@media(max-width:320px) {
+    .Card:hover .Curved {
+        margin-top: -55px;
+    }
+
+    .Card:hover .CardFooterText1 {
+        line-height: 1px;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(1) {
+        margin-top: 28px;
+        font-size: 1.8vh;
+    }
+
+    .Card:hover .CardFooterText1 p:nth-child(2) {
+        font-size: 1.2vh;
     }
 }
