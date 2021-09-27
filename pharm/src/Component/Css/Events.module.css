@@ -1,5 +1,5 @@
 .Events {
-  padding-top: 10px;
+  padding-top: 5%;
 }
 .Events .EventsMenuText1 {
   font-family: Montserrat;
@@ -300,14 +300,14 @@
     }
 
     .EventsMenuItemText ul li i:nth-child(1) {
-      font-size: 2.5vh;
+      font-size: 2vh;
     }
 
     .EventsMenuItemText ul li i:nth-child(3) {
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
-      font-size: 2.5vh;
+      font-size: 1.9vh;
       color: #010b19;
       margin-top: 1%;
     }
@@ -316,7 +316,7 @@
 
     @media(max-width:440px) {
       .EventsMenuItem {
-        height: 490px
+        height: auto
       }
 
       .EventsMenuItemText ul {
@@ -330,14 +330,14 @@
       }
 
       .EventsMenuItemText ul li i:nth-child(1) {
-        font-size: 2.2vh;
+        font-size: 1.8vh;
       }
 
       .EventsMenuItemText ul li i:nth-child(3) {
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 2.2vh;
+        font-size: 1.5vh;
         color: #010b19;
         margin-top: 1%;
       }
@@ -391,7 +391,7 @@
 
     @media(max-width:390px) {
       .EventsMenuItem {
-        height: 400px;
+        height: auto;
       }
 
       .EventsMenuItemText ul {
@@ -405,6 +405,9 @@
       }
 
       .EventsMenuItemText ul li i:nth-child(1) {
+        font-size: 10px;
+      }
+      .EventsMenuItemText ul li i:nth-child(2) {
         font-size: 10px;
       }
 
@@ -423,8 +426,15 @@
     margin-left: -9%;
   }
 
+  .EventsMenuItemText ul li i:nth-child(1) {
+    font-size: 10px;
+  }
+
+  .EventsMenuItemText ul li i:nth-child(2) {
+    font-size: 10px;
+  }
   .EventsMenuItemText ul li i:nth-child(3) {
-    font-size: 1.7vh;
+    font-size: 10px;
   }
 
 
