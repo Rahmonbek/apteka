@@ -233,7 +233,13 @@
   width: 90%;
   height: 90%;
 }
+.CardFooterExitIcon i {
+  color: red;
+}
 
+.CardBodyCallIcon {
+  cursor: pointer;
+}
 @media (min-width: 1301px) {
   .MenuTextButtons {
     width: 95%;

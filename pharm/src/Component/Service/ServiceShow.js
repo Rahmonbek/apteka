@@ -235,11 +235,7 @@ export default function ServiceShow() {
           </div>
           <div data-aos="zoom-in" className={styles.ServiceMenu}>
             {posts.slice(pagination.start, pagination.end).map((post) => (
-              <div
-                
-                className={styles.ServiceMenuCard}
-                key={post.id}
-              >
+              <div className={styles.ServiceMenuCard} key={post.id}>
                 <div className={styles.CardIcons}>
                   <i>{post.icon}</i>
                 </div>

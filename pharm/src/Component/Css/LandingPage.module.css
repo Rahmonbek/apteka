@@ -120,10 +120,12 @@
 }
 
 .MenuTextButtons {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  margin-top: 5%;
+
 }
 
 .WhatchWriter {
@@ -162,7 +164,7 @@
   color: white;
 }
 
-.CardBodyCallIcon p {
+.CardBodyCallIcon {
   cursor: pointer;
 }
 
@@ -178,6 +180,7 @@
 .CardFooterExitIcon i {
   font-size: 22px;
   cursor: pointer;
+  color: red;
 }
 
 .WhatchVideo {
@@ -367,7 +370,6 @@
   .WhatchWriter a {
     margin-top: 10px;
     font-size: 15px;
-    border: 1px solid black;
   }
 
   .MenuTextNextIcons p:nth-child(2) {
@@ -432,7 +434,11 @@
   .MenuTextNextIcons {
     font-size: 15px;
     margin-top: 4%;
-  }
+
+
+    }
+
+
 
   .MenuImg {
     width: 50%;
@@ -485,7 +491,7 @@
 
 @media (max-width: 1200px) {
   .NavMe {
-    width: 70%;
+    width: 80%;
   }
   .MenuImg {
     width: 50%;

@@ -4,7 +4,6 @@ import { Zoom, Fade } from "react-reveal";
 import ReactPlayer from "react-player/youtube";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-
 function Medicine(props) {
   const { data } = props;
   const dispatch = useDispatch();

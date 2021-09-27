@@ -7,6 +7,7 @@ import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import styles from "../../Component/Css/LandingPage.module.css";
+import NavbarMenuChat from "../../Component/NavbarMenu";
 
 function Header(props) {
   const [res, setRes] = useState(true);
@@ -24,10 +25,10 @@ function Header(props) {
               <Link to="/">Bosh sahifa</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/">Doktorlar</Link>
+              <Link to="/">Dorilar</Link>
             </Nav.Link>
-            <Nav.Link href="#dorilar">
-              <span onClick={() => setRes(!res)}>Dorilar</span>{" "}
+            <Nav.Link>
+              <span onClick={() => setRes(!res)}>Dorixonalar</span>{" "}
             </Nav.Link>
             <Nav.Link>
               <Link to="/Contact">Kontakt</Link>
@@ -37,7 +38,10 @@ function Header(props) {
       ) : (
         ""
       )}
-      <div className="dorilar_header">
+      <div>
+        <NavbarMenuChat />
+      </div>
+      {/* <div className="dorilar_header">
         <Navbar className="dorilar-navbar">
           <Container>
             <Navbar.Brand className="mx-4">
@@ -80,11 +84,12 @@ function Header(props) {
                   <Link to="/">Bosh sahifa</Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to="/">Doktorlar</Link>
-                </Nav.Link>
-                <Nav.Link href="#dorilar">
                   <span>Dorilar</span>{" "}
                 </Nav.Link>
+                <Nav.Link>
+                  <Link to="/apteka">Dorixonalar</Link>
+                </Nav.Link>
+
                 <Nav.Link>
                   <Link to="/Contact">Kontakt</Link>
                 </Nav.Link>
@@ -93,7 +98,7 @@ function Header(props) {
           </Container>
         </Navbar>
         <div className="dorilar-main"></div>
-      </div>
+      </div> */}
     </div>
   );
 }

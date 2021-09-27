@@ -9,6 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import NavbarMenuChat from "./NavbarMenu";
 
 // import { Modal, Button, Space } from "antd";
 function Menu() {
@@ -22,7 +23,10 @@ function Menu() {
   return (
     <>
       <div className={styles.HeaderMenu}>
-        <div className="fixed-top" id={styles.NavbarMe}>
+        <div>
+          <NavbarMenuChat />
+        </div>
+        {/* <div className="fixed-top" id={styles.NavbarMe}>
           <Container>
             <div className={styles.NavbarMenu}>
               <div className={styles.ScheduleName}>
@@ -70,7 +74,7 @@ function Menu() {
                   </Navbar.Toggle>
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={styles.NavMe}>
-                      <Nav.Link href="#deets">
+                      <Nav.Link to="/">
                         <p>Bosh sahifa</p>
                       </Nav.Link>
                       <Nav.Link>
@@ -79,12 +83,11 @@ function Menu() {
                           <p>Dorilar</p>
                         </Link>
                       </Nav.Link>
-
-                      <Nav.Link href="/Contact">
-                        <p>Kantakt</p>
-                      </Nav.Link>
                       <Nav.Link href="/apteka">
                         <p>Dorixonalar</p>
+                      </Nav.Link>
+                      <Nav.Link href="/Contact">
+                        <p>Kantakt</p>
                       </Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
@@ -92,7 +95,7 @@ function Menu() {
               </Navbar>
             </div>
           </Container>
-        </div>
+        </div> */}
 
         <div className={styles.Menu}>
           <Container className={styles.MenuGroup}>
@@ -109,7 +112,7 @@ function Menu() {
                 Biz har bir mijoz <br />
                 <b>
                   {" "}
-                  Istagi va Hohishini amalga{" "}
+                  Istagi va Xohishini amalga{" "}
                   <a href="#kun" style={{ color: "white" }}>
                     Oshiramiz
                   </a>

@@ -81,7 +81,7 @@ function Medicines() {
                           aria-describedby="basic-addon2"
                         />
                         <Button variant="primary" id="button-addon2">
-                          Find out
+                          <i>Search</i>
                         </Button>
                       </InputGroup>
                     </div>

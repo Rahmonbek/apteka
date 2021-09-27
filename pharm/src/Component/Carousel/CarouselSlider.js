@@ -299,12 +299,9 @@ export default function CarouselSlider() {
                 d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,64C672,32,768,32,864,53.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
               ></path>
             </svg>
-            <div  className={style.CardFooterText1}>
-              <p >Dori-Darmon</p>
-              <p >
-                {" "}
-                Toshkent, Yunusobod tumani, 2-kvartal, 7B
-              </p>
+            <div className={style.CardFooterText1}>
+              <p>Dori-Darmon</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
             </div>
             <div className={style.social_icons_Item}>
               <ul

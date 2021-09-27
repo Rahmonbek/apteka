@@ -173,6 +173,16 @@
 .CardFooterExitIcon i {
   font-size: 22px;
   cursor: pointer;
+  color: red;
+  }
+
+  .CardBodyCallIcon {
+    cursor: pointer;
+  }
+
+  .CardBodyCallIcon i:nth-child(1) {
+    margin-right: 5px;
+    color: #62E4BC;
 }
   
   .MenuImg {
@@ -442,10 +452,11 @@
     }
   
     .WhatchWriter {
-      width: 30%;
+      width: 45%;
       margin: auto;
       border-radius: 10px;
-    }
+      }
+
   
     .WhatchVideo:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
