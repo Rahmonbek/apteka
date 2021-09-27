@@ -389,6 +389,20 @@
     cursor: pointer;
   }
 }
+@media(min-width:1300px) and (max-width:1400px) {
+  .HeaderMenu {
+    height: 700px;
+    overflow: hidden;
+  }
+
+  .Curved {
+    position: relative;
+    margin-top: -13.5%;
+  }
+
+
+
+}
 
 @media (min-width: 1024px) and (max-width: 1300px) {
   .HeaderMenu {
