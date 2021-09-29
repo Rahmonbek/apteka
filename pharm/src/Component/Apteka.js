@@ -90,13 +90,12 @@ export default class Apteka extends Component {
   render() {
     return (
       <div>
-       
         <div className={styles.HeaderMenu} style={{ width: "100%" }}>
-        <div style={{height:'100px'}}>
-          <NavbarMenuChat/>
-        </div>
+          <div id={styles.NavbarMe}>
+            <NavbarMenuChat />
+          </div>
           <Container>
-         {/*    <div className={styles.NavbarMenu}>
+            {/*    <div className={styles.NavbarMenu}>
               <div className={styles.ScheduleName}>
                 <div className={styles.ScheduleNameIcon}>
                   <p>

@@ -24,7 +24,9 @@
     align-content: flex-end;
     box-sizing: border-box;
   }
-  
+  #NavbarMe {
+    height: 106px;
+  }
   .ScheduleName {
     padding-top: 10px;
     margin-bottom: 10px;
@@ -659,4 +661,8 @@
     .MuiAvatar-square{
       width: 60px !important;
     }
-  
+  @media(max-width:410px) {
+    #NavbarMe {
+      height: 90px;
+    }
+  }

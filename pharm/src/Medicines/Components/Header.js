@@ -38,7 +38,7 @@ function Header(props) {
       ) : (
         ""
       )}
-      <div>
+      <div id={styles.NavbarMe}>
         <NavbarMenuChat />
       </div>
       {/* <div className="dorilar_header">

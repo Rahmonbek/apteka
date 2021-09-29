@@ -17,7 +17,7 @@
 
 #NavbarMe {
   width: 100%;
-  height: auto;
+  height: 106px;
   background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
 
 }
@@ -66,20 +66,40 @@
 
 .NavMe {
   width: 75%;
-  justify-content: space-between;
+  height: 67px;
+  justify-content: space-around;
   margin-top: auto;
   margin-left: auto;
-}
+  }
+
+
 
 .NavMe p {
+  height: 100%;
   font-family: "Andale Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 160%;
   color: #ffffff;
+  margin-top: 5%;
   opacity: 0.9;
-  padding-left: 10px;
+  padding-left: 1px;
+  text-align: center;
+
+  }
+
+  .NavButton:hover p {
+    color: #F2C434;
+    border-bottom: 4px solid #F2C434;
+    transition: .2s;
+  }
+
+  .NavButton:focus p,
+  .NavButton:hover p,
+  .NavButton:active p {
+    color: #F2C434;
+    border-bottom: 4px solid #F2C434;
 }
 
 .MenuGroup {
@@ -575,6 +595,8 @@
   }
 
   .NavMe {
+    position: absolute;
+    height: auto;
     border-radius: 4px;
     background-color: #010b19dc;
     color: white;
@@ -678,6 +700,8 @@
   }
 
   .NavMe {
+    position: absolute;
+    height: auto;
     border-radius: 4px;
     background-color: #010b19dc;
     color: white;

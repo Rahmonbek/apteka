@@ -35,13 +35,13 @@ export default function NavbarMenuChat() {
             </div>
             <Navbar className={styles.NavbarGroup} collapseOnSelect expand="lg">
               <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                   <Image className={styles.ImgBrand} src={Rasm} />
                 </Navbar.Brand>
                 <Navbar.Toggle
                   className={styles.NavbarMenuMedia}
                   aria-controls="responsive-navbar-nav"
-                  style={{ color: "#98349400", border: "none" }}
+                  style={{ border: "none" }}
                 >
                   <i
                     class="fas fa-bars"
@@ -50,23 +50,29 @@ export default function NavbarMenuChat() {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
-                    <Nav.Link>
-                      <Link to="/">
+                    <Nav.Link className={styles.NavButton}>
+                      <Link exact={true} to="/">
                         {" "}
                         <p>Bosh sahifa</p>{" "}
                       </Link>
                     </Nav.Link>
-                    <Nav.Link>
+                    <Nav.Link className={styles.NavButton}>
                       <Link to="/dorilar">
                         {" "}
                         <p>Dorilar</p>
                       </Link>
                     </Nav.Link>
-                    <Nav.Link href="/apteka">
-                      <p>Dorixonalar</p>
+                    <Nav.Link className={styles.NavButton}>
+                      <Link activeclassName="active" to="/apteka">
+                        {" "}
+                        <p>Dorixonalar</p>
+                      </Link>
                     </Nav.Link>
-                    <Nav.Link href="/Contact">
-                      <p>Bog'lanish</p>
+                    <Nav.Link className={styles.NavButton}>
+                      <Link to="/Contact">
+                        {" "}
+                        <p>Bog'lanish</p>
+                      </Link>
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>

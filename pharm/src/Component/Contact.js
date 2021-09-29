@@ -119,7 +119,7 @@ export default class Contact extends Component {
     return (
       <div style={{ overflow: "hidden" }}>
         <div className={styles.HeaderMenu}>
-          <div style={{ height: "100px" }}>
+          <div id={styles.NavbarMe}>
             <NavbarMenuChat />
           </div>
           <Container>
@@ -201,7 +201,7 @@ export default class Contact extends Component {
               </Navbar>
             </div> */}
             <Row>
-              <Col lg={6}>
+              <Col  lg={6}>
                 <h1 className={styles.headertext}>Biz bilan bog'laning !</h1>
                 <div className={styles.WhatchWriter}>
                   <a
@@ -220,7 +220,7 @@ export default class Contact extends Component {
                   >
                     <Modal.Header>
                       <Modal.Title id="example-modal-sizes-title-sm">
-                       Telefon Raqam!
+                        Telefon Raqam!
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
@@ -242,7 +242,8 @@ export default class Contact extends Component {
                     </Modal.Body>
                     <Modal.Footer className={styles.CardFooterExitIcon}>
                       <i
-                        class="fas fa-times" styles={{color:"red"}}
+                        class="fas fa-times"
+                        styles={{ color: "red" }}
                         onClick={() => this.showModalBot()}
                       ></i>
                     </Modal.Footer>
