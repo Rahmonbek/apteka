@@ -5,7 +5,7 @@ import { MdTimer } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import Rasm from "./img/Brand.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavbarMenuChat() {
   return (
@@ -51,28 +51,24 @@ export default function NavbarMenuChat() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className={styles.NavMe}>
                     <Nav.Link className={styles.NavButton}>
-                      <Link exact={true} to="/">
-                        {" "}
+                      <NavLink exact={true} to="/">
                         <p>Bosh sahifa</p>{" "}
-                      </Link>
+                      </NavLink>
                     </Nav.Link>
                     <Nav.Link className={styles.NavButton}>
-                      <Link to="/dorilar">
-                        {" "}
+                      <NavLink to="/dorilar">
                         <p>Dorilar</p>
-                      </Link>
+                      </NavLink>
                     </Nav.Link>
                     <Nav.Link className={styles.NavButton}>
-                      <Link activeclassName="active" to="/apteka">
-                        {" "}
+                      <NavLink to="/apteka">
                         <p>Dorixonalar</p>
-                      </Link>
+                      </NavLink>
                     </Nav.Link>
                     <Nav.Link className={styles.NavButton}>
-                      <Link to="/Contact">
-                        {" "}
-                        <p>Bog'lanish</p>
-                      </Link>
+                      <NavLink to="/Contact">
+                        <p>Bog'lanish</p>{" "}
+                      </NavLink>
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
