@@ -85,7 +85,7 @@ height: 180px;
     justify-content: center;
     border-radius: 10px;
     align-content: center center;
-    background: #184e61;
+    background: linear-gradient(to left, #020629,#000214 );;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -477,7 +477,6 @@ overflow: hidden;
         height: auto;
     }
 
-    .ServiceMe {}
 
     .ServiceMenu {
         margin-top: 5%;
@@ -610,7 +609,7 @@ overflow: hidden;
 #ButtonGroupId {
     width: 130px;
     text-align: center;
-    background-color: #5189C6;
+    background: linear-gradient(to left, #020629,#000214 );
     color: white;
     opacity: .9;
 
@@ -620,6 +619,6 @@ overflow: hidden;
 
 #ButtonGroupId:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #649cd8;
+    background-color: linear-gradient(to left, #020629,#000214 );
 
 }

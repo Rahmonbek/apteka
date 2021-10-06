@@ -9,6 +9,7 @@
   width: 100%;
   height: 400px;
   background-color: #010b19;
+  background: linear-gradient(to left, #020629,#000214 );
   border: 1px solid black;
 }
 

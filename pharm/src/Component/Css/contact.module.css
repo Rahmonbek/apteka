@@ -12,10 +12,10 @@
 .HeaderMenu {
   width: 100%;
   height: 702px;
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );;
 }
 .Menu {
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background:linear-gradient(to left, #020629,#000214 );;
 }
 .NavbarMenu {
   width: 100%;
@@ -335,7 +335,7 @@
   }
   .NavMe {
     border-radius: 4px;
-    background-color: #010b19dc;
+    background-color: linear-gradient(to left, #020629,#000214 );;
     color: white;
     text-shadow: 0px 0px 30px white;
     justify-content: center;
@@ -404,7 +404,7 @@
   }
   .NavMe {
     border-radius: 4px;
-    background-color: #010b19dc;
+    background-color: linear-gradient(to left, #020629,#000214 );;
     color: white;
     justify-content: center;
     position: relative;
@@ -581,7 +581,7 @@
   .form{
       width: 100% !important;
       height: 500px !important;
-      background-color:#1C487A;
+      background-color:linear-gradient(to left, #020629,#000214 );;
       margin-bottom: 0px;
   }
 .aloqa{
@@ -601,7 +601,7 @@
     left:-10%;
     width: 120%;
     height: 3px;
-    background-color:#1C487A
+    background:linear-gradient(to left, #020629,#000214 );
 }
 .aloqacard{
     margin:15px;
@@ -618,7 +618,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    background: #1C487A;
+    background: linear-gradient(to left, #020629,#000214 );
     box-shadow:  0px 0px 60px #c5dbf3,
                  0px 0px 60px #ffffff;
                  margin-bottom: 20px;
@@ -822,7 +822,7 @@
     width: 100% !important;
     height: 510px !important;
    position: relative !important;
- background-color:#1C487A;
+ background:linear-gradient(to left, #020629,#000214 );
  margin-bottom: 0px;
 
 

@@ -265,6 +265,9 @@ export default class Apteka extends Component {
           <h1 style={{ margin: "50px 0px 60px 0px" }} data-aos="zoom-in-up">
             Bizning Dorixonalarimiz
           </h1>
+
+       
+
           <Container>
             <Row>
               <Col lg={6} md={6} sm={12}>

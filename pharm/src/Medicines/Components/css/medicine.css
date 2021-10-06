@@ -1,5 +1,5 @@
 .dorilar_header {
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
   width: 100%;
 }
 .margin_for {
@@ -39,7 +39,7 @@
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
 }
 .medicine .col-lg-4,
 .medicine .col-sm-6 {
@@ -89,7 +89,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-image: linear-gradient(270deg, #0a4fb6 -9.87%, #28859a 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
   display: none;
 }
 .findout {
@@ -146,7 +146,8 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://thumbs.dreamstime.com/b/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80-%D1%87%D0%B5-%D0%BE%D0%B2%D0%B5%D0%BA-%D1%81-%D1%81%D1%82%D0%B5%D1%82%D0%BE%D1%81%D0%BA%D0%BE%D0%BF-84232406.jpg");
+  background-image: url("../../images/bermix-studio-b8mwvvFs8Ak-unsplash.jpg");
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,6 +164,9 @@
   .medicines .container {
     width: 100%;
     margin: 0;
+  }
+  .dorilar_page {
+    background-size: 768px 1024px;
   }
 }
 @media screen and (max-width: 922px) {
