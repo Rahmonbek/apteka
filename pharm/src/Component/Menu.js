@@ -7,7 +7,7 @@ import { IoIosCall } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import AOS from "aos";
 import NavbarMenuChat from "./NavbarMenu";
 

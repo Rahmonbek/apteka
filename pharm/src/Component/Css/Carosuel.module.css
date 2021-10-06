@@ -228,7 +228,6 @@
 
 }
 @media(min-width:1700px) {
-    .CarosuelMe {}
 
     .SliderMenuText1 {
         font-size: 5vh;
@@ -243,11 +242,13 @@
     }
 
     .Card:hover .CardFooterText1 {
-        margin-top: -10%;
+        margin-top: -1%;
+        line-height: 10%;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
         font-size: 25px;
+        margin-top: -45;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
