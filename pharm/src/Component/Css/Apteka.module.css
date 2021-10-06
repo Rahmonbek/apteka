@@ -632,7 +632,7 @@
       font-family: Montserrat;
       font-style: normal;
       font-weight: 600;
-      font-size: 6vh;
+      font-size: 4vh;
       line-height: 130%;
       font-family: "Andale Mono", monospace;
       text-align: center;
@@ -640,7 +640,7 @@
      }
     
      .root {
-      width: 70% !important;
+      width: 90% !important;
    
     }
     .root:hover{
@@ -666,3 +666,4 @@
       height: 90px;
     }
   }
+ 
