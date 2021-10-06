@@ -12,10 +12,10 @@
   .HeaderMenu {
     width: 100% !important;
     height: 722px;
-    background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+    background: linear-gradient(to left, #020629,#000214 );
   }
   .Menu {
-    background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+    background:linear-gradient(to left, #020629,#000214 );
   }
   .NavbarMenu {
     width: 100%;
@@ -328,7 +328,7 @@
     }
     .NavMe {
       border-radius: 4px;
-      background-color: #010b19dc;
+      background: linear-gradient(to left, #020629,#000214 );;
       color: white;
       text-shadow: 0px 0px 30px white;
       justify-content: center;
@@ -399,7 +399,7 @@
     }
     .NavMe {
       border-radius: 4px;
-      background-color: #010b19dc;
+      background: linear-gradient(to left, #020629,#000214 );
       color: white;
       justify-content: center;
       position: relative;
@@ -666,4 +666,6 @@
       height: 90px;
     }
   }
- 
+ .card1{
+   display: flex;
+ }

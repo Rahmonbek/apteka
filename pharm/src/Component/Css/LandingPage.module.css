@@ -12,19 +12,19 @@
 .HeaderMenu {
   width: 100%;
   height: 652px;
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
 }
 
 #NavbarMe {
   width: 100%;
   height: 106px;
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
 
 }
 
 
 .Menu {
-  background: linear-gradient(270deg, #1c467f -9.87%, #184e60 111.47%);
+  background: linear-gradient(to left, #020629,#000214 );
   margin-top: 105px;
 }
 
