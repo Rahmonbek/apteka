@@ -40,6 +40,7 @@
     "react-slick": "^0.28.1",
     "react-slider-swiper": "^2.0.6",
     "react-spinners": "^0.11.0",
+    "react-svg": "^14.0.14",
     "react-yandex-maps": "^4.6.0",
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",

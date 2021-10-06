@@ -13,8 +13,7 @@
 
 .Card Img {
     width: 100%;
-    height: 350px;
-
+    height: 310px;
 }
 
 
@@ -72,7 +71,7 @@
 
 }
 .news_item {
-    height: 350px;
+    height: 310px;
 }
 
 
@@ -87,11 +86,34 @@
     position: relative;
     display: block;
     overflow: hidden;
-    margin-top: -22%;
+    margin-top: -20%;
+    z-index: 1;
+    transition: .5s;
+    }
+
+    /* --------------------------- */
+    .Card:hover .Curved1 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin-top: -10%;
     z-index: 1;
     transition: .5s;
 }
+.Curved1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.Curved1 .Curved2 {
+    fill: #010b19;
+}
+
+/* ---------------------- */
 .CardFooterText1 {
     width: 100%;
     height: max-content;
@@ -112,6 +134,7 @@
 
 .Card:hover .CardFooterText1 p:nth-child(1) {
     font-size: 3vh;
+    margin-top: 0%;
 }
 
 .Card:hover .CardFooterText1 p:nth-child(2) {
@@ -119,7 +142,6 @@
 }
 
 .Card:hover .CardFooterText1 {
-    margin-top: -53px;
     z-index: 3;
     color: white;
     display: block;
@@ -217,13 +239,13 @@
 
 .Card:hover .CallMeGroup {
     position: absolute;
-    margin-top: -50px;
     justify-content: center;
     margin: auto;
     display: block;
     z-index: 4;
     transition: .7s;
-    margin-left: 46.5%;
+    margin-top: -65px;
+    margin-left: 44%;
     transform: translateY(200px);
 
 
