@@ -129,7 +129,7 @@ function Menu() {
                 </p>
               </div>
               <p className={styles.TextOnlineBuy}>
-                HEALTH Sizga dorixonaga borishing yangi usulini taklif
+                HEALTH Sizga dorixonaga borishning yangi usulini taklif
                 etadi.Endi dorixona oynasida navbat kutishning hojati yo'q,
                 chunki endi siz uydan chiqmasdan yoki ish joyingizdan chiqmasdan
                 dori tanlashingiz mumkin.
@@ -189,7 +189,6 @@ function Menu() {
                 >
                   <p
                     style={{
-                      fontSize: "27px",
                       color: "white",
                       marginLeft: "10%",
                     }}
@@ -200,8 +199,6 @@ function Menu() {
                     style={{
                       marginLeft: "10px",
                       color: "white",
-                      fontSize: "18px",
-                      marginTop: "10px",
                     }}
                   >
                     Videoni Ko'rish
@@ -239,7 +236,7 @@ function Menu() {
                   </p>
                 </div>
                 <p className={styles.TextOnlineBuy}>
-                  HEALTH Sizga dorixonaga borishing yangi usulini taklif
+                  HEALTH Sizga dorixonaga borishning yangi usulini taklif
                   etadi.Endi dorixona oynasida navbat kutishning hojati yo'q,
                   chunki endi siz uydan chiqmasdan yoki ish joyingizdan
                   chiqmasdan dori tanlashingiz mumkin.

@@ -38,7 +38,7 @@ export default function CarouselSlider() {
   return (
     <div className={style.CarosuelMe}>
       <div className={style.SliderMenuText}>
-        <p className={style.SliderMenuText1}>Eng Yaxshi Dorixonalar Ruyhati</p>
+        <p className={style.SliderMenuText1}>Eng Yaxshi Dorixonalar Ro'yhati</p>
         <p className={style.SliderMenuText2}>
           Semper integer est quis leo, nunc. Quis lectus amet aenean massa
           turpis senectus pulvinar. Pharetra gravida volutpat faucibus faucibus.
@@ -74,7 +74,7 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -132,7 +132,7 @@ export default function CarouselSlider() {
               <p>Dori-Darmon</p>
               <p>
                 {/* style={{ marginTop: "-6px" }}  bu adressniki*/} Toshkent,
-                Yunusobod tumani, 2-kvartal, 7B
+                Yunusobod tumani, 2-kvartal
               </p>
             </div>{" "}
             <div className={style.social_icons_Item}>
@@ -189,7 +189,7 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -249,7 +249,7 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -301,7 +301,7 @@ export default function CarouselSlider() {
             </svg>
             <div className={style.CardFooterText1}>
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal, 7B</p>
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
             </div>
             <div className={style.social_icons_Item}>
               <ul
