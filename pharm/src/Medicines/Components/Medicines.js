@@ -58,14 +58,20 @@ function Medicines() {
       {loading ? (
         <>
           <Header />
+
           <div className="margin_for"></div>
+
           <div className="dorilar_page">
             <div className="findout">
               <Container className="find_container">
+                <br />
+                <br />
+
                 <Row>
                   <Col sm={24} lg={10} className="findout_col">
                     <div className="findout_item">
                       <div id="dorilar"></div>
+
                       <h1>
                         Brellaning qo'shimcha tibbiy sug'urtasi bilan
                         jamoangizga tinchlik bering.
@@ -91,11 +97,17 @@ function Medicines() {
               </Container>
             </div>
             <div className="dorilar-page_bottom">
+              <br />
+              <br />
+              <br />
+              <br />
               <svg
                 className={styles.Curved}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320"
               >
+                <br />
+                <br />
                 <path
                   fill="#FFFFFF"
                   fill-opacity="1"
