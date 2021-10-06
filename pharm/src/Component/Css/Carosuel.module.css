@@ -123,6 +123,7 @@
     z-index: 3;
     color: white;
     display: block;
+    line-height: 10%;
 }
 
 .social_icons_Item {
@@ -263,22 +264,19 @@
 
     }
 
-    @media(max-width:1400px) {
+    @media(min-width:1201px) and (max-width:1400px) {
         .CarosuelMe {
             height: auto;
         }
 
         .CardFooterText1 {
 
-            line-height: 2px;
-            border-bottom: 20px;
-        }
-.CardFooterText1 {
-    line-height: 1%;
-
-}
+            line-height: 4%;
+            border-bottom: 15px;
+            }
         .CardFooterText1 p:nth-child(1) {
-            margin-top: 3%;
+            margin-top: 4%;
+            font-size: 2.1vh;
         }
 }
 @media(max-width:1200px) {
@@ -322,7 +320,7 @@
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
         font-size: 2.3vh;
-        margin-top: 7%;
+        margin-top: 5%;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
@@ -334,7 +332,7 @@
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
         font-size: 2.3vh;
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
@@ -345,14 +343,13 @@
     .Card:hover .Curved {
         margin-top: -88px;
     }
-
-    .Card {}
     .Card:hover .CardFooterText1 {
         margin-top: -56px;
+        line-height: 10%;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        margin-top: -3%;
+        margin-top: -5%;
         font-size: 2.7vh;
     }
 
@@ -513,15 +510,15 @@
         padding: 5%;
     }
     .Card:hover .Curved {
-        margin-top: -70px;
+        margin-top: -66px;
     }
 
     .Card:hover .CardFooterText1 {
-        line-height: 7px;
+        line-height: 5px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        margin-top: 5%;
+        margin-top: 4%;
         font-size: 2vh;
     }
 
@@ -631,20 +628,20 @@
 }
 @media(max-width:350px) {
     .Card:hover .Curved {
-        margin-top: -60px;
+        margin-top: -53px;
     }
 
     .Card:hover .CardFooterText1 {
-        line-height: 4px;
+        line-height: 0px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        margin-top: 8%;
-        font-size: 1.8vh;
+        margin-top: 5%;
+        font-size: 1.7vh;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {
-        font-size: 1.5vh;
+        font-size: 1.4vh;
 
     }
     .SliderMenuText1 {
@@ -682,11 +679,11 @@
 }
 @media(max-width:335px) {
     .Card:hover .Curved {
-        margin-top: -55px;
+        margin-top: -50px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        margin-top: 10%;
+        margin-top: 8%;
     }
 }
 @media(max-width:320px) {
@@ -697,12 +694,30 @@
     }
 
     .Card:hover .CardFooterText1 {
-        line-height: 1px;
+        line-height: 0px;
+        }
+
+        .Card:hover .CardFooterText1 p:nth-child(1) {
+            margin-top: 9%;
+            font-size: 1.6vh;
+        }
+
+        .Card:hover .CardFooterText1 p:nth-child(2) {
+            font-size: 1.4vh;
+            border-bottom: 2px;
+        }
+        }
+
+        @media(max-width:300px) {
+
+
+            .Card:hover .CardFooterText1 {
+                line-height: 0px;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(1) {
-        margin-top: 12%;
-        font-size: 1.7vh;
+        margin-top: 11%;
+        font-size: 1.6vh;
     }
 
     .Card:hover .CardFooterText1 p:nth-child(2) {

@@ -73,8 +73,8 @@ export default function CarouselSlider() {
               // style={{ paddingTop: "10px" }}
               className={style.CardFooterText1}
             >
-              <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
+              <p>Dori-Darmon</p>   <br />
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>   <br />
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -129,11 +129,11 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               {/* style={{ marginTop: "8px" }} bu dori darmonniki */}
-              <p>Dori-Darmon</p>
+              <p>Dori-Darmon</p>   <br />
               <p>
                 {/* style={{ marginTop: "-6px" }}  bu adressniki*/} Toshkent,
                 Yunusobod tumani, 2-kvartal
-              </p>
+              </p>   <br />
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -189,7 +189,8 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
+              <br />
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>   <br />
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -249,7 +250,8 @@ export default function CarouselSlider() {
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
+              <br />
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>   <br />
             </div>{" "}
             <div className={style.social_icons_Item}>
               <ul
@@ -301,7 +303,8 @@ export default function CarouselSlider() {
             </svg>
             <div className={style.CardFooterText1}>
               <p>Dori-Darmon</p>
-              <p> Toshkent, Yunusobod tumani, 2-kvartal</p>
+              <br />
+              <p> Toshkent, Yunusobod tumani, 2-kvartal</p><br/>
             </div>
             <div className={style.social_icons_Item}>
               <ul
