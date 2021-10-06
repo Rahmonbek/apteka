@@ -81,7 +81,7 @@ export default class Obuna extends Component {
                 </p>
                 <p className={style.IconsFooterGroup}>
                   <p>
-                    <FiFacebook  className={style.IconsFooter} />
+                    <FiFacebook className={style.IconsFooter} />
                   </p>
                   <p>
                     {" "}
@@ -101,7 +101,7 @@ export default class Obuna extends Component {
               <p className={style.Copyright}>
                 {" "}
                 <RiCopyrightLine style={{ marginRight: "10px" }} />
-                By It-Tower tamonidan tayyorlangan mahsulot
+                It-Tower tamonidan tayyorlangan mahsulot
               </p>
             </div>
           </Container>

@@ -21,7 +21,7 @@ export default function ServiceShow() {
       id: 1,
       icon: <FontAwesomeIcon icon={faHospital} />,
       title: "Afzalliklari",
-      body: "Siz uyingizdan chiqamagan holda dori buyurtma berasiz. Biz yetkazib beramiz",
+      body: "Siz uyingizdan chiqmagan holda dori buyurtma berasiz. Biz yetkazib beramiz",
     },
     {
       userId: 1,
