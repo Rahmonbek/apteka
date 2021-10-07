@@ -133,7 +133,7 @@ function Menu() {
                 etadi.Endi dorixona oynasida navbat kutishning hojati yo'q,
                 chunki endi siz uydan chiqmasdan yoki ish joyingizdan chiqmasdan
                 dori tanlashingiz mumkin.
-              </p>
+              </p><br/>
               <div className={styles.MenuTextButtons}>
                 <a className={styles.WhatchWriter}>
                   <a
