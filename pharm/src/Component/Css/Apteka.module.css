@@ -669,3 +669,82 @@
  .card1{
    display: flex;
  }
+ .hammasi1{
+box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
+  margin: 10px;
+ }
+ .hammasi1:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px ;
+   }
+ .flex1{
+   display: flex;
+ }
+ .flex1 .img{
+  width: 30%;
+  margin: 10px;
+}
+.flex1 .img img{
+  width: 100%;
+  margin: 10px;
+}
+.flex1 .matn1{
+  width: 30%;
+  margin: 20px;
+  font-size: 20px;
+ 
+}
+.xarita3{
+  width: 300px;
+  height: 300px;
+}
+@media(max-width:991px){
+  .flex1{
+    display: block;
+    margin:auto;
+  }
+  .flex1 .img{
+  width: 100%;
+   margin: 0px;
+  
+   display: flex;
+   justify-content: center;
+ }
+ .flex1 .img img{
+   width: 80%;
+ 
+ }
+ .flex1 .matn1{
+   width: 100%;
+ 
+   margin: auto;
+   text-align: center;
+   font-size: 20px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+ }
+ .xarita1{
+ 
+ display: flex;
+ justify-content: center;
+ }
+ .xarita2{
+   margin: auto;
+   text-align: center;
+ }
+}
+@media(max-width:380px){
+  .flex1 .matn1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px; 
+     margin-top: 10px;
+     margin-bottom: 10px;
+  
+  }
+  .xarita3{
+    width: 270px;
+    height: 270px;
+  }
+}

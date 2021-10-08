@@ -47,7 +47,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import clsx from "clsx";
-
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import NavbarMenuChat from "./NavbarMenu";
@@ -266,9 +266,462 @@ export default class Apteka extends Component {
             Bizning Dorixonalarimiz
           </h1>
 
-       
 
-          <Container>
+
+
+
+
+
+<Container>
+  <Row>
+    <Col lg={12} xl={12}>
+    <div className={styles.hammasi1}   data-aos="zoom-in-up">
+    <h1>The name of pharm</h1>
+    <div className={styles.flex1}><div className={styles.img}>
+<img src={apteka1} /></div>
+<div className={styles.matn1}>  Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Repellat labore saepe animi tenetur perferendis
+                          repudiandae dolor nobis maiores veritatis,
+                          exercitationem consequuntur nam minima tempora rerum
+                          alias asperiores eius. Earum, natus!</div>
+<div className={styles.xarita1}><div className={styles.xarita2}> <YMaps>
+    <div style={{width:"100%"}} style={{margin:'auto',textAlign:'center'}}>
+    
+      <Map className={styles.xarita3} defaultState={{ center: [41.311158, 69.279737], zoom: 9 }} >
+      <Placemark geometry={[41.311158, 69.279737]} />
+</Map>
+    </div>
+  </YMaps></div></div>
+    </div>
+    <div style={{margin:'auto',textAlign:'center'}}> <CardActions disableSpacing style={{margin:'auto',textAlign:'center'}}><div style={{margin:'auto',textAlign:'center'}}>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Telegram
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="@ItTower">
+                                <IconButton>
+                                  <TelegramIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Instagram
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="http://instagram.com/ItTower">
+                                <IconButton>
+                                  <InstagramIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              YouTube
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="https://www.youtube.com">
+                                <IconButton>
+                                  <YouTubeIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Telefon qilish
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="tel:+998935555555">
+                                <IconButton>
+                                  <CallIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Email
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a>
+                                <IconButton>
+                                  <MailOutlineIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Dorixona haqida batafsil ma'lumot
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <IconButton
+                                className={clsx(styles.expand, {
+                                  [styles.expandOpen]: this.state.expanded[0],
+                                })}
+                                onClick={() => {
+                                  this.handleExpandClick(0);
+                                }}
+                                aria-expanded={this.state.expanded[0]}
+                                aria-label="show more"
+                              >
+                                <ExpandMoreIcon />
+                              </IconButton>
+                            </Button>
+                          )}
+                        </OverlayTrigger></div>
+                      </CardActions>
+                      <Collapse
+                        in={this.state.expanded[0]}
+                        timeout="auto"
+                        unmountOnExit
+                      >
+                        <CardContent>
+                          <Typography paragraph>
+                            Backend Developer kursi
+                          </Typography>
+                          <Typography paragraph>
+                            Heat 1/2 cup of the broth in a pot until simmering,
+                            add saffron and set aside for 10 minutes.
+                          </Typography>
+                          <Typography paragraph>
+                            Heat oil in a (14- to 16-inch) paella pan or a
+                            large, deep skillet over medium-high heat. Add
+                            chicken, shrimp and chorizo, and cook, stirring
+                            occasionally until lightly browned, 6 to 8 minutes.
+                            Transfer shrimp to a large plate and set aside,
+                            leaving chicken and chorizo in the pan. Add
+                            pimentón, bay leaves, garlic, tomatoes, onion, salt
+                            and pepper, and cook, stirring often until thickened
+                            and fragrant, about 10 minutes. Add saffron broth
+                            and remaining 4 1/2 cups chicken broth; bring to a
+                            boil.
+                          </Typography>
+
+                          <Typography>
+                            Set aside off of the heat to let rest for 10
+                            minutes, and then serve.
+                          </Typography>
+                        </CardContent>
+                      </Collapse></div></div>
+    </Col>
+    <Col lg={12} xl={12}>
+    <div className={styles.hammasi1}   data-aos="zoom-in-up">
+    <h1>The name of pharm</h1>
+    <div className={styles.flex1}><div className={styles.img}>
+<img src={apteka1} /></div>
+<div className={styles.matn1}>  Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Repellat labore saepe animi tenetur perferendis
+                          repudiandae dolor nobis maiores veritatis,
+                          exercitationem consequuntur nam minima tempora rerum
+                          alias asperiores eius. Earum, natus!</div>
+<div className={styles.xarita1}><div className={styles.xarita2}> <YMaps>
+    <div style={{width:"100%"}} style={{margin:'auto',textAlign:'center'}}>
+    
+      <Map className={styles.xarita3} defaultState={{ center: [41.311158, 69.279737], zoom: 9 }} >
+      <Placemark geometry={[41.311158, 69.279737]} />
+</Map>
+    </div>
+  </YMaps></div></div>
+    </div>
+    <div style={{margin:'auto',textAlign:'center'}}> <CardActions disableSpacing style={{margin:'auto',textAlign:'center'}}><div style={{margin:'auto',textAlign:'center'}}>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Telegram
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="@ItTower">
+                                <IconButton>
+                                  <TelegramIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Instagram
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="http://instagram.com/ItTower">
+                                <IconButton>
+                                  <InstagramIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              YouTube
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="https://www.youtube.com">
+                                <IconButton>
+                                  <YouTubeIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Telefon qilish
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a href="tel:+998935555555">
+                                <IconButton>
+                                  <CallIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Email
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <a>
+                                <IconButton>
+                                  <MailOutlineIcon />
+                                </IconButton>
+                              </a>
+                            </Button>
+                          )}
+                        </OverlayTrigger>
+                        <OverlayTrigger
+                          placement="bottom"
+                          overlay={
+                            <Tooltip
+                              id="button-tooltip-2"
+                              style={{ marginTop: "15px" }}
+                            >
+                              Dorixona haqida batafsil ma'lumot
+                            </Tooltip>
+                          }
+                        >
+                          {({ ref, ...triggerHandler }) => (
+                            <Button
+                              variant="#F2F2F2"
+                              {...triggerHandler}
+                              className="d-inline-flex align-items-center"
+                            >
+                              <Image ref={ref} />
+                              <IconButton
+                                className={clsx(styles.expand, {
+                                  [styles.expandOpen]: this.state.expanded[1],
+                                })}
+                                onClick={() => {
+                                  this.handleExpandClick(1);
+                                }}
+                                aria-expanded={this.state.expanded[1]}
+                                aria-label="show more"
+                              >
+                                <ExpandMoreIcon />
+                              </IconButton>
+                            </Button>
+                          )}
+                        </OverlayTrigger></div>
+                      </CardActions>
+                      <Collapse
+                        in={this.state.expanded[1]}
+                        timeout="auto"
+                        unmountOnExit
+                      >
+                        <CardContent>
+                          <Typography paragraph>
+                            Backend Developer kursi
+                          </Typography>
+                          <Typography paragraph>
+                            Heat 1/2 cup of the broth in a pot until simmering,
+                            add saffron and set aside for 10 minutes.
+                          </Typography>
+                          <Typography paragraph>
+                            Heat oil in a (14- to 16-inch) paella pan or a
+                            large, deep skillet over medium-high heat. Add
+                            chicken, shrimp and chorizo, and cook, stirring
+                            occasionally until lightly browned, 6 to 8 minutes.
+                            Transfer shrimp to a large plate and set aside,
+                            leaving chicken and chorizo in the pan. Add
+                            pimentón, bay leaves, garlic, tomatoes, onion, salt
+                            and pepper, and cook, stirring often until thickened
+                            and fragrant, about 10 minutes. Add saffron broth
+                            and remaining 4 1/2 cups chicken broth; bring to a
+                            boil.
+                          </Typography>
+
+                          <Typography>
+                            Set aside off of the heat to let rest for 10
+                            minutes, and then serve.
+                          </Typography>
+                        </CardContent>
+                      </Collapse></div></div>
+    </Col>
+  </Row>
+</Container>       
+
+
+
+
+
+          {/* <Container>
             <Row>
               <Col lg={6} md={6} sm={12}>
                 <Row>
@@ -2223,7 +2676,7 @@ export default class Apteka extends Component {
                 </Row>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </div>
       </div>
     );
