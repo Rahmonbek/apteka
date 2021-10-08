@@ -262,7 +262,7 @@ export default class Apteka extends Component {
         {/* ------------------------- Card Section ---------------- */}
 
         <div className={styles.cardApteka}>
-          <h1 style={{ margin: "50px 0px 60px 0px" }} data-aos="zoom-in-up">
+          <h1 style={{ margin: "50px 0px 0px 0px" }} data-aos="zoom-in-up">
             Bizning Dorixonalarimiz
           </h1>
 
@@ -277,15 +277,15 @@ export default class Apteka extends Component {
     <Col lg={12} xl={12}>
     <div className={styles.hammasi1}   data-aos="zoom-in-up">
     <h1>The name of pharm</h1>
-    <div className={styles.flex1}><div className={styles.img}>
-<img src={apteka1} /></div>
-<div className={styles.matn1}>  Lorem ipsum dolor sit amet consectetur adipisicing
+    <div className={styles.flex1}>
+      <div className={styles.img}><img src={apteka1} /></div>
+<div className={styles.matn1} style={{textAlign:'justify', padding:'0px 10px 0px 10px'}}>  Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Repellat labore saepe animi tenetur perferendis
                           repudiandae dolor nobis maiores veritatis,
                           exercitationem consequuntur nam minima tempora rerum
                           alias asperiores eius. Earum, natus!</div>
 <div className={styles.xarita1}><div className={styles.xarita2}> <YMaps>
-    <div style={{width:"100%"}} style={{margin:'auto',textAlign:'center'}}>
+    <div style={{width:"100%"}} >
     
       <Map className={styles.xarita3} defaultState={{ center: [41.311158, 69.279737], zoom: 9 }} >
       <Placemark geometry={[41.311158, 69.279737]} />
@@ -499,7 +499,7 @@ export default class Apteka extends Component {
     <h1>The name of pharm</h1>
     <div className={styles.flex1}><div className={styles.img}>
 <img src={apteka1} /></div>
-<div className={styles.matn1}>  Lorem ipsum dolor sit amet consectetur adipisicing
+<div className={styles.matn1} style={{textAlign:'justify', padding:'0px 10px 0px 10px'}}>  Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Repellat labore saepe animi tenetur perferendis
                           repudiandae dolor nobis maiores veritatis,
                           exercitationem consequuntur nam minima tempora rerum

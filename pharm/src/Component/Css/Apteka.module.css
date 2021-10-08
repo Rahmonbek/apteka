@@ -665,27 +665,33 @@
     #NavbarMe {
       height: 90px;
     }
+    .xarita1{
+      width: 100%;
+    }
   }
  .card1{
    display: flex;
  }
  .hammasi1{
-box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
-  margin: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  margin: 50px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+  cursor: pointer;
  }
  .hammasi1:hover{
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px ;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
    }
  .flex1{
    display: flex;
  }
  .flex1 .img{
   width: 30%;
-  margin: 10px;
+  margin: 20px;
 }
 .flex1 .img img{
   width: 100%;
-  margin: 10px;
+  height: 300px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .flex1 .matn1{
   width: 30%;
@@ -693,9 +699,15 @@ box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
   font-size: 20px;
  
 }
+.xarita1{
+  width: 30%;
+  margin: 20px auto !important;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
 .xarita3{
-  width: 300px;
+  width: 100%;
   height: 300px;
+  
 }
 @media(max-width:991px){
   .flex1{
@@ -703,16 +715,13 @@ box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
     margin:auto;
   }
   .flex1 .img{
-  width: 100%;
-   margin: 0px;
+  width: 60%;
+   margin: auto;
   
    display: flex;
    justify-content: center;
  }
- .flex1 .img img{
-   width: 80%;
- 
- }
+
  .flex1 .matn1{
    width: 100%;
  
@@ -723,7 +732,7 @@ box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
     margin-bottom: 10px;
   
  }
- .xarita1{
+ /* .xarita1{
  
  display: flex;
  justify-content: center;
@@ -731,7 +740,10 @@ box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
  .xarita2{
    margin: auto;
    text-align: center;
- }
+ } */
+ .xarita1{
+  width: 100%;
+}
 }
 @media(max-width:380px){
   .flex1 .matn1{
@@ -743,8 +755,7 @@ box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
      margin-bottom: 10px;
   
   }
-  .xarita3{
-    width: 270px;
-    height: 270px;
-  }
+ .xarita1{
+   width: 100%;
+ }
 }
