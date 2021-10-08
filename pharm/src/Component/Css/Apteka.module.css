@@ -709,19 +709,22 @@
   height: 300px;
   
 }
+
 @media(max-width:991px){
   .flex1{
     display: block;
     margin:auto;
   }
   .flex1 .img{
-  width: 60%;
+  width: 100%;
    margin: auto;
   
    display: flex;
    justify-content: center;
  }
-
+.img img{
+  width: 100%;
+}
  .flex1 .matn1{
    width: 100%;
  
