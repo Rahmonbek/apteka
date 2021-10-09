@@ -9,6 +9,7 @@
 
 .Card {
     overflow: hidden;
+    position: relative;
 }
 
 .Card Img {
@@ -71,17 +72,38 @@
 
 }
 .news_item {
-    height: 310px;
+    height: 300px;
 }
 
-
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #184E61;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .text {
+      width: 100%;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    text-align: left;
+  }
 .Curved {
     position: relative;
     width: 100%;
     height: 100% !important;
     margin-bottom:4%;
 }
-
+.Card:hover .overlay {
+    height: 28%;
+  }
 .Card:hover .Curved {
     position: relative;
     display: block;
@@ -154,17 +176,19 @@
 }
 
 .social_icons {
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .social_icons li {
     list-style-type: none;
-    z-index: 4;
+    display: inline-block;
+    /* z-index: 4; */
 }
 
 .social_icons li a {
     position: relative;
-    display: block;
+    /* display: block; */
+    display: inline-block;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -174,15 +198,15 @@
     color: #FFFFFF;
     font-size: 23px;
     font-weight: bold;
-    transform: translateX(-160px);
-    margin: 6px 0px;
+    transform: translatey(100%);
+    margin: 170px 20px 10px 0px;
     transition: .7s;
     opacity: 0;
 }
 
 .social_icons li a i {
     position: absolute;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 10px;
     margin-left: -8px;
@@ -527,6 +551,22 @@
             }
     }
 @media(max-width:400px) {
+  .news_item, .Card{
+      height: 250px;
+  }
+      .text {
+        font-size: 14px;
+        top: 5px;
+        left: 10px;
+      }
+      .social_icons li a {
+    
+        margin: 130px 6px 0px 6px;
+       
+    }
+    .social_icons{
+       margin: auto;
+    }
     .CarosuelMe {
         height: auto;
         padding: 5%;
@@ -583,31 +623,7 @@
         margin-top: 9.5px;
     }
 
-    .social_icons li a {
-        position: relative;
-        display: block;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        line-height: 50px;
-        text-align: center;
-        background: #184E61;
-        color: #FFFFFF;
-        font-size: 23px;
-        font-weight: bold;
-        transform: translateX(-160px);
-        margin: 6px 0px;
-        transition: .7s;
-        opacity: 0;
-    }
-
-    .social_icons li a i {
-        position: absolute;
-        font-size: 13px;
-        font-weight: 500;
-        margin-top: 7px;
-        margin-left: -6px;
-    }
+   
 
     .SliderMenuText1 {
         /* Subtitle / Base */
@@ -647,8 +663,34 @@
     .Card:hover .Curved {
         margin-top: -64px;
     }
+    .news_item, .Card{
+        height: 250px;
+    }
+        .text {
+          font-size: 14px;
+          top: 5px;
+          left: 10px;
+        }
+        .social_icons li a {
+      
+          margin: 130px 6px 0px 6px;
+         
+      }
 }
 @media(max-width:350px) {
+    .news_item, .Card{
+        height: 250px;
+    }
+        .text {
+          font-size: 14px;
+          top: 5px;
+          left: 10px;
+        }
+        .social_icons li a {
+      
+          margin: 130px 6px 0px 6px;
+         
+      }
     .Card:hover .Curved {
         margin-top: -53px;
     }
@@ -709,7 +751,21 @@
     }
 }
 @media(max-width:320px) {
-
+    .news_item, .Card{
+        height: 230px;
+    }
+        .text {
+          font-size: 14px;
+          top: 5px;
+          left: 10px;
+       
+        }
+      
+        .social_icons li a {
+      
+          margin: 120px 3px 0px 3px;
+         
+      }
 
         .Card:hover .Curved {
         margin-top: -50px;

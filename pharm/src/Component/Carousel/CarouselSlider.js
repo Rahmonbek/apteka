@@ -56,7 +56,51 @@ export default function CarouselSlider() {
         <div className={style.news_item}>
           <Card className={style.Card}>
             <Card.Img variant="top" src={Rasm} className="img-fluid" />
-            <svg
+
+           <div className={style.overlay}>
+           <div className={style.text}>
+             <b style={{fontSize:'18px'}}>Dori-Darmon</b>
+             <p>Toshkent, Yunusobod tumani, 2-kvartal</p>
+           </div>
+           </div>
+           <div className={style.social_icons_Item}>
+              <ul
+                style={{ listStyleType: "none", textDecoration: "none", paddingLeft:'20px' }}
+                className={style.social_icons}
+              >
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="far fa-envelope"></i>{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                  <i class="fas fa-phone"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <div className={style.CallMeGroup}>
+              <i>
+                <FiPhoneCall className={style.CallMeGroupIcon} />
+              </i>
+            </div> */}
+            {/* <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -68,15 +112,15 @@ export default function CarouselSlider() {
               >
                 {" "}
               </path>
-            </svg>
-            <div
-              // style={{ paddingTop: "10px" }}
+            </svg> */}
+            {/* <div
+            
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p> <br />
               <p> Toshkent, Yunusobod tumani, 2-kvartal</p> <br />
-            </div>{" "}
-            <div className={style.social_icons_Item}>
+            </div>{" "} */}
+            {/* <div className={style.social_icons_Item}>
               <ul
                 style={{ listStyleType: "none", textDecoration: "none" }}
                 className={style.social_icons}
@@ -107,13 +151,52 @@ export default function CarouselSlider() {
               <i>
                 <FiPhoneCall className={style.CallMeGroupIcon} />
               </i>
-            </div>
+            </div> */}
           </Card>
         </div>
         <div className={style.news_item}>
           <Card className={style.Card}>
             <Card.Img variant="top" src={Rasm1} />
-            <svg
+
+            <div className={style.overlay}>
+           <div className={style.text}>
+             <b style={{fontSize:'18px'}}>Dori-Darmon</b>
+             <p>Toshkent, Yunusobod tumani, 2-kvartal</p>
+           </div>
+           </div>
+           <div className={style.social_icons_Item}>
+              <ul
+                style={{ listStyleType: "none", textDecoration: "none", paddingLeft:'20px' }}
+                className={style.social_icons}
+              >
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="far fa-envelope"></i>{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                  <i class="fas fa-phone"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -125,13 +208,13 @@ export default function CarouselSlider() {
               ></path>
             </svg>
             <div
-              // style={{ paddingTop: "10px" }}
+           
               className={style.CardFooterText1}
             >
-              {/* style={{ marginTop: "8px" }} bu dori darmonniki */}
+              
               <p>Dori-Darmon</p> <br />
               <p>
-                {/* style={{ marginTop: "-6px" }}  bu adressniki*/} Toshkent,
+            Toshkent,
                 Yunusobod tumani, 2-kvartal
               </p>{" "}
               <br />
@@ -167,14 +250,53 @@ export default function CarouselSlider() {
               <i>
                 <FiPhoneCall className={style.CallMeGroupIcon} />
               </i>
-            </div>
+            </div> */}
           </Card>
         </div>
 
         <div className={style.news_item}>
           <Card className={style.Card}>
             <Card.Img variant="top" src={Rasm3} className="img-fluid" />
-            <svg
+
+            <div className={style.overlay}>
+           <div className={style.text}>
+             <b style={{fontSize:'18px'}}>Dori-Darmon</b>
+             <p>Toshkent, Yunusobod tumani, 2-kvartal</p>
+           </div>
+           </div>
+           <div className={style.social_icons_Item}>
+              <ul
+                style={{ listStyleType: "none", textDecoration: "none", paddingLeft:'20px' }}
+                className={style.social_icons}
+              >
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="far fa-envelope"></i>{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                  <i class="fas fa-phone"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -186,7 +308,7 @@ export default function CarouselSlider() {
               ></path>
             </svg>
             <div
-              // style={{ paddingTop: "10px" }}
+            
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
@@ -224,13 +346,52 @@ export default function CarouselSlider() {
               <i>
                 <FiPhoneCall className={style.CallMeGroupIcon} />
               </i>
-            </div>
+            </div> */}
           </Card>
         </div>
         <div className={style.news_item}>
           <Card className={style.Card}>
             <Card.Img variant="top" src={Rasm4} />
-            <svg
+
+            <div className={style.overlay}>
+           <div className={style.text}>
+             <b style={{fontSize:'18px'}}>Dori-Darmon</b>
+             <p>Toshkent, Yunusobod tumani, 2-kvartal</p>
+           </div>
+           </div>
+           <div className={style.social_icons_Item}>
+              <ul
+                style={{ listStyleType: "none", textDecoration: "none", paddingLeft:'20px' }}
+                className={style.social_icons}
+              >
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="far fa-envelope"></i>{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                  <i class="fas fa-phone"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -247,7 +408,7 @@ export default function CarouselSlider() {
               </i>
             </div>
             <div
-              // style={{ paddingTop: "10px" }}
+             
               className={style.CardFooterText1}
             >
               <p>Dori-Darmon</p>
@@ -280,7 +441,7 @@ export default function CarouselSlider() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             {/* <div className={style.CallMeGroup}>
               <i>
                 <FiPhoneCall className={style.CallMeGroupIcon} />
@@ -291,7 +452,46 @@ export default function CarouselSlider() {
         <div className={style.news_item}>
           <Card className={style.Card}>
             <Card.Img variant="top" src={Rasm2} />
-            <svg
+
+            <div className={style.overlay}>
+           <div className={style.text}>
+             <b style={{fontSize:'18px'}}>Dori-Darmon</b>
+             <p>Toshkent, Yunusobod tumani, 2-kvartal</p>
+           </div>
+           </div>
+           <div className={style.social_icons_Item}>
+              <ul
+                style={{ listStyleType: "none", textDecoration: "none", paddingLeft:'20px' }}
+                className={style.social_icons}
+              >
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="far fa-envelope"></i>{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={x}>
+                  <i class="fas fa-phone"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* <svg
               className={style.Curved}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -339,7 +539,7 @@ export default function CarouselSlider() {
               <i>
                 <FiPhoneCall className={style.CallMeGroupIcon} />
               </i>
-            </div>
+            </div> */}
           </Card>
         </div>
       </Carousel>
